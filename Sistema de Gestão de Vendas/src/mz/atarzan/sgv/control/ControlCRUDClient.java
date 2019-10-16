@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
-import javax.swing.table.TableModel;
 import mz.atarzan.sgv.model.ModelClient;
 import mz.atarzan.sgv.util.UtilDatabaseConnection;
 
@@ -66,20 +65,20 @@ public class ControlCRUDClient {
                             rs.getString("name"),
                             rs.getString("email"),
                             rs.getString("tell"),
-                            rs.getString("endereco")
+                            rs.getString("address")
                     ));
                     list.add(new Object[]{
                         rs.getString("name"),
                         rs.getString("email"),
                         rs.getString("tell"),
-                        rs.getString("endereco")
+                        rs.getString("address")
                     });
                 }
             }
         }
         catch (Exception e){
             System.err.println(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Ocorreu um erro enquanto carregava os dados dos clintes!");
+            JOptionPane.showMessageDialog(null, "Ocorreu um erro enquanto carregava os dados dos clientes!");
         }
         return list;
   }

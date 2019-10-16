@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
+import mz.atarzan.sgv.control.ControlCRUDClient;
 import mz.atarzan.sgv.util.UtilDatabaseConnection;
 
 /**
@@ -20,19 +21,20 @@ public class VisionListarClientes extends javax.swing.JFrame {
      */
     public VisionListarClientes() throws SQLException {
         initComponents();
+        ControlCRUDClient.read(jtClients);
     }
     
     private void listarUsuarios() throws SQLException{
         try {
             try (Connection connect = UtilDatabaseConnection.connect()) {
-                String sql = "SELECT * from users";
+                String sql = "SELECT * FROM clients";
                 PreparedStatement stmt = connect.prepareStatement(sql);
                 try (ResultSet rs = stmt.executeQuery()) {
-                    DefaultTableModel model = (DefaultTableModel)jtUsuarios.getModel();
+                    DefaultTableModel model = (DefaultTableModel)jtClients.getModel();
                     model.setNumRows(0);
                     
                     while(rs.next()){
-                        model.addRow(new Object[]{rs.getString("id"),rs.getString("name"),rs.getString("username"),rs.getString("password")});
+                        model.addRow(new Object[]{rs.getString("name"),rs.getString("email"),rs.getString("tell"),rs.getString("endereco")});
                     }
                 }
             }
@@ -41,25 +43,23 @@ public class VisionListarClientes extends javax.swing.JFrame {
         
     }
     
-    private void pesquisarUsuarios(String username) throws SQLException{
+    private void searchClients(String username) throws SQLException{
         try {
             try (Connection connect = UtilDatabaseConnection.connect()) {
-                String sql = "SELECT FROM users WHERE name = "+username;
+                String sql = "SELECT FROM clients WHERE name = "+username;
                 PreparedStatement stmt = connect.prepareStatement(sql);
                 try (ResultSet rs = stmt.executeQuery()) {
-                    DefaultTableModel model = (DefaultTableModel)jtUsuarios.getModel();
+                    DefaultTableModel model = (DefaultTableModel)jtClients.getModel();
                     model.setNumRows(0);
                     
                     while(rs.first()){
-                        model.addRow(new Object[]{rs.getString("id"),rs.getString("name"),rs.getString("username"),rs.getString("password")});
+                        model.addRow(new Object[]{rs.getString("name"),rs.getString("email"),rs.getString("tell"),rs.getString("endereco")});
                     }
                 }
             }
         } catch (SQLException e) {
         }
-        
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -74,7 +74,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
         btnPesquisar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jtUsuarios = new javax.swing.JTable();
+        jtClients = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -85,7 +85,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
             }
         });
 
-        jtUsuarios.setModel(new javax.swing.table.DefaultTableModel(
+        jtClients.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null}
             },
@@ -101,11 +101,11 @@ public class VisionListarClientes extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jtUsuarios.getTableHeader().setReorderingAllowed(false);
-        jScrollPane2.setViewportView(jtUsuarios);
-        if (jtUsuarios.getColumnModel().getColumnCount() > 0) {
-            jtUsuarios.getColumnModel().getColumn(1).setResizable(false);
-            jtUsuarios.getColumnModel().getColumn(2).setResizable(false);
+        jtClients.getTableHeader().setReorderingAllowed(false);
+        jScrollPane2.setViewportView(jtClients);
+        if (jtClients.getColumnModel().getColumnCount() > 0) {
+            jtClients.getColumnModel().getColumn(1).setResizable(false);
+            jtClients.getColumnModel().getColumn(2).setResizable(false);
         }
 
         jScrollPane1.setViewportView(jScrollPane2);
@@ -164,8 +164,8 @@ public class VisionListarClientes extends javax.swing.JFrame {
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
         try {
             // TODO add your handling code here:
-            String pesq = jtfPesquisar.getText();
-            pesquisarUsuarios(pesq);
+            String search = jtfPesquisar.getText();
+            searchClients(search);
         } catch (SQLException ex) {
             Logger.getLogger(VisionListarClientes.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -214,13 +214,11 @@ public class VisionListarClientes extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    new VisionListarClientes().setVisible(true);
-                } catch (SQLException ex) {
-                    Logger.getLogger(VisionListarClientes.class.getName()).log(Level.SEVERE, null, ex);
-                }
+        java.awt.EventQueue.invokeLater(() -> {
+            try {
+                new VisionListarClientes().setVisible(true);
+            } catch (SQLException ex) {
+                Logger.getLogger(VisionListarClientes.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
     }
@@ -232,7 +230,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jtUsuarios;
+    private javax.swing.JTable jtClients;
     private javax.swing.JTextField jtfPesquisar;
     // End of variables declaration//GEN-END:variables
 }
