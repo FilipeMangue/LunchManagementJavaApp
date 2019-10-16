@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mz.atarzan.sgv.vision;
 
 import java.sql.Connection;
@@ -16,10 +11,9 @@ import mz.atarzan.sgv.util.UtilDatabaseConnection;
 
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
  */
 public class VisionListarClientes extends javax.swing.JFrame {
-
     /**
      * Creates new form PainelListaUsuarioss
      * @throws java.sql.SQLException
@@ -110,8 +104,13 @@ public class VisionListarClientes extends javax.swing.JFrame {
         jtUsuarios.getTableHeader().setReorderingAllowed(false);
         jScrollPane2.setViewportView(jtUsuarios);
         if (jtUsuarios.getColumnModel().getColumnCount() > 0) {
+            jtUsuarios.getColumnModel().getColumn(0).setHeaderValue("ID");
+            jtUsuarios.getColumnModel().getColumn(1).setHeaderValue("Nome");
             jtUsuarios.getColumnModel().getColumn(2).setResizable(false);
+            jtUsuarios.getColumnModel().getColumn(2).setHeaderValue("Email");
             jtUsuarios.getColumnModel().getColumn(3).setResizable(false);
+            jtUsuarios.getColumnModel().getColumn(3).setHeaderValue("Telemóvel");
+            jtUsuarios.getColumnModel().getColumn(4).setHeaderValue("Endereço");
         }
 
         jScrollPane1.setViewportView(jScrollPane2);

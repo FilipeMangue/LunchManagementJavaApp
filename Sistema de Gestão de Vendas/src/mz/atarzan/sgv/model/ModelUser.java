@@ -1,11 +1,7 @@
+
 package mz.atarzan.sgv.model;
-
-import java.util.Date;
-
 /**
- *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
- * @author Explicador Inc, Lda
  */
 public class ModelUser {
     private int id;

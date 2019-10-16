@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mz.atarzan.sgv.vision;
 
 import java.sql.SQLException;
@@ -11,8 +6,7 @@ import java.util.logging.Logger;
 import mz.atarzan.sgv.model.ModelUser;
 
 /**
- *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
  */
 public class VisionMain extends javax.swing.JFrame{
     private ModelUser usuario;
