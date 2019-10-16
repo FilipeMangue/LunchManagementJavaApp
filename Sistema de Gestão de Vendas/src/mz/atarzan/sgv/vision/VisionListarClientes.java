@@ -76,7 +76,9 @@ public class VisionListarClientes extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jtClients = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lbCliRegistados = new javax.swing.JLabel();
+
+        setTitle("LISTAGEM DE CLIENTES");
 
         btnPesquisar.setText("Pesquisar");
         btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
@@ -102,6 +104,14 @@ public class VisionListarClientes extends javax.swing.JFrame {
             }
         });
         jtClients.getTableHeader().setReorderingAllowed(false);
+        jtClients.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtClientsMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jtClientsMouseEntered(evt);
+            }
+        });
         jScrollPane2.setViewportView(jtClients);
         if (jtClients.getColumnModel().getColumnCount() > 0) {
             jtClients.getColumnModel().getColumn(1).setResizable(false);
@@ -113,9 +123,8 @@ public class VisionListarClientes extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Clientes Registados:");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 204, 204));
-        jLabel1.setText("0000");
+        lbCliRegistados.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        lbCliRegistados.setText("0");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -126,7 +135,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbCliRegistados, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jtfPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -136,13 +145,13 @@ public class VisionListarClientes extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel5)
-                        .addComponent(jLabel1))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jtfPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnPesquisar)))
+                        .addComponent(btnPesquisar))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbCliRegistados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel5)))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE))
         );
@@ -170,6 +179,23 @@ public class VisionListarClientes extends javax.swing.JFrame {
             Logger.getLogger(VisionListarClientes.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnPesquisarActionPerformed
+
+    private void jtClientsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtClientsMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtClientsMouseEntered
+
+    private void jtClientsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtClientsMouseClicked
+        // TODO add your handling code here:
+        VisionCadastrarCliente vcc = new VisionCadastrarCliente();
+        vcc.setVisible(true);
+        VisionCadastrarCliente.btnCadastrar.setVisible(false);
+        VisionCadastrarCliente.jtfName.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 0).toString());
+        VisionCadastrarCliente.jtfEmail.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 1).toString());
+        VisionCadastrarCliente.jtfTell.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 2).toString());
+        VisionCadastrarCliente.jtfAddress.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 3).toString());
+        
+        
+    }//GEN-LAST:event_jtClientsMouseClicked
 
     /**
      * @param args the command line arguments
@@ -225,12 +251,12 @@ public class VisionListarClientes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnPesquisar;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jtClients;
     private javax.swing.JTextField jtfPesquisar;
+    public static javax.swing.JLabel lbCliRegistados;
     // End of variables declaration//GEN-END:variables
 }

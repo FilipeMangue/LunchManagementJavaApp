@@ -16,6 +16,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
      */
     public VisionCadastrarCliente() {
         initComponents();
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -54,6 +55,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jtfBirth = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CADASTRO / EDIÇÃO DE CLIENTES");
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         pnlPricinpal.setBackground(new java.awt.Color(255, 255, 51));
@@ -114,7 +116,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
             .addGap(0, 129, Short.MAX_VALUE)
         );
 
-        bntActualizar.setText("Actulizar");
+        bntActualizar.setText("Actualizar");
 
         btnCadastrar.setText("Cadastrar");
         btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
@@ -332,8 +334,8 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bntActualizar;
-    private javax.swing.JButton btnCadastrar;
+    public static javax.swing.JButton bntActualizar;
+    public static javax.swing.JButton btnCadastrar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -348,13 +350,13 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox jcbSex;
     private javax.swing.JRadioButton jrbType;
-    private javax.swing.JTextArea jtaComment;
-    private javax.swing.JTextField jtfAddress;
-    private javax.swing.JTextField jtfBirth;
-    private javax.swing.JTextField jtfCod;
-    private javax.swing.JTextField jtfEmail;
-    private javax.swing.JTextField jtfName;
-    private javax.swing.JTextField jtfTell;
+    public static javax.swing.JTextArea jtaComment;
+    public static javax.swing.JTextField jtfAddress;
+    public static javax.swing.JTextField jtfBirth;
+    public static javax.swing.JTextField jtfCod;
+    public static javax.swing.JTextField jtfEmail;
+    public static javax.swing.JTextField jtfName;
+    public static javax.swing.JTextField jtfTell;
     private javax.swing.JLabel lbAge;
     private javax.swing.JPanel pnlPricinpal;
     // End of variables declaration//GEN-END:variables

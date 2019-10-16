@@ -10,6 +10,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import mz.atarzan.sgv.model.ModelClient;
 import mz.atarzan.sgv.util.UtilDatabaseConnection;
+import mz.atarzan.sgv.vision.VisionListarClientes;
 
 /**
  * @author Filipe Emanuel Da Julieta Hafo Mangue
@@ -17,6 +18,7 @@ import mz.atarzan.sgv.util.UtilDatabaseConnection;
 public class ControlCRUDClient {
     
     public static ArrayList<ModelClient> clientsList = new ArrayList<>();
+    public static int cli_registados;
     
     public static ModelClient create(ModelClient client) {
         try {
@@ -73,7 +75,9 @@ public class ControlCRUDClient {
                         rs.getString("tell"),
                         rs.getString("address")
                     });
+                    cli_registados += 1;
                 }
+                VisionListarClientes.lbCliRegistados.setText(""+cli_registados);
             }
         }
         catch (Exception e){
