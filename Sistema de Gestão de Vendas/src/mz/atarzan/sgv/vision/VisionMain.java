@@ -374,13 +374,16 @@ public class VisionMain extends javax.swing.JFrame{
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
-       if(evt.getSource() == jmiCadastUsuario)
-        new VisionRegistoUsuario().setVisible(true);
+       if(evt.getSource() == jmiCadastUsuario){
+           
+       }
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem23ActionPerformed
 
     private void jmiCadastUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiCadastUsuarioActionPerformed
-      new VisionRegistoUsuario().setVisible(true);
+      if(true){
+          
+      }
     }//GEN-LAST:event_jmiCadastUsuarioActionPerformed
 
     private void jmiCadastUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmiCadastUsuarioMouseClicked
@@ -393,12 +396,14 @@ public class VisionMain extends javax.swing.JFrame{
 
     private void jMenuBar1ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jMenuBar1ComponentHidden
         // TODO add your handling code here:
-        new VisionRegistoUsuario().setVisible(true);
+        if(true){
+            
+        }
     }//GEN-LAST:event_jMenuBar1ComponentHidden
 
     private void jmiListarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiListarUsuarioActionPerformed
         try {
-            new VisionListUsers().setVisible(true);
+            new VisionListarClientes().setVisible(true);
             // TODO add your handling code here:
         } catch (SQLException ex) {
             Logger.getLogger(VisionMain.class.getName()).log(Level.SEVERE, null, ex);

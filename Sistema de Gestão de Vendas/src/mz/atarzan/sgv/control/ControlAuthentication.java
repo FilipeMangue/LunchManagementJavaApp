@@ -14,7 +14,7 @@ public class ControlAuthentication {
     public static ModelUser login(String username, String password) {
        
         try {
-              Connection conn = UtilDatabaseConnection.conectar();
+              Connection conn = UtilDatabaseConnection.connect();
              
               String query = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + password + "'";
 

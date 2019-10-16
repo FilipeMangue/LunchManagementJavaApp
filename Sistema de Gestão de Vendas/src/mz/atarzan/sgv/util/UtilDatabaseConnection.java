@@ -7,31 +7,27 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 /**
- *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
- * @author Explicador Inc, Lda.
  */
 public class UtilDatabaseConnection {
-    private static String db_name = "dblanchonete"; //Nome da base de dados
-    private static String username = "root"; //Nome de usuário para conexão com a db
-    private static String password = ""; //Password de acesso
-    private static String server = "localhost"; //Servidor or ip, mas geralmente: localhost
+    private static final String db_name = "dblanchonete";
+    private static final String username = "root";
+    private static final String password = "";
+    private static final String server = "localhost";
     
-    public static Connection conectar (){
+    public static Connection connect (){
         try {
             Class.forName("java.sql.Driver");
             String path = "jdbc:mysql://" + server + "/" + db_name;
-            Connection con = DriverManager.getConnection(path, username, password);
+            Connection connection = DriverManager.getConnection(path, username, password);
             
-            System.out.println("Conexao feita com sucesso com o mysql no server: '" + server + "'...");
-            
-//            JOptionPane.showMessageDialog(null, "Conexão feita com sucesso!");
-            
-            return con;
+            System.out.println("Conexão feita com sucesso com o MySql no server: '" + server + "'...");
+                        
+            return connection;
             
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(UtilDatabaseConnection.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(null, "Erro ao contactar com o server: " + server + "\nError: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao conectar com o servidor: " + server + "\nError: " + ex.getMessage());
         }
         
         return null;

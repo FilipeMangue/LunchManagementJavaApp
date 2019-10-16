@@ -15,7 +15,7 @@ public class ControlCRUDUser {
        
         try {
             // the mysql insert statement
-            try (Connection dbconnect = UtilDatabaseConnection.conectar()) {
+            try (Connection dbconnect = UtilDatabaseConnection.connect()) {
                 // the mysql insert statement
                 String query = "INSERT INTO users (name, username, password)"
                              + " values (?, ?, ?)";
@@ -45,7 +45,7 @@ public class ControlCRUDUser {
        
         try {
             // the mysql insert statement
-            try (Connection dbconnect = UtilDatabaseConnection.conectar()) {
+            try (Connection dbconnect = UtilDatabaseConnection.connect()) {
                 // the mysql insert statement
                 String query = "UPDATE users SET name = ?, username = ?, password = ?, WHERE name = "+name;
                 
@@ -73,7 +73,7 @@ public class ControlCRUDUser {
        
         try {
             // the mysql insert statement
-            try (Connection dbconnect = UtilDatabaseConnection.conectar()) {
+            try (Connection dbconnect = UtilDatabaseConnection.connect()) {
                 // the mysql insert statement
                 String query = "DELETE FROM `users` WHERE `users`.`name` = "+usuario.getUsername();
                 
