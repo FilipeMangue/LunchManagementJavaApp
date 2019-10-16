@@ -258,7 +258,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         int birth = Integer.parseInt(jtfBirth.getText());
         String email = jtfEmail.getText();
         String tell = jtfTell.getText();
-        byte age = (byte)(Integer.parseInt(jtfBirth.getText()) - 2019);
+        byte age = (byte)(2019 - Integer.parseInt(jtfBirth.getText()));
         String address = jtfAddress.getText();
         String comment = jtaComment.getText();
         
@@ -271,7 +271,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         } 
         ModelClient client;
         try {
-            client = ControlCRUDClient.create(new ModelClient(type,name, birth, email,tell, age, address, comment));
+            client = ControlCRUDClient.create(new ModelClient(type, name, birth, email, tell, age, address, comment));
             if (client != null) {
                JOptionPane.showMessageDialog(this, "Cliente Registado Com Sucesso!");
             } else {

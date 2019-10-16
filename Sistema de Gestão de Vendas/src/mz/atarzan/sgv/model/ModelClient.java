@@ -27,6 +27,13 @@ public class ModelClient {
         this.comment = comment;
     }
     
+    public ModelClient(String name, String email, String tell,String address) {
+        this.name = name;
+        this.email = email;
+        this.tell = tell;
+        this.address = address;
+    }
+    
     public ModelClient(boolean type, String name, int birth, String email, String tell, byte age, String address, String comment) {
         this.type = type;
         this.name = name;

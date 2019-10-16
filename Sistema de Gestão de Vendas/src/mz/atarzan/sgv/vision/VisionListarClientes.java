@@ -87,14 +87,14 @@ public class VisionListarClientes extends javax.swing.JFrame {
 
         jtUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null}
+                {null, null, null, null}
             },
             new String [] {
-                "ID", "Nome", "Email", "Telemóvel", "Endereço"
+                "Nome", "Email", "Telemóvel", "Endereço"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, true, true
+                false, false, true, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -104,13 +104,8 @@ public class VisionListarClientes extends javax.swing.JFrame {
         jtUsuarios.getTableHeader().setReorderingAllowed(false);
         jScrollPane2.setViewportView(jtUsuarios);
         if (jtUsuarios.getColumnModel().getColumnCount() > 0) {
-            jtUsuarios.getColumnModel().getColumn(0).setHeaderValue("ID");
-            jtUsuarios.getColumnModel().getColumn(1).setHeaderValue("Nome");
+            jtUsuarios.getColumnModel().getColumn(1).setResizable(false);
             jtUsuarios.getColumnModel().getColumn(2).setResizable(false);
-            jtUsuarios.getColumnModel().getColumn(2).setHeaderValue("Email");
-            jtUsuarios.getColumnModel().getColumn(3).setResizable(false);
-            jtUsuarios.getColumnModel().getColumn(3).setHeaderValue("Telemóvel");
-            jtUsuarios.getColumnModel().getColumn(4).setHeaderValue("Endereço");
         }
 
         jScrollPane1.setViewportView(jScrollPane2);

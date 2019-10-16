@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  * @author Filipe Emanuel Da Julieta Hafo Mangue
  */
 public class UtilDatabaseConnection {
-    private static final String db_name = "dblanchonete";
+    private static final String db_name = "dbsgv";
     private static final String username = "root";
     private static final String password = "";
     private static final String server = "localhost";
     
-    public static Connection connect (){
+    public static Connection connect(){
         try {
             Class.forName("java.sql.Driver");
             String path = "jdbc:mysql://" + server + "/" + db_name;
