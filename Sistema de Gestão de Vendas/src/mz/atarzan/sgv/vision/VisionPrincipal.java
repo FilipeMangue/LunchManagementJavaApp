@@ -753,9 +753,19 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jMenu10.setText("1. Licença");
 
         jMenuItem12.setText("1. Adquirir");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
         jMenu10.add(jMenuItem12);
 
         jMenuItem14.setText("2. Renovar ");
+        jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem14ActionPerformed(evt);
+            }
+        });
         jMenu10.add(jMenuItem14);
 
         jMenu2.add(jMenu10);
@@ -896,6 +906,18 @@ public class VisionPrincipal extends javax.swing.JFrame {
        vl.setVisible(true);
        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+       VisionLicencas vl = new VisionLicencas();
+       vl.setVisible(true);
+       // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+        VisionLicencas vl = new VisionLicencas();
+        vl.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem14ActionPerformed
 
     /**
      * @param args the command line arguments
