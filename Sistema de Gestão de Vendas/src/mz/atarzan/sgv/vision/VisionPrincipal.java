@@ -16,6 +16,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
      */
     public VisionPrincipal() {
         initComponents();
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
     /**
@@ -80,8 +82,18 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jCheckBoxMenuItem3 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem4 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem5 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem6 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem7 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem8 = new javax.swing.JCheckBoxMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
+        jMenu10 = new javax.swing.JMenu();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem14 = new javax.swing.JMenuItem();
+        jmMudancaPassword = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -91,6 +103,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         jMenu3 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Gestão de Vendas");
@@ -303,7 +321,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel6.setText("Produto:");
 
         jTextField1.setForeground(new java.awt.Color(255, 153, 153));
-        jTextField1.setText("  Digite o código ou nome do produto");
         jTextField1.setToolTipText("");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -678,47 +695,118 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addComponent(jtpGeral))
         );
 
-        jMenu1.setText("Ficheiro");
+        jMenu1.setText("Programa");
+
+        jMenu4.setText("Mostrar");
+
+        jCheckBoxMenuItem3.setSelected(true);
+        jCheckBoxMenuItem3.setText("Vendas");
+        jMenu4.add(jCheckBoxMenuItem3);
+
+        jCheckBoxMenuItem4.setSelected(true);
+        jCheckBoxMenuItem4.setText("Caixa");
+        jMenu4.add(jCheckBoxMenuItem4);
+
+        jCheckBoxMenuItem5.setSelected(true);
+        jCheckBoxMenuItem5.setText("Fornecedores");
+        jMenu4.add(jCheckBoxMenuItem5);
+
+        jCheckBoxMenuItem6.setSelected(true);
+        jCheckBoxMenuItem6.setText("Produtos");
+        jMenu4.add(jCheckBoxMenuItem6);
+
+        jCheckBoxMenuItem7.setSelected(true);
+        jCheckBoxMenuItem7.setText("Resumo");
+        jMenu4.add(jCheckBoxMenuItem7);
+
+        jCheckBoxMenuItem8.setSelected(true);
+        jCheckBoxMenuItem8.setText("Usuários");
+        jMenu4.add(jCheckBoxMenuItem8);
+
+        jMenu1.add(jMenu4);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Ajuda");
+
+        jMenu10.setText("1. Licença");
+
+        jMenuItem12.setText("1. Adquirir");
+        jMenu10.add(jMenuItem12);
+
+        jMenuItem14.setText("2. Renovar ");
+        jMenu10.add(jMenuItem14);
+
+        jMenu2.add(jMenu10);
+
         jMenuBar1.add(jMenu2);
 
-        jMenu5.setText("Ferramentas");
+        jmMudancaPassword.setText("Ferramentas");
 
-        jMenuItem5.setText("Opções");
-        jMenu5.add(jMenuItem5);
+        jMenuItem5.setText("1. Opções");
+        jmMudancaPassword.add(jMenuItem5);
 
-        jMenu7.setText("Idioma");
+        jMenu7.setText("2. Idioma");
 
         jCheckBoxMenuItem1.setSelected(true);
-        jCheckBoxMenuItem1.setText("Português");
+        jCheckBoxMenuItem1.setText("1. Português");
         jMenu7.add(jCheckBoxMenuItem1);
 
         jCheckBoxMenuItem2.setSelected(true);
-        jCheckBoxMenuItem2.setText("English");
+        jCheckBoxMenuItem2.setText("2. English");
         jMenu7.add(jCheckBoxMenuItem2);
 
-        jMenu5.add(jMenu7);
+        jmMudancaPassword.add(jMenu7);
 
-        jMenuItem13.setText("Mudança de Password");
-        jMenu5.add(jMenuItem13);
+        jMenuItem13.setText("3. Mudança de Password");
+        jMenuItem13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuItem13MouseClicked(evt);
+            }
+        });
+        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem13ActionPerformed(evt);
+            }
+        });
+        jmMudancaPassword.add(jMenuItem13);
 
-        jMenu8.setText("Acesso ao Sistema");
+        jMenu8.setText("4. Acesso ao Sistema");
 
         jRadioButtonMenuItem1.setSelected(true);
-        jRadioButtonMenuItem1.setText("Sem Autenticação");
+        jRadioButtonMenuItem1.setText("1. Sem Autenticação");
         jMenu8.add(jRadioButtonMenuItem1);
 
         jRadioButtonMenuItem2.setSelected(true);
-        jRadioButtonMenuItem2.setText("Com Autenticação ");
+        jRadioButtonMenuItem2.setText("2. Com Autenticação ");
         jMenu8.add(jRadioButtonMenuItem2);
 
-        jMenu5.add(jMenu8);
+        jmMudancaPassword.add(jMenu8);
 
-        jMenuBar1.add(jMenu5);
+        jMenuBar1.add(jmMudancaPassword);
 
         jMenu3.setText("Sobre");
+
+        jMenu6.setText("1. Sistema");
+
+        jMenuItem8.setText("1. Funcionalidades");
+        jMenu6.add(jMenuItem8);
+
+        jMenuItem9.setText("2. Administradores");
+        jMenu6.add(jMenuItem9);
+
+        jMenu3.add(jMenu6);
+
+        jMenu9.setText("2. Desenvolvedor");
+
+        jMenuItem10.setText("1. Informações de Contacto");
+        jMenu9.add(jMenuItem10);
+
+        jMenuItem11.setText("2. Suporte Técnico Online ");
+        jMenu9.add(jMenuItem11);
+
+        jMenu3.add(jMenu9);
+
         jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
@@ -742,6 +830,18 @@ public class VisionPrincipal extends javax.swing.JFrame {
        jlNomeCliente.setText((String) jComboBox1.getItemAt(0));
        // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jMenuItem13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem13MouseClicked
+       VisionChangePassword vcp = new VisionChangePassword();
+       vcp.setVisible(true);
+       // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem13MouseClicked
+
+    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+       VisionChangePassword vcp = new VisionChangePassword();
+       vcp.setVisible(true); 
+       // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem13ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -788,6 +888,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem3;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem4;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem5;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem6;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem7;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem8;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -806,14 +912,23 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
@@ -822,7 +937,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
@@ -839,6 +953,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JLabel jlNomeCliente;
+    private javax.swing.JMenu jmMudancaPassword;
     private javax.swing.JPanel jtpForncedores;
     private javax.swing.JTabbedPane jtpGeral;
     private javax.swing.JPanel jtpProdutos;
