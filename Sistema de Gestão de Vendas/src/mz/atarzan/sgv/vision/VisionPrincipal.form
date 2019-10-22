@@ -679,13 +679,13 @@
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextField2" min="-2" pref="85" max="-2" attributes="0"/>
+                                              <Component id="jtfQtd" min="-2" pref="85" max="-2" attributes="0"/>
                                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jTextField3" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <Component id="jtfPreco" min="-2" pref="103" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -694,7 +694,7 @@
                                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
-                                                  <Component id="jTextField4" min="-2" pref="131" max="-2" attributes="0"/>
+                                                  <Component id="jtfSubTotal" min="-2" pref="131" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
                                                   <Component id="jButton3" pref="57" max="32767" attributes="0"/>
                                               </Group>
@@ -755,9 +755,9 @@
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jTextField1" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Component id="jTextField2" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Component id="jTextField3" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                          <Component id="jTextField4" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="jtfQtd" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="jtfPreco" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                          <Component id="jtfSubTotal" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jButton3" max="32767" attributes="0"/>
                                   </Group>
@@ -928,20 +928,25 @@
                             <Property name="text" type="java.lang.String" value="SubTotal:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField2">
+                        <Component class="javax.swing.JTextField" name="jtfQtd">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" value="Digite o c&#xf3;digo ou nome do produto"/>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="inputMethodTextChanged" listener="java.awt.event.InputMethodListener" parameters="java.awt.event.InputMethodEvent" handler="jtfQtdInputMethodTextChanged"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtfQtdActionPerformed"/>
+                            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="jtfQtdPropertyChange"/>
+                          </Events>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField3">
+                        <Component class="javax.swing.JTextField" name="jtfPreco">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" value="Digite o c&#xf3;digo ou nome do produto"/>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
                             <Property name="enabled" type="boolean" value="false"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField4">
+                        <Component class="javax.swing.JTextField" name="jtfSubTotal">
                           <Properties>
-                            <Property name="toolTipText" type="java.lang.String" value="Digite o c&#xf3;digo ou nome do produto"/>
+                            <Property name="toolTipText" type="java.lang.String" value=""/>
                             <Property name="enabled" type="boolean" value="false"/>
                           </Properties>
                         </Component>

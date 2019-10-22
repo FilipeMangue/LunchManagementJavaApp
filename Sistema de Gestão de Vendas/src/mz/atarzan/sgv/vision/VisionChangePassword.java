@@ -71,6 +71,11 @@ public class VisionChangePassword extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        jButton2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton2KeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -153,6 +158,11 @@ public class VisionChangePassword extends javax.swing.JFrame {
         dispose();
     // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
+       dispose();
+       // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2KeyPressed
 
     /**
      * @param args the command line arguments

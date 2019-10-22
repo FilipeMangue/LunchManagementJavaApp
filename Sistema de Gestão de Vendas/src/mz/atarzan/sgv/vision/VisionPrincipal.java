@@ -5,6 +5,8 @@
  */
 package mz.atarzan.sgv.vision;
 
+import mz.atarzan.sgv.control.ControlVenda;
+
 /**
  *
  * @author Filipe Emanuel
@@ -64,9 +66,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jtfQtd = new javax.swing.JTextField();
+        jtfPreco = new javax.swing.JTextField();
+        jtfSubTotal = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
@@ -360,13 +362,30 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel9.setText("SubTotal:");
 
-        jTextField2.setToolTipText("Digite o código ou nome do produto");
+        jtfQtd.setToolTipText("");
+        jtfQtd.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+            }
+            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+                jtfQtdInputMethodTextChanged(evt);
+            }
+        });
+        jtfQtd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfQtdActionPerformed(evt);
+            }
+        });
+        jtfQtd.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jtfQtdPropertyChange(evt);
+            }
+        });
 
-        jTextField3.setToolTipText("Digite o código ou nome do produto");
-        jTextField3.setEnabled(false);
+        jtfPreco.setToolTipText("");
+        jtfPreco.setEnabled(false);
 
-        jTextField4.setToolTipText("Digite o código ou nome do produto");
-        jTextField4.setEnabled(false);
+        jtfSubTotal.setToolTipText("");
+        jtfSubTotal.setEnabled(false);
 
         jButton3.setBackground(new java.awt.Color(204, 204, 255));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -409,19 +428,19 @@ public class VisionPrincipal extends javax.swing.JFrame {
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtfQtd, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jtfPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel10Layout.createSequentialGroup()
                                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jtfSubTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE))))
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -466,9 +485,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jtfQtd, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jtfPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jtfSubTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -903,6 +922,24 @@ public class VisionPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
+    private void jtfQtdInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_jtfQtdInputMethodTextChanged
+        int qtd = Integer.parseInt(jtfQtd.getText()); 
+        double preco = 100;
+        jtfPreco.setText("Certo"); 
+        double subtotal = ControlVenda.calcularTotal(qtd,preco);
+        jtfPreco.setText("Certo");
+         // TODO add your handling code here:
+    }//GEN-LAST:event_jtfQtdInputMethodTextChanged
+
+    private void jtfQtdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfQtdActionPerformed
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfQtdActionPerformed
+
+    private void jtfQtdPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jtfQtdPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfQtdPropertyChange
+
     /**
      * @param args the command line arguments
      */
@@ -1012,13 +1049,13 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JLabel jlNomeCliente;
     private javax.swing.JMenu jmMudancaPassword;
     private javax.swing.JTextField jtfDate;
+    private javax.swing.JTextField jtfPreco;
+    private javax.swing.JTextField jtfQtd;
+    private javax.swing.JTextField jtfSubTotal;
     private javax.swing.JPanel jtpForncedores;
     private javax.swing.JTabbedPane jtpGeral;
     private javax.swing.JPanel jtpProdutos;
