@@ -7,19 +7,16 @@ public class ModelUser {
     private int id;
     private String username;
     private String password;
-    private String name;
 
-    public ModelUser(int id, String username, String name, String password) {
+    public ModelUser(int id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.name = name;
     }
 
-    public ModelUser(String username, String name, String password) {
+    public ModelUser(String username, String password) {
         this.username = username;
         this.password = password;
-        this.name = name;
     }
 
     public int getId() {
@@ -44,14 +41,5 @@ public class ModelUser {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }  
-    
 }

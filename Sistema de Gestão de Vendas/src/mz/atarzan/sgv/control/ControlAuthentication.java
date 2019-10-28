@@ -28,7 +28,7 @@ public class ControlAuthentication {
                 {
                     return new ModelUser (
                             rs.getInt("id"),
-                            rs.getString("username"),"",
+                            rs.getString("username"),
                             rs.getString("name")
                     );
                 }

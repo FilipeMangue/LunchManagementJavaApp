@@ -23,9 +23,8 @@ public class ControlCRUDUser {
                 // criando a mysql preparedstatement para inserção dos dados
                 PreparedStatement preparedStmt = dbconnect.prepareStatement(query);
                 
-                preparedStmt.setString (1, usuario.getName());
-                preparedStmt.setString(2, usuario.getUsername());
-                preparedStmt.setString(3, usuario.getPassword());
+                preparedStmt.setString(1, usuario.getUsername());
+                preparedStmt.setString(2, usuario.getPassword());
                 
                 
                 // executando a preparedstatement
@@ -52,8 +51,7 @@ public class ControlCRUDUser {
                 // criando a mysql preparedstatement para inserção dos dados
                 PreparedStatement preparedStmt = dbconnect.prepareStatement(query);
                 
-                preparedStmt.setString (1, usuario.getName());
-                preparedStmt.setString(2, usuario.getUsername());
+                preparedStmt.setString(1, usuario.getUsername());
                 preparedStmt.setString(2, usuario.getPassword());
                 
                 // executando a preparedstatement
