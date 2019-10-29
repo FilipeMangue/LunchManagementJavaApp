@@ -16,7 +16,8 @@ public class VisionCancelSell extends javax.swing.JFrame {
      */
     public VisionCancelSell() {
         initComponents();
-        setResizable(false);
+        setResizable(false); 
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**
