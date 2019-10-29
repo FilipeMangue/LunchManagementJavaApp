@@ -5,7 +5,6 @@
  */
 package mz.atarzan.sgv.vision;
 
-import java.awt.Color;
 import javax.swing.JOptionPane;
 
 /**
