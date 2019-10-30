@@ -16,6 +16,8 @@ public class VisionDevolucao extends javax.swing.JFrame {
      */
     public VisionDevolucao() {
         initComponents();
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**

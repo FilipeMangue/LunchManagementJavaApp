@@ -17,6 +17,7 @@ public class VsionSelectClient extends javax.swing.JFrame {
     public VsionSelectClient() {
         initComponents();
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(this);
     }
 
     /**
