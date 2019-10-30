@@ -385,6 +385,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         btnFornecedores.setBackground(new java.awt.Color(102, 102, 102));
+        btnFornecedores.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnFornecedoresMouseClicked(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -408,6 +413,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         btnProdutos.setBackground(new java.awt.Color(102, 102, 102));
+        btnProdutos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProdutosMouseClicked(evt);
+            }
+        });
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -432,6 +442,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         btnContas.setBackground(new java.awt.Color(102, 102, 102));
+        btnContas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnContasMouseClicked(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -455,6 +470,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         btnUsuarios.setBackground(new java.awt.Color(102, 102, 102));
+        btnUsuarios.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnUsuariosMouseClicked(evt);
+            }
+        });
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -481,6 +501,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel9.setText(" DATA");
 
         btnApps.setBackground(new java.awt.Color(102, 102, 102));
+        btnApps.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAppsMouseClicked(evt);
+            }
+        });
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
@@ -504,6 +529,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         btnServices.setBackground(new java.awt.Color(102, 102, 102));
+        btnServices.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnServicesMouseClicked(evt);
+            }
+        });
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
@@ -4369,7 +4399,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private void btnClentesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClentesMouseClicked
         // TODO add your handling code here:
         hidePanels();
-        pnlVendas.setVisible(false);
         pnlClientes.setVisible(true);
     }//GEN-LAST:event_btnClentesMouseClicked
 
@@ -4461,6 +4490,30 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private void jPanel123MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel123MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanel123MouseClicked
+
+    private void btnFornecedoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFornecedoresMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFornecedoresMouseClicked
+
+    private void btnProdutosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProdutosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProdutosMouseClicked
+
+    private void btnContasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContasMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnContasMouseClicked
+
+    private void btnUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsuariosMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnUsuariosMouseClicked
+
+    private void btnAppsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAppsMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAppsMouseClicked
+
+    private void btnServicesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnServicesMouseClicked
 
     /**
      * @param args the command line arguments
