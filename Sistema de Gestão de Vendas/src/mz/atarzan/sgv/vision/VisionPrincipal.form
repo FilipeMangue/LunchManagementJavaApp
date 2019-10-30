@@ -431,7 +431,7 @@
                               <Component id="btnProdutos" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnFornecedores" alignment="0" pref="104" max="32767" attributes="0"/>
                               <Component id="btnVendas" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnClentes" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btnClientes" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnUsuarios" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnApps" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnServices" alignment="0" max="32767" attributes="0"/>
@@ -448,7 +448,7 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="btnVendas" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnClentes" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnClientes" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnFornecedores" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -511,14 +511,14 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="btnClentes">
+                <Container class="javax.swing.JPanel" name="btnClientes">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="66" green="66" red="66" type="rgb"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnClentesMouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnClientesMouseClicked"/>
                   </Events>
 
                   <Layout>
@@ -1762,7 +1762,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Caixa"/>
+                        <Property name="text" type="java.lang.String" value="Clientes"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -2422,7 +2422,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Caixa"/>
+                        <Property name="text" type="java.lang.String" value="Forneced"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3082,7 +3082,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Caixa"/>
+                        <Property name="text" type="java.lang.String" value="Prod"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3742,7 +3742,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Caixa"/>
+                        <Property name="text" type="java.lang.String" value="Contas"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -4402,7 +4402,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Caixa"/>
+                        <Property name="text" type="java.lang.String" value="Users"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -5062,7 +5062,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Caixa"/>
+                        <Property name="text" type="java.lang.String" value="Apps"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -5722,7 +5722,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Caixa"/>
+                        <Property name="text" type="java.lang.String" value="Services"/>
                       </Properties>
                     </Component>
                   </SubComponents>

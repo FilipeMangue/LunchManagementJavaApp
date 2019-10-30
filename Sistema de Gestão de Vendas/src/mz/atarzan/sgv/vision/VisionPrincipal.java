@@ -5,9 +5,7 @@
  */
 package mz.atarzan.sgv.vision;
 
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import mz.atarzan.sgv.control.ControlVenda;
+import java.awt.Color;
 import mz.atarzan.sgv.util.UtilOpenLink;
 
 /**
@@ -26,7 +24,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jlDate.setText(date.toString());
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        pnlClientes.setVisible(false);
+        hidePanels();
+        pnlVendas.setVisible(true);
     }
 
     /**
@@ -43,7 +42,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         btnVendas = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        btnClentes = new javax.swing.JPanel();
+        btnClientes = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         btnFornecedores = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -356,10 +355,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
-        btnClentes.setBackground(new java.awt.Color(102, 102, 102));
-        btnClentes.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnClientes.setBackground(new java.awt.Color(102, 102, 102));
+        btnClientes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnClentesMouseClicked(evt);
+                btnClientesMouseClicked(evt);
             }
         });
 
@@ -367,18 +366,18 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Clientes");
 
-        javax.swing.GroupLayout btnClentesLayout = new javax.swing.GroupLayout(btnClentes);
-        btnClentes.setLayout(btnClentesLayout);
-        btnClentesLayout.setHorizontalGroup(
-            btnClentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnClentesLayout.createSequentialGroup()
+        javax.swing.GroupLayout btnClientesLayout = new javax.swing.GroupLayout(btnClientes);
+        btnClientes.setLayout(btnClientesLayout);
+        btnClientesLayout.setHorizontalGroup(
+            btnClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnClientesLayout.createSequentialGroup()
                 .addContainerGap(30, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(26, 26, 26))
         );
-        btnClentesLayout.setVerticalGroup(
-            btnClentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnClentesLayout.createSequentialGroup()
+        btnClientesLayout.setVerticalGroup(
+            btnClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnClientesLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(jLabel3)
                 .addContainerGap(22, Short.MAX_VALUE))
@@ -568,7 +567,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                     .addComponent(btnProdutos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnFornecedores, javax.swing.GroupLayout.PREFERRED_SIZE, 104, Short.MAX_VALUE)
                     .addComponent(btnVendas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnClentes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnClientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnUsuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnApps, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnServices, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -582,7 +581,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnVendas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnClentes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnFornecedores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1129,7 +1128,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel26.setText("Caixa");
+        jLabel26.setText("Clientes");
 
         javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
         jPanel29.setLayout(jPanel29Layout);
@@ -1550,7 +1549,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel38.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel38.setText("Caixa");
+        jLabel38.setText("Forneced");
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -1971,7 +1970,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel50.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel50.setText("Caixa");
+        jLabel50.setText("Prod");
 
         javax.swing.GroupLayout jPanel57Layout = new javax.swing.GroupLayout(jPanel57);
         jPanel57.setLayout(jPanel57Layout);
@@ -2392,7 +2391,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel62.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel62.setText("Caixa");
+        jLabel62.setText("Contas");
 
         javax.swing.GroupLayout jPanel71Layout = new javax.swing.GroupLayout(jPanel71);
         jPanel71.setLayout(jPanel71Layout);
@@ -2813,7 +2812,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel74.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel74.setText("Caixa");
+        jLabel74.setText("Users");
 
         javax.swing.GroupLayout jPanel85Layout = new javax.swing.GroupLayout(jPanel85);
         jPanel85.setLayout(jPanel85Layout);
@@ -3234,7 +3233,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel86.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel86.setText("Caixa");
+        jLabel86.setText("Apps");
 
         javax.swing.GroupLayout jPanel99Layout = new javax.swing.GroupLayout(jPanel99);
         jPanel99.setLayout(jPanel99Layout);
@@ -3655,7 +3654,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel98.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel98.setText("Caixa");
+        jLabel98.setText("Services");
 
         javax.swing.GroupLayout jPanel113Layout = new javax.swing.GroupLayout(jPanel113);
         jPanel113.setLayout(jPanel113Layout);
@@ -4396,11 +4395,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanel39MouseClicked
 
-    private void btnClentesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClentesMouseClicked
+    private void btnClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClientesMouseClicked
         // TODO add your handling code here:
         hidePanels();
         pnlClientes.setVisible(true);
-    }//GEN-LAST:event_btnClentesMouseClicked
+    }//GEN-LAST:event_btnClientesMouseClicked
 
     private void btnVendasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVendasMouseClicked
         // TODO add your handling code here:
@@ -4417,6 +4416,17 @@ public class VisionPrincipal extends javax.swing.JFrame {
         pnlUsuarios.setVisible(false);
         pnlClientes.setVisible(false);
         pnlVendas.setVisible(false);
+    }
+    
+    public void btnColors(){
+        btnProdutos.setBackground(Color.LIGHT_GRAY);
+        btnApps.setBackground(Color.LIGHT_GRAY);
+        btnContas.setBackground(Color.LIGHT_GRAY);
+        btnFornecedores.setBackground(Color.LIGHT_GRAY);
+        btnServices.setBackground(Color.LIGHT_GRAY);
+        btnUsuarios.setBackground(Color.LIGHT_GRAY);
+        btnClientes.setBackground(Color.LIGHT_GRAY);
+        btnVendas.setBackground(Color.LIGHT_GRAY);
     }
     
     private void jPanel43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel43MouseClicked
@@ -4564,7 +4574,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel btnApps;
-    private javax.swing.JPanel btnClentes;
+    private javax.swing.JPanel btnClientes;
     private javax.swing.JPanel btnContas;
     private javax.swing.JPanel btnFornecedores;
     private javax.swing.JPanel btnProdutos;
