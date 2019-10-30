@@ -506,6 +506,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel9MouseClicked(evt);
+            }
+        });
+
         jPanel21.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel12.setText(" ");
@@ -1161,6 +1167,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
         VisionSellCaixa vsc = new VisionSellCaixa();
         vsc.setVisible(true);
     }//GEN-LAST:event_jPanel8MouseClicked
+
+    private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
+        // TODO add your handling code here:
+        VisionDevolucao vd = new VisionDevolucao();
+        vd.setVisible(true);
+    }//GEN-LAST:event_jPanel9MouseClicked
 
     /**
      * @param args the command line arguments

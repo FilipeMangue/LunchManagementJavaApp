@@ -16,6 +16,7 @@ public class VisionSelectProduct extends javax.swing.JFrame {
      */
     public VisionSelectProduct() {
         initComponents();
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**
