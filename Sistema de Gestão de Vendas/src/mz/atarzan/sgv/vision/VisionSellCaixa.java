@@ -18,6 +18,8 @@ public class VisionSellCaixa extends javax.swing.JFrame {
         initComponents();
         jtfPreco.setEditable(false);
         jtfTotal.setEditable(false);
+        setLocationRelativeTo(this);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
     }
 
     /**
