@@ -4493,26 +4493,38 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
     private void btnFornecedoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFornecedoresMouseClicked
         // TODO add your handling code here:
+        hidePanels();
+        pnlFornecedores.setVisible(true);
     }//GEN-LAST:event_btnFornecedoresMouseClicked
 
     private void btnProdutosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProdutosMouseClicked
         // TODO add your handling code here:
+        hidePanels();
+        pnProdutos.setVisible(true);
     }//GEN-LAST:event_btnProdutosMouseClicked
 
     private void btnContasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContasMouseClicked
         // TODO add your handling code here:
+        hidePanels();
+        pnlContas.setVisible(true);
     }//GEN-LAST:event_btnContasMouseClicked
 
     private void btnUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsuariosMouseClicked
         // TODO add your handling code here:
+        hidePanels();
+        pnlUsuarios.setVisible(true);
     }//GEN-LAST:event_btnUsuariosMouseClicked
 
     private void btnAppsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAppsMouseClicked
         // TODO add your handling code here:
+        hidePanels();
+        pnlApps.setVisible(true);
     }//GEN-LAST:event_btnAppsMouseClicked
 
     private void btnServicesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseClicked
         // TODO add your handling code here:
+        hidePanels();
+        pnlServices.setVisible(true);
     }//GEN-LAST:event_btnServicesMouseClicked
 
     /**
