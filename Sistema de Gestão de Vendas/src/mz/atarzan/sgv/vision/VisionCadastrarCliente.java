@@ -97,7 +97,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jrbType.setText("Empresa");
 
         jcbSex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "Masculino. Feminino" }));
 
         jtfTell.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
