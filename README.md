@@ -16,7 +16,7 @@ Nome do projecto: ### Software Para Gestão de Vendas - SPGV
 * Consolidar os conhecimentos adquiridos ao longo do curso
 
 ### Desenrolar da SPGV
-* O sistema esta dividido em quatro módulos, sendo a seguir:
+O sistema esta dividido em quatro módulos, sendo a seguir:
 - Vendas
 - Usuários
 - Produtos
