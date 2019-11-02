@@ -3978,6 +3978,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
     private void jPanel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel29MouseClicked
         // TODO add your handling code here:
+        VisionCadastrarCliente vcc = new VisionCadastrarCliente();
+        vcc.setVisible(true);
     }//GEN-LAST:event_jPanel29MouseClicked
 
     private void jPanel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel31MouseClicked
