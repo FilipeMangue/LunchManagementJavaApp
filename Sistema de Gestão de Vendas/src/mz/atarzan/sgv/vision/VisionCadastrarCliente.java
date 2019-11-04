@@ -125,6 +125,11 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jcbSex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Feminino" }));
 
+        jtfName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfNameActionPerformed(evt);
+            }
+        });
         jtfName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jtfNameKeyPressed(evt);
@@ -142,6 +147,16 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         lbAge.setText("  ");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
+        });
+        jPanel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPanel1KeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -304,9 +319,13 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
 
     private void primaryColor(){
         Color gcolor = new Color(245, 243, 242);
+        jtfCod.setBackground(gcolor);
         jtfName.setBackground(gcolor);
+        jtfBirth.setBackground(gcolor);
+        jtfEmail.setBackground(gcolor);
         jtfTell.setBackground(gcolor);
         jtfAddress.setBackground(gcolor);
+        jtaComment.setBackground(gcolor);
     }
     
     private void  warningColor(){
@@ -397,12 +416,14 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private void jrbTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrbTypeActionPerformed
         // TODO add your handling code here:
         if(jrbType.isSelected()){
+            primaryColor();
             JOptionPane.showMessageDialog(this, "Gravação de Cliente Empresarial");
             jlDataNasc.setVisible(false);
             jlSexo.setVisible(false);
             jcbSex.setVisible(false);
             jtfBirth.setVisible(false);
         } else {
+            primaryColor();
             JOptionPane.showMessageDialog(this, "Gravação de Cliente Singular");
             jlDataNasc.setVisible(true);
             jlSexo.setVisible(true);
@@ -410,6 +431,20 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
             jtfBirth.setVisible(true); 
         }
     }//GEN-LAST:event_jrbTypeActionPerformed
+
+    private void jtfNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfNameActionPerformed
+
+    private void jPanel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPanel1KeyPressed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Inserção de foto brevemente!");
+    }//GEN-LAST:event_jPanel1KeyPressed
+
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Inserção de foto brevemente!");
+    }//GEN-LAST:event_jPanel1MouseClicked
 
     /**
      * @param args the command line arguments

@@ -49,7 +49,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
     private void searchClients(String username) throws SQLException{
         try {
             try (Connection connect = UtilDatabaseConnection.connect()) {
-                String sql = "SELECT FROM clients WHERE name = "+username;
+                String sql = "SELECT FROM clients WHERE name = ?"+username;
                 PreparedStatement stmt = connect.prepareStatement(sql);
                 try (ResultSet rs = stmt.executeQuery()) {
                     DefaultTableModel model = (DefaultTableModel)jtClients.getModel();
@@ -178,6 +178,9 @@ public class VisionListarClientes extends javax.swing.JFrame {
             // TODO add your handling code here:
             String search = jtfPesquisar.getText();
             searchClients(search);
+            VisionListarClientes vlc = new VisionListarClientes();
+            vlc.setVisible(true);
+            ControlCRUDClient.read(jtClients);
         } catch (SQLException ex) {
             Logger.getLogger(VisionListarClientes.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -192,6 +195,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
         VisionCadastrarCliente vcc = new VisionCadastrarCliente();
         vcc.setVisible(true);
         VisionCadastrarCliente.btnCadastrar.setVisible(false);
+        VisionCadastrarCliente.jtfName.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 0).toString());
         VisionCadastrarCliente.jtfEmail.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 1).toString());
         VisionCadastrarCliente.jtfTell.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 2).toString());
         VisionCadastrarCliente.jtfAddress.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 3).toString());
