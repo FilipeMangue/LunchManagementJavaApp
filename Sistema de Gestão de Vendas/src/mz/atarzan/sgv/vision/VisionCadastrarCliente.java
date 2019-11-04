@@ -89,6 +89,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel8.setText("Observações:");
 
+        jtaComment.setBackground(new java.awt.Color(240, 244, 250));
         jtaComment.setColumns(20);
         jtaComment.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         jtaComment.setRows(5);
@@ -99,6 +100,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jtaComment);
 
+        jtfAddress.setBackground(new java.awt.Color(240, 244, 250));
         jtfAddress.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jtfAddress.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -106,8 +108,10 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
             }
         });
 
+        jtfCod.setBackground(new java.awt.Color(240, 244, 250));
         jtfCod.setFocusable(false);
 
+        jtfEmail.setBackground(new java.awt.Color(240, 244, 250));
         jtfEmail.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jtfEmail.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -125,6 +129,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jcbSex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Feminino" }));
 
+        jtfName.setBackground(new java.awt.Color(240, 244, 250));
         jtfName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtfNameActionPerformed(evt);
@@ -136,6 +141,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
             }
         });
 
+        jtfTell.setBackground(new java.awt.Color(240, 244, 250));
         jtfTell.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jtfTell.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -147,6 +153,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         lbAge.setText("  ");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel1MouseClicked(evt);
@@ -185,6 +192,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
             }
         });
 
+        jtfBirth.setBackground(new java.awt.Color(240, 244, 250));
         jtfBirth.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jtfBirthKeyPressed(evt);
@@ -296,7 +304,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(bntActualizar)
                         .addComponent(btnCadastrar)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnlPricinpalLayout = new javax.swing.GroupLayout(pnlPricinpal);

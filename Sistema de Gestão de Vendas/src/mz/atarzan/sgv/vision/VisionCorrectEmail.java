@@ -43,6 +43,7 @@ public class VisionCorrectEmail extends javax.swing.JFrame {
         jlEmail.setText("Email");
         jlEmail.setToolTipText("");
 
+        jTextField1.setBackground(new java.awt.Color(240, 244, 250));
         jTextField1.setText(" ");
 
         jButton1.setBackground(new java.awt.Color(102, 102, 255));
