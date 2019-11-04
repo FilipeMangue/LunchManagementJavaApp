@@ -2,6 +2,7 @@
 package mz.atarzan.sgv.vision;
 
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import mz.atarzan.sgv.control.ControlCRUDClient;
 import mz.atarzan.sgv.model.ModelClient;
@@ -10,7 +11,10 @@ import mz.atarzan.sgv.model.ModelClient;
  * @author Filipe Emanuel Da Julieta Hafo Mangue
  */
 public class VisionCadastrarCliente extends javax.swing.JFrame {
-
+    int birth;
+    byte age;
+    boolean type;
+    String email,tell,address,comment;
     /**
      * Creates new form VisionCadastrarCliente
      */
@@ -33,8 +37,8 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jlDataNasc = new javax.swing.JLabel();
+        jlSexo = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -67,11 +71,11 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Nome:");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Data Nasc:");
+        jlDataNasc.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlDataNasc.setText("Data Nasc:");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Sexo:");
+        jlSexo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlSexo.setText("Sexo:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Email:");
@@ -88,23 +92,71 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jtaComment.setColumns(20);
         jtaComment.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         jtaComment.setRows(5);
+        jtaComment.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtaCommentKeyPressed(evt);
+            }
+        });
         jScrollPane1.setViewportView(jtaComment);
 
         jtfAddress.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jtfAddress.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfAddressKeyPressed(evt);
+            }
+        });
+
+        jtfCod.setFocusable(false);
 
         jtfEmail.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jtfEmail.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfEmailKeyPressed(evt);
+            }
+        });
 
         jrbType.setText("Empresa");
+        jrbType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrbTypeActionPerformed(evt);
+            }
+        });
 
         jcbSex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "Masculino. Feminino" }));
+        jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Feminino" }));
+
+        jtfName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfNameActionPerformed(evt);
+            }
+        });
+        jtfName.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfNameKeyPressed(evt);
+            }
+        });
 
         jtfTell.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jtfTell.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfTellKeyPressed(evt);
+            }
+        });
 
         lbAge.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lbAge.setText("  ");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel1MouseClicked(evt);
+            }
+        });
+        jPanel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPanel1KeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -130,6 +182,12 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelarActionPerformed(evt);
+            }
+        });
+
+        jtfBirth.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfBirthKeyPressed(evt);
             }
         });
 
@@ -164,7 +222,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
                         .addContainerGap(26, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
+                            .addComponent(jlDataNasc)
                             .addComponent(jLabel5)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1))
@@ -174,7 +232,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addComponent(jtfBirth)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel4)
+                                    .addComponent(jlSexo)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jcbSex, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(10, 10, 10))
@@ -210,9 +268,9 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
                             .addComponent(jtfName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(29, 29, 29)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
+                            .addComponent(jlDataNasc)
                             .addComponent(jcbSex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)
+                            .addComponent(jlSexo)
                             .addComponent(jtfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
@@ -259,22 +317,43 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void primaryColor(){
+        Color gcolor = new Color(245, 243, 242);
+        jtfCod.setBackground(gcolor);
+        jtfName.setBackground(gcolor);
+        jtfBirth.setBackground(gcolor);
+        jtfEmail.setBackground(gcolor);
+        jtfTell.setBackground(gcolor);
+        jtfAddress.setBackground(gcolor);
+        jtaComment.setBackground(gcolor);
+    }
+    
+    private void  warningColor(){
+        Color bgcolor = new Color(245,158,147);
+        jtfName.setBackground(bgcolor);
+        jtfTell.setBackground(bgcolor);
+        jtfAddress.setBackground(bgcolor);
+    }
+       
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        boolean type;
+        primaryColor();
         type = jrbType.isEnabled();
         String name = jtfName.getText();
-        int birth = Integer.parseInt(jtfBirth.getText());
-        String email = jtfEmail.getText();
-        String tell = jtfTell.getText();
-        byte age = (byte)(2019 - Integer.parseInt(jtfBirth.getText()));
-        String address = jtfAddress.getText();
-        String comment = jtaComment.getText();
+        try {
+            birth = Integer.parseInt(jtfBirth.getText());
+            age = (byte)(2019 - Integer.parseInt(jtfBirth.getText()));
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Verifique os campos de dados numéricos!");
+            return;
+        }
+        email = jtfEmail.getText();
+        tell = jtfTell.getText();
+        address = jtfAddress.getText();
+        comment = jtaComment.getText();
         
         if (!this.validarDados()) {
             JOptionPane.showMessageDialog(this, "Preencha os Campos Obrigatórios!");
-            jtfName.setBackground(Color.red);
-            jtfTell.setBackground(Color.red);
-            jtfAddress.setBackground(Color.red);
+            warningColor();
             return;
         } 
         ModelClient client;
@@ -294,6 +373,78 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void jtfNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfNameKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfBirth.requestFocus();
+        }
+    }//GEN-LAST:event_jtfNameKeyPressed
+
+    private void jtfBirthKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfBirthKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfEmail.requestFocus();
+        }
+    }//GEN-LAST:event_jtfBirthKeyPressed
+
+    private void jtfEmailKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfEmailKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfTell.requestFocus();
+        }
+    }//GEN-LAST:event_jtfEmailKeyPressed
+
+    private void jtfTellKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfTellKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfAddress.requestFocus();
+        }
+    }//GEN-LAST:event_jtfTellKeyPressed
+
+    private void jtfAddressKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfAddressKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtaComment.requestFocus();
+        }
+    }//GEN-LAST:event_jtfAddressKeyPressed
+
+    private void jtaCommentKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtaCommentKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtaCommentKeyPressed
+
+    private void jrbTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrbTypeActionPerformed
+        // TODO add your handling code here:
+        if(jrbType.isSelected()){
+            primaryColor();
+            JOptionPane.showMessageDialog(this, "Gravação de Cliente Empresarial");
+            jlDataNasc.setVisible(false);
+            jlSexo.setVisible(false);
+            jcbSex.setVisible(false);
+            jtfBirth.setVisible(false);
+        } else {
+            primaryColor();
+            JOptionPane.showMessageDialog(this, "Gravação de Cliente Singular");
+            jlDataNasc.setVisible(true);
+            jlSexo.setVisible(true);
+            jcbSex.setVisible(true);
+            jtfBirth.setVisible(true); 
+        }
+    }//GEN-LAST:event_jrbTypeActionPerformed
+
+    private void jtfNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfNameActionPerformed
+
+    private void jPanel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPanel1KeyPressed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Inserção de foto brevemente!");
+    }//GEN-LAST:event_jPanel1KeyPressed
+
+    private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Inserção de foto brevemente!");
+    }//GEN-LAST:event_jPanel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -341,7 +492,12 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private boolean validarDados() {
         return     jtfName.getText().length() > 0 
                 && jtfTell.getText().length() > 0 
-                && jtfAddress.getText().length() > 0;
+                && jtfAddress.getText().length() > 0
+                && jtfBirth.getText().length() > 0
+                && jtfEmail.getText().length() > 0
+                && jtfTell.getText().length() > 0
+                && jtfAddress.getText().length() > 0
+                && jtaComment.getText().length() > 0;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -350,8 +506,6 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -360,6 +514,8 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox jcbSex;
+    private javax.swing.JLabel jlDataNasc;
+    private javax.swing.JLabel jlSexo;
     private javax.swing.JRadioButton jrbType;
     public static javax.swing.JTextArea jtaComment;
     public static javax.swing.JTextField jtfAddress;

@@ -1,5 +1,7 @@
 package mz.atarzan.sgv.vision;
 
+import com.mysql.fabric.xmlrpc.Client;
+import java.net.MalformedURLException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -22,6 +24,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
     public VisionListarClientes() throws SQLException {
         initComponents();
         ControlCRUDClient.read(jtClients);
+        setLocationRelativeTo(this);
     }
     
     private void listarUsuarios() throws SQLException{
@@ -46,7 +49,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
     private void searchClients(String username) throws SQLException{
         try {
             try (Connection connect = UtilDatabaseConnection.connect()) {
-                String sql = "SELECT FROM clients WHERE name = "+username;
+                String sql = "SELECT FROM clients WHERE name = ?"+username;
                 PreparedStatement stmt = connect.prepareStatement(sql);
                 try (ResultSet rs = stmt.executeQuery()) {
                     DefaultTableModel model = (DefaultTableModel)jtClients.getModel();
@@ -175,6 +178,9 @@ public class VisionListarClientes extends javax.swing.JFrame {
             // TODO add your handling code here:
             String search = jtfPesquisar.getText();
             searchClients(search);
+            VisionListarClientes vlc = new VisionListarClientes();
+            vlc.setVisible(true);
+            ControlCRUDClient.read(jtClients);
         } catch (SQLException ex) {
             Logger.getLogger(VisionListarClientes.class.getName()).log(Level.SEVERE, null, ex);
         }

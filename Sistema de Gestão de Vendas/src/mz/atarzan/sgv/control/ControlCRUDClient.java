@@ -1,6 +1,7 @@
 
 package mz.atarzan.sgv.control;
 
+import com.mysql.fabric.xmlrpc.Client;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -41,6 +42,32 @@ public class ControlCRUDClient {
             return client;
         } catch (Exception e) {
             System.err.println("\tErro cadastrando cliente: \n" + e.getMessage()+"\n");
+        }
+        return null;
+    }
+    
+    public static ModelClient  update (int id, ModelClient client){
+        try {
+            // Create the java mysql update preparedstatement
+            try (Connection conn = UtilDatabaseConnection.connect()) {
+                // Create the java mysql update preparedstatement
+                String query = "update clients set name = ?, birth = ?, email = ?, tell = ?, address = ?, comment = ?, where id = ?";
+                PreparedStatement preparedStmt = conn.prepareStatement(query);
+                
+                preparedStmt.setString (1, client.getName());
+                preparedStmt.setInt(2, client.getBirth());
+                preparedStmt.setString(3, client.getEmail());
+                preparedStmt.setString(4, client.getTell());
+                preparedStmt.setString(5, client.getAddress());
+                preparedStmt.setString(6, client.getComment());
+                preparedStmt.setInt(7, id);
+                // Executes the java preparedstatement
+                preparedStmt.executeUpdate();
+            }
+            return client;
+        } catch (Exception e){
+            System.err.println(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Infelizmente, ocorreu um erro actualizando o Prato: " + client.getName());
         }
         return null;
     }
