@@ -72,6 +72,10 @@ public class VisionLogin extends javax.swing.JFrame {
             }
         });
 
+        jtfUsername.setBackground(new java.awt.Color(240, 244, 250));
+
+        jpfPassword.setBackground(new java.awt.Color(240, 244, 250));
+
         jButton4.setText("CANCELAR");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

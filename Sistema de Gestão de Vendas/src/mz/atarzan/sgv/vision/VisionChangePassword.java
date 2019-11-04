@@ -46,6 +46,12 @@ public class VisionChangePassword extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Alterar palavra passe do Administrador");
 
+        jTextField1.setBackground(new java.awt.Color(240, 244, 250));
+
+        jTextField4.setBackground(new java.awt.Color(240, 244, 250));
+
+        jTextField5.setBackground(new java.awt.Color(240, 244, 250));
+
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Digite a palavra passe actual");
 
