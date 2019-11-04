@@ -57,6 +57,8 @@ public class VisionRegConfirm extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(102, 102, 255));
         jButton1.setText("Confirmar");
 
+        jTextField1.setBackground(new java.awt.Color(240, 244, 250));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(

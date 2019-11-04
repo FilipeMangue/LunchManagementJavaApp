@@ -61,6 +61,12 @@ public class VisionDevolucao extends javax.swing.JFrame {
 
         jLabel5.setText("Por Produto");
 
+        jTextField1.setBackground(new java.awt.Color(240, 244, 250));
+
+        jTextField3.setBackground(new java.awt.Color(240, 244, 250));
+
+        jTextField4.setBackground(new java.awt.Color(240, 244, 250));
+
         jButton3.setText("Seleccionar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +80,8 @@ public class VisionDevolucao extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+
+        jTextField5.setBackground(new java.awt.Color(240, 244, 250));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

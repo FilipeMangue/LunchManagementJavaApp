@@ -41,6 +41,8 @@ public class VsionSelectClient extends javax.swing.JFrame {
         setTitle("Seleccione um cliente");
         setAutoRequestFocus(false);
 
+        jTextField1.setBackground(new java.awt.Color(240, 244, 250));
+
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},

@@ -83,6 +83,8 @@ public class VisionListarClientes extends javax.swing.JFrame {
 
         setTitle("LISTAGEM DE CLIENTES");
 
+        jtfPesquisar.setBackground(new java.awt.Color(240, 244, 250));
+
         btnPesquisar.setText("Pesquisar");
         btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
