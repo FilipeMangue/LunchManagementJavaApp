@@ -37,8 +37,8 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jlDataNasc = new javax.swing.JLabel();
+        jlSexo = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -71,11 +71,11 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Nome:");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setText("Data Nasc:");
+        jlDataNasc.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlDataNasc.setText("Data Nasc:");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("Sexo:");
+        jlSexo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlSexo.setText("Sexo:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Email:");
@@ -116,6 +116,11 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         });
 
         jrbType.setText("Empresa");
+        jrbType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrbTypeActionPerformed(evt);
+            }
+        });
 
         jcbSex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Feminino" }));
@@ -202,7 +207,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
                         .addContainerGap(26, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
+                            .addComponent(jlDataNasc)
                             .addComponent(jLabel5)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1))
@@ -212,7 +217,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
                                 .addGroup(jPanel3Layout.createSequentialGroup()
                                     .addComponent(jtfBirth)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel4)
+                                    .addComponent(jlSexo)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(jcbSex, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(10, 10, 10))
@@ -248,9 +253,9 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
                             .addComponent(jtfName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(29, 29, 29)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
+                            .addComponent(jlDataNasc)
                             .addComponent(jcbSex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)
+                            .addComponent(jlSexo)
                             .addComponent(jtfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
@@ -389,6 +394,23 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jtaCommentKeyPressed
 
+    private void jrbTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrbTypeActionPerformed
+        // TODO add your handling code here:
+        if(jrbType.isSelected()){
+            JOptionPane.showMessageDialog(this, "Gravação de Cliente Empresarial");
+            jlDataNasc.setVisible(false);
+            jlSexo.setVisible(false);
+            jcbSex.setVisible(false);
+            jtfBirth.setVisible(false);
+        } else {
+            JOptionPane.showMessageDialog(this, "Gravação de Cliente Singular");
+            jlDataNasc.setVisible(true);
+            jlSexo.setVisible(true);
+            jcbSex.setVisible(true);
+            jtfBirth.setVisible(true); 
+        }
+    }//GEN-LAST:event_jrbTypeActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -449,8 +471,6 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -459,6 +479,8 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox jcbSex;
+    private javax.swing.JLabel jlDataNasc;
+    private javax.swing.JLabel jlSexo;
     private javax.swing.JRadioButton jrbType;
     public static javax.swing.JTextArea jtaComment;
     public static javax.swing.JTextField jtfAddress;

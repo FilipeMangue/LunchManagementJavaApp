@@ -87,7 +87,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jlDataNasc" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -98,7 +98,7 @@
                                       <Group type="102" attributes="0">
                                           <Component id="jtfBirth" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jlSexo" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jcbSex" min="-2" pref="92" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
@@ -148,9 +148,9 @@
                               </Group>
                               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jlDataNasc" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jcbSex" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jlSexo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jtfBirth" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -207,7 +207,7 @@
                 <Property name="text" type="java.lang.String" value="Nome:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel3">
+            <Component class="javax.swing.JLabel" name="jlDataNasc">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -215,7 +215,7 @@
                 <Property name="text" type="java.lang.String" value="Data Nasc:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="jlSexo">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="14" style="0"/>
@@ -317,6 +317,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Empresa"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbTypeActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JComboBox" name="jcbSex">
               <Properties>
