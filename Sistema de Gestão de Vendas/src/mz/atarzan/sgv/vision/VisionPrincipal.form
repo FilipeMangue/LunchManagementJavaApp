@@ -3175,7 +3175,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Contas"/>
+                        <Property name="text" type="java.lang.String" value="Adicionar"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3264,7 +3264,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Devolu&#xe7;&#xe3;o"/>
+                        <Property name="text" type="java.lang.String" value="Pesquisar"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3350,10 +3350,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="66" green="66" red="ff" type="rgb"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="Pedido"/>
+                        <Property name="text" type="java.lang.String" value="Editar"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3525,7 +3522,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Imprimir Recibo"/>
+                        <Property name="text" type="java.lang.String" value="Backup"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -3614,7 +3611,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Editar"/>
+                        <Property name="text" type="java.lang.String" value="Imprimir"/>
                       </Properties>
                     </Component>
                   </SubComponents>

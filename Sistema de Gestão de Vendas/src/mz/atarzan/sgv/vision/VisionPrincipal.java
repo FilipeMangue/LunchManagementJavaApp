@@ -1994,7 +1994,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel62.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel62.setText("Contas");
+        jLabel62.setText("Adicionar");
 
         javax.swing.GroupLayout jPanel71Layout = new javax.swing.GroupLayout(jPanel71);
         jPanel71.setLayout(jPanel71Layout);
@@ -2053,7 +2053,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel64.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel64.setText("Devolução");
+        jLabel64.setText("Pesquisar");
 
         javax.swing.GroupLayout jPanel73Layout = new javax.swing.GroupLayout(jPanel73);
         jPanel73.setLayout(jPanel73Layout);
@@ -2106,8 +2106,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel66.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel66.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel66.setText("Pedido");
+        jLabel66.setText("Editar");
 
         javax.swing.GroupLayout jPanel75Layout = new javax.swing.GroupLayout(jPanel75);
         jPanel75.setLayout(jPanel75Layout);
@@ -2213,7 +2212,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel70.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel70.setText("Imprimir Recibo");
+        jLabel70.setText("Backup");
 
         javax.swing.GroupLayout jPanel79Layout = new javax.swing.GroupLayout(jPanel79);
         jPanel79.setLayout(jPanel79Layout);
@@ -2272,7 +2271,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         jLabel72.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel72.setText("Editar");
+        jLabel72.setText("Imprimir");
 
         javax.swing.GroupLayout jPanel81Layout = new javax.swing.GroupLayout(jPanel81);
         jPanel81.setLayout(jPanel81Layout);
