@@ -303,6 +303,13 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jtfTell.setBackground(gcolor);
         jtfAddress.setBackground(gcolor);
     }
+    
+    private void  warningColor(){
+        Color bgcolor = new Color(245,158,147);
+        jtfName.setBackground(bgcolor);
+        jtfTell.setBackground(bgcolor);
+        jtfAddress.setBackground(bgcolor);
+    }
        
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         primaryColor();
@@ -322,10 +329,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         
         if (!this.validarDados()) {
             JOptionPane.showMessageDialog(this, "Preencha os Campos Obrigatórios!");
-            Color bgcolor = new Color(245,158,147);
-            jtfName.setBackground(bgcolor);
-            jtfTell.setBackground(bgcolor);
-            jtfAddress.setBackground(bgcolor);
+            warningColor();
             return;
         } 
         ModelClient client;
