@@ -2,6 +2,7 @@
 package mz.atarzan.sgv.vision;
 
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import mz.atarzan.sgv.control.ControlCRUDClient;
 import mz.atarzan.sgv.model.ModelClient;
@@ -88,18 +89,44 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jtaComment.setColumns(20);
         jtaComment.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         jtaComment.setRows(5);
+        jtaComment.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtaCommentKeyPressed(evt);
+            }
+        });
         jScrollPane1.setViewportView(jtaComment);
 
         jtfAddress.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jtfAddress.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfAddressKeyPressed(evt);
+            }
+        });
 
         jtfEmail.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jtfEmail.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfEmailKeyPressed(evt);
+            }
+        });
 
         jrbType.setText("Empresa");
 
         jcbSex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "Masculino. Feminino" }));
 
+        jtfName.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfNameKeyPressed(evt);
+            }
+        });
+
         jtfTell.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jtfTell.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfTellKeyPressed(evt);
+            }
+        });
 
         lbAge.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lbAge.setText("  ");
@@ -130,6 +157,12 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelarActionPerformed(evt);
+            }
+        });
+
+        jtfBirth.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfBirthKeyPressed(evt);
             }
         });
 
@@ -294,6 +327,45 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void jtfNameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfNameKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfBirth.requestFocus();
+        }
+    }//GEN-LAST:event_jtfNameKeyPressed
+
+    private void jtfBirthKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfBirthKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfEmail.requestFocus();
+        }
+    }//GEN-LAST:event_jtfBirthKeyPressed
+
+    private void jtfEmailKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfEmailKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfTell.requestFocus();
+        }
+    }//GEN-LAST:event_jtfEmailKeyPressed
+
+    private void jtfTellKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfTellKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfAddress.requestFocus();
+        }
+    }//GEN-LAST:event_jtfTellKeyPressed
+
+    private void jtfAddressKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfAddressKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtaComment.requestFocus();
+        }
+    }//GEN-LAST:event_jtfAddressKeyPressed
+
+    private void jtaCommentKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtaCommentKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtaCommentKeyPressed
 
     /**
      * @param args the command line arguments

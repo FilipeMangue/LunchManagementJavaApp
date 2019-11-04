@@ -6,6 +6,9 @@
 package mz.atarzan.sgv.vision;
 
 import java.awt.Color;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import mz.atarzan.sgv.util.UtilOpenLink;
 
 /**
@@ -617,8 +620,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jlDate.setText("20/10/2019");
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("Explicador Inc, Lda");
+        jLabel22.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel22.setText("Explicador eCommerce");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -1299,6 +1302,26 @@ public class VisionPrincipal extends javax.swing.JFrame {
                     .addComponent(jLabel32)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
+
+        jPanel37.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jPanel37AncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jPanel37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel37MouseClicked(evt);
+            }
+        });
+        jPanel37.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPanel37KeyPressed(evt);
+            }
+        });
 
         jPanel38.setBackground(new java.awt.Color(102, 102, 102));
 
@@ -4131,6 +4154,31 @@ public class VisionPrincipal extends javax.swing.JFrame {
        VisionCadastrarCliente vcc = new VisionCadastrarCliente();
        vcc.setVisible(true);
     }//GEN-LAST:event_jMenuItem16ActionPerformed
+
+    private void jPanel37AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel37AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel37AncestorAdded
+
+    private void jPanel37KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPanel37KeyPressed
+//        try {
+//            // TODO add your handling code here:
+//            VisionListarClientes vlc = new VisionListarClientes();
+//            vlc.setVisible(true);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(VisionPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+    }//GEN-LAST:event_jPanel37KeyPressed
+
+    private void jPanel37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel37MouseClicked
+        // TODO add your handling code here:
+        try {
+            // TODO add your handling code here:
+            VisionListarClientes vlc = new VisionListarClientes();
+            vlc.setVisible(true);
+        } catch (SQLException ex) {
+            Logger.getLogger(VisionPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jPanel37MouseClicked
 
     /**
      * @param args the command line arguments

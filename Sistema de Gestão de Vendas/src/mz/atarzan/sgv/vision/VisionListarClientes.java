@@ -22,6 +22,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
     public VisionListarClientes() throws SQLException {
         initComponents();
         ControlCRUDClient.read(jtClients);
+        setLocationRelativeTo(this);
     }
     
     private void listarUsuarios() throws SQLException{
