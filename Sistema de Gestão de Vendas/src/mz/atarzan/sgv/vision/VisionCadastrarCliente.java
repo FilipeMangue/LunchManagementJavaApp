@@ -11,7 +11,10 @@ import mz.atarzan.sgv.model.ModelClient;
  * @author Filipe Emanuel Da Julieta Hafo Mangue
  */
 public class VisionCadastrarCliente extends javax.swing.JFrame {
-
+    int birth;
+    byte age;
+    boolean type;
+    String email,tell,address,comment;
     /**
      * Creates new form VisionCadastrarCliente
      */
@@ -103,6 +106,8 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
             }
         });
 
+        jtfCod.setFocusable(false);
+
         jtfEmail.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jtfEmail.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -113,7 +118,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         jrbType.setText("Empresa");
 
         jcbSex.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "", "Masculino. Feminino" }));
+        jcbSex.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Feminino" }));
 
         jtfName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -292,22 +297,35 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void primaryColor(){
+        Color gcolor = new Color(245, 243, 242);
+        jtfName.setBackground(gcolor);
+        jtfTell.setBackground(gcolor);
+        jtfAddress.setBackground(gcolor);
+    }
+       
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        boolean type;
+        primaryColor();
         type = jrbType.isEnabled();
         String name = jtfName.getText();
-        int birth = Integer.parseInt(jtfBirth.getText());
-        String email = jtfEmail.getText();
-        String tell = jtfTell.getText();
-        byte age = (byte)(2019 - Integer.parseInt(jtfBirth.getText()));
-        String address = jtfAddress.getText();
-        String comment = jtaComment.getText();
+        try {
+            birth = Integer.parseInt(jtfBirth.getText());
+            age = (byte)(2019 - Integer.parseInt(jtfBirth.getText()));
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Verifique os campos de dados numéricos!");
+            return;
+        }
+        email = jtfEmail.getText();
+        tell = jtfTell.getText();
+        address = jtfAddress.getText();
+        comment = jtaComment.getText();
         
         if (!this.validarDados()) {
             JOptionPane.showMessageDialog(this, "Preencha os Campos Obrigatórios!");
-            jtfName.setBackground(Color.red);
-            jtfTell.setBackground(Color.red);
-            jtfAddress.setBackground(Color.red);
+            Color bgcolor = new Color(245,158,147);
+            jtfName.setBackground(bgcolor);
+            jtfTell.setBackground(bgcolor);
+            jtfAddress.setBackground(bgcolor);
             return;
         } 
         ModelClient client;
@@ -413,7 +431,12 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
     private boolean validarDados() {
         return     jtfName.getText().length() > 0 
                 && jtfTell.getText().length() > 0 
-                && jtfAddress.getText().length() > 0;
+                && jtfAddress.getText().length() > 0
+                && jtfBirth.getText().length() > 0
+                && jtfEmail.getText().length() > 0
+                && jtfTell.getText().length() > 0
+                && jtfAddress.getText().length() > 0
+                && jtaComment.getText().length() > 0;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

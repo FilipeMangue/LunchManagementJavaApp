@@ -1,5 +1,7 @@
 package mz.atarzan.sgv.vision;
 
+import com.mysql.fabric.xmlrpc.Client;
+import java.net.MalformedURLException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -190,7 +192,6 @@ public class VisionListarClientes extends javax.swing.JFrame {
         VisionCadastrarCliente vcc = new VisionCadastrarCliente();
         vcc.setVisible(true);
         VisionCadastrarCliente.btnCadastrar.setVisible(false);
-        VisionCadastrarCliente.jtfName.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 0).toString());
         VisionCadastrarCliente.jtfEmail.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 1).toString());
         VisionCadastrarCliente.jtfTell.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 2).toString());
         VisionCadastrarCliente.jtfAddress.setText(jtClients.getValueAt(jtClients.getSelectedRow(), 3).toString());
