@@ -43,6 +43,7 @@ public class VisionLogin extends javax.swing.JFrame {
         setAlwaysOnTop(true);
         setBackground(new java.awt.Color(51, 51, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setLocationByPlatform(true);
         setUndecorated(true);
 
         btnLogin.setText("LOGIN");

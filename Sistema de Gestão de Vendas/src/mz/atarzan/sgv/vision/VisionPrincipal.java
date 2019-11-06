@@ -344,18 +344,20 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Gestão de Vendas");
+        setBackground(new java.awt.Color(192, 194, 194));
         setMaximumSize(new java.awt.Dimension(1800, 780));
-        setMinimumSize(new java.awt.Dimension(908, 681));
-        setPreferredSize(new java.awt.Dimension(908, 681));
+        setMinimumSize(new java.awt.Dimension(1050, 681));
+        setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        setPreferredSize(new java.awt.Dimension(1050, 681));
         setSize(new java.awt.Dimension(908, 681));
 
-        jPanel1.setBackground(new java.awt.Color(240, 244, 250));
+        jPanel1.setBackground(new java.awt.Color(170, 173, 173));
         jPanel1.setToolTipText("");
         jPanel1.setFocusCycleRoot(true);
 
-        jPanel2.setBackground(new java.awt.Color(240, 244, 250));
+        jPanel2.setBackground(new java.awt.Color(170, 173, 173));
 
-        jPanel6.setBackground(new java.awt.Color(240, 244, 250));
+        jPanel6.setBackground(new java.awt.Color(170, 173, 173));
         jPanel6.setToolTipText("");
 
         btnVendas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -643,12 +645,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 4659, Short.MAX_VALUE)
+            .addGap(0, 4660, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(240, 244, 250));
+        jPanel3.setBackground(new java.awt.Color(170, 173, 173));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 255));
@@ -670,13 +672,13 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 10, Short.MAX_VALUE)
+                .addGap(0, 11, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jlDate)
                     .addComponent(jLabel1)))
         );
 
-        pnlVendas.setBackground(new java.awt.Color(181, 209, 255));
+        pnlVendas.setBackground(new java.awt.Color(192, 194, 194));
         pnlVendas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlVendas.setMinimumSize(new java.awt.Dimension(680, 500));
         pnlVendas.setName(""); // NOI18N
@@ -897,7 +899,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel5.setBackground(new java.awt.Color(192, 194, 194));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel5.setForeground(new java.awt.Color(204, 204, 204));
         jPanel5.setDoubleBuffered(false);
@@ -937,7 +939,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlClientes.setBackground(new java.awt.Color(181, 209, 255));
+        pnlClientes.setBackground(new java.awt.Color(192, 194, 194));
         pnlClientes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlClientes.setPreferredSize(new java.awt.Dimension(775, 500));
 
@@ -1215,7 +1217,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlFornecedores.setBackground(new java.awt.Color(181, 209, 255));
+        pnlFornecedores.setBackground(new java.awt.Color(192, 194, 194));
         pnlFornecedores.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlFornecedores.setPreferredSize(new java.awt.Dimension(775, 500));
 
@@ -1476,7 +1478,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         pnProdutos.setBackground(new java.awt.Color(240, 244, 250));
 
-        jTabbedPane1.setBackground(new java.awt.Color(240, 244, 250));
+        jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
         jTabbedPane1.setToolTipText("");
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(775, 500));
 
@@ -2937,7 +2939,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        pnlContas.setBackground(new java.awt.Color(181, 209, 255));
+        pnlContas.setBackground(new java.awt.Color(192, 194, 194));
         pnlContas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlContas.setPreferredSize(new java.awt.Dimension(775, 500));
         pnlContas.setVerifyInputWhenFocusTarget(false);
@@ -3197,7 +3199,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlUsuarios.setBackground(new java.awt.Color(181, 209, 255));
+        pnlUsuarios.setBackground(new java.awt.Color(192, 194, 194));
         pnlUsuarios.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlUsuarios.setPreferredSize(new java.awt.Dimension(775, 500));
 
@@ -3424,6 +3426,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel97.setPreferredSize(new java.awt.Dimension(755, 500));
         jPanel97.setRequestFocusEnabled(false);
 
+        jPanel11.setBackground(new java.awt.Color(192, 194, 194));
+
         jTable1.setBackground(new java.awt.Color(240, 244, 250));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -3472,7 +3476,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE))
         );
@@ -3487,12 +3491,16 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane6.addTab("Todas", jPanel10);
+
+        jPanel15.setBackground(new java.awt.Color(192, 194, 194));
+
+        jScrollPane2.setMinimumSize(new java.awt.Dimension(23, 550));
 
         jTable2.setBackground(new java.awt.Color(240, 244, 250));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -3528,6 +3536,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 "Tipo", "Valor", "Data", "Referente a"
             }
         ));
+        jTable2.setMinimumSize(new java.awt.Dimension(60, 550));
         jScrollPane2.setViewportView(jTable2);
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
@@ -3542,9 +3551,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
@@ -3557,7 +3566,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3612,7 +3621,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel26Layout.setVerticalGroup(
             jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE))
         );
@@ -3627,7 +3636,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3682,7 +3691,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel27Layout.setVerticalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE))
         );
@@ -3697,7 +3706,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3752,9 +3761,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel56Layout.setVerticalGroup(
             jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 452, Short.MAX_VALUE)
+            .addGap(0, 550, Short.MAX_VALUE)
             .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 452, Short.MAX_VALUE))
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 550, Short.MAX_VALUE))
         );
 
         jTabbedPane6.addTab("Pagas", jPanel56);
@@ -3769,7 +3778,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel97Layout.setVerticalGroup(
             jPanel97Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 480, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(jPanel97Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jTabbedPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE))
         );
@@ -3791,11 +3800,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel97, javax.swing.GroupLayout.DEFAULT_SIZE, 482, Short.MAX_VALUE)
+                .addComponent(jPanel97, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        pnlApps.setBackground(new java.awt.Color(181, 209, 255));
+        pnlApps.setBackground(new java.awt.Color(192, 194, 194));
         pnlApps.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlApps.setPreferredSize(new java.awt.Dimension(775, 500));
 
@@ -4054,7 +4063,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlServices.setBackground(new java.awt.Color(181, 209, 255));
+        pnlServices.setBackground(new java.awt.Color(192, 194, 194));
         pnlServices.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pnlServices.setPreferredSize(new java.awt.Dimension(775, 500));
 
@@ -4363,9 +4372,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
         pnlApps.getAccessibleContext().setAccessibleName("");
         pnlServices.getAccessibleContext().setAccessibleName("");
 
-        jMenuBar1.setBackground(new java.awt.Color(240, 244, 250));
-        jMenuBar1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(240, 244, 250), 5, true));
-        jMenuBar1.setForeground(new java.awt.Color(240, 240, 240));
+        jMenuBar1.setBackground(new java.awt.Color(0, 153, 255));
+        jMenuBar1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(170, 173, 173), 5, true));
+        jMenuBar1.setForeground(new java.awt.Color(0, 153, 255));
         jMenuBar1.setToolTipText("");
         jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jMenuBar1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
