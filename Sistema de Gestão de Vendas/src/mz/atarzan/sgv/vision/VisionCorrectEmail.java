@@ -17,9 +17,7 @@ public class VisionCorrectEmail extends javax.swing.JFrame {
      */              
     
     public VisionCorrectEmail() {
-        ImageIcon icone = criarImageIcon("C:\\Users\\user\\Downloads\\explicador_icon50x50.png", "Mail");
         initComponents();
-        jlEmail.setIcon(icone);
     }
 
     /**
