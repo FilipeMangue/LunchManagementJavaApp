@@ -5,6 +5,11 @@
  */
 package mz.atarzan.sgv.vision;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Filipe Emanuel
@@ -492,6 +497,14 @@ public class VisionSellCaixa extends javax.swing.JFrame {
 
     private void jPanel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel10MouseClicked
         // TODO add your handling code here:
+        VisionListarClientes vlc;
+        try {
+            vlc = new VisionListarClientes();
+            vlc.setVisible(true);
+        } catch (SQLException ex) {
+            Logger.getLogger(VisionSellCaixa.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(this, "Não foi possível carregar a tela de listagem de Clientes.");
+        }
     }//GEN-LAST:event_jPanel10MouseClicked
 
     private void jPanel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseClicked
