@@ -76,11 +76,6 @@
       </Layout>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="jPanel2">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="99" type="rgb"/>
-            </Property>
-          </Properties>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -146,9 +141,6 @@
               <SubComponents>
                 <Container class="javax.swing.JPanel" name="jPanel6">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="99" type="rgb"/>
-                    </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                         <EtchetBorder/>
@@ -192,7 +184,7 @@
                           <Font name="Tahoma" size="11" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="33" green="33" red="33" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Definir Password"/>
                       </Properties>
@@ -201,9 +193,6 @@
                 </Container>
                 <Container class="javax.swing.JPanel" name="jPanel7">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="99" type="rgb"/>
-                    </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                         <EtchetBorder/>
@@ -244,7 +233,7 @@
                           <Font name="Tahoma" size="11" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="33" green="33" red="33" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Guardar"/>
                       </Properties>
@@ -253,9 +242,6 @@
                 </Container>
                 <Container class="javax.swing.JPanel" name="jPanel8">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="99" type="rgb"/>
-                    </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                         <EtchetBorder/>
@@ -299,7 +285,7 @@
                           <Font name="Tahoma" size="11" style="1"/>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                          <Color blue="33" green="33" red="33" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Cancelar"/>
                       </Properties>
@@ -356,9 +342,6 @@
           <SubComponents>
             <Container class="javax.swing.JPanel" name="jPanel5">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
-                </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                     <LineBorder/>
@@ -392,11 +375,13 @@
                                                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                                      <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                                                      <Component id="jrbYes" min="-2" pref="54" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jrbNo" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
                                                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="jtfLimite" min="-2" pref="101" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
@@ -404,7 +389,7 @@
                                           <EmptySpace min="0" pref="24" max="32767" attributes="0"/>
                                       </Group>
                                       <Component id="jTextField4" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField3" pref="477" max="32767" attributes="0"/>
+                                      <Component id="jTextField3" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                               </Group>
@@ -441,9 +426,10 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrbNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jtfLimite" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrbYes" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jPanel10" max="32767" attributes="0"/>
@@ -455,9 +441,6 @@
               <SubComponents>
                 <Container class="javax.swing.JPanel" name="jPanel10">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="99" red="99" type="rgb"/>
-                    </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                         <LineBorder/>
@@ -521,11 +504,6 @@
                     <Property name="text" type="java.lang.String" value="Fazer Descontos"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="SIM"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JCheckBox" name="jCheckBox2">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Administrador"/>
@@ -545,10 +523,13 @@
                     <Property name="text" type="java.lang.String" value="Indique o limite"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+                <Component class="javax.swing.JRadioButton" name="jrbNo">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="N&#xc3;O"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jrbNoMouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel10">
                   <Properties>
@@ -557,6 +538,22 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="(Acesso &#xe0; todas fun&#xe7;&#xf5;es) "/>
                   </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="jtfLimite">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="jrbYes">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SIM"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbYesActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>

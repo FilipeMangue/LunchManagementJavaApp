@@ -47,20 +47,18 @@ public class VisionRegUser extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        jrbNo = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
+        jtfLimite = new javax.swing.JTextField();
+        jrbYes = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 255));
-
-        jPanel6.setBackground(new java.awt.Color(153, 153, 153));
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -69,7 +67,7 @@ public class VisionRegUser extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("Definir Password");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -93,11 +91,10 @@ public class VisionRegUser extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        jPanel7.setBackground(new java.awt.Color(153, 153, 153));
         jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("Guardar");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -121,7 +118,6 @@ public class VisionRegUser extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        jPanel8.setBackground(new java.awt.Color(153, 153, 153));
         jPanel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -130,7 +126,7 @@ public class VisionRegUser extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
         jLabel3.setText("Cancelar");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -213,10 +209,8 @@ public class VisionRegUser extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(204, 255, 255));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jPanel10.setBackground(new java.awt.Color(153, 153, 255));
         jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
@@ -246,17 +240,29 @@ public class VisionRegUser extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel8.setText("Fazer Descontos");
 
-        jCheckBox1.setText("SIM");
-
         jCheckBox2.setText("Administrador");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel9.setText("Indique o limite");
 
-        jRadioButton1.setText("NÃO");
+        jrbNo.setText("NÃO");
+        jrbNo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jrbNoMouseClicked(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel10.setText("(Acesso à todas funções) ");
+
+        jtfLimite.setEditable(false);
+
+        jrbYes.setText("SIM");
+        jrbYes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrbYesActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -283,15 +289,17 @@ public class VisionRegUser extends javax.swing.JFrame {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                             .addComponent(jLabel10))
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
-                                            .addComponent(jCheckBox1)
-                                            .addGap(9, 9, 9)
-                                            .addComponent(jRadioButton1)
-                                            .addGap(68, 68, 68)
-                                            .addComponent(jLabel9)))
+                                            .addComponent(jrbYes, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jrbNo)
+                                            .addGap(95, 95, 95)
+                                            .addComponent(jLabel9)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jtfLimite, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addComponent(jLabel7))
                                 .addGap(0, 24, Short.MAX_VALUE))
                             .addComponent(jTextField4)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 477, Short.MAX_VALUE))
+                            .addComponent(jTextField3))
                         .addGap(2, 2, 2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -319,9 +327,10 @@ public class VisionRegUser extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jCheckBox1)
                     .addComponent(jLabel9)
-                    .addComponent(jRadioButton1))
+                    .addComponent(jrbNo)
+                    .addComponent(jtfLimite, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jrbYes))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -403,6 +412,20 @@ public class VisionRegUser extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jPanel8MouseClicked
 
+    private void jrbYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrbYesActionPerformed
+        // TODO add your handling code here:
+//        if(jrbYes.isEnabled() == true){
+            jtfLimite.setEditable(true);
+//        } else if (jrbNo.isEnabled()){
+//            jtfLimite.setEditable(false);
+//        }
+    }//GEN-LAST:event_jrbYesActionPerformed
+
+    private void jrbNoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jrbNoMouseClicked
+        // TODO add your handling code here:
+        jtfLimite.setEditable(false);
+    }//GEN-LAST:event_jrbNoMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -439,7 +462,6 @@ public class VisionRegUser extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -461,9 +483,11 @@ public class VisionRegUser extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JRadioButton jrbNo;
+    private javax.swing.JRadioButton jrbYes;
+    public javax.swing.JTextField jtfLimite;
     // End of variables declaration//GEN-END:variables
 }
