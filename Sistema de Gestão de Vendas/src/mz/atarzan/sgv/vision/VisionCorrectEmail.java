@@ -36,6 +36,7 @@ public class VisionCorrectEmail extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Corrigir Email de Registro");
+        setType(java.awt.Window.Type.UTILITY);
 
         jlEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlEmail.setText("Email");

@@ -64,6 +64,7 @@ public class VisionPayment extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pagamento");
         setPreferredSize(new java.awt.Dimension(565, 554));
+        setType(java.awt.Window.Type.UTILITY);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 

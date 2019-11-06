@@ -82,6 +82,7 @@ public class VisionListarClientes extends javax.swing.JFrame {
         lbCliRegistados = new javax.swing.JLabel();
 
         setTitle("LISTAGEM DE CLIENTES");
+        setType(java.awt.Window.Type.UTILITY);
 
         jtfPesquisar.setBackground(new java.awt.Color(240, 244, 250));
 

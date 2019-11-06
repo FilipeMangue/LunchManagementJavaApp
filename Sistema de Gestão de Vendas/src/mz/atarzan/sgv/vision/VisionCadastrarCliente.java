@@ -61,6 +61,7 @@ public class VisionCadastrarCliente extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CADASTRO / EDIÇÃO DE CLIENTES");
+        setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         pnlPricinpal.setBackground(new java.awt.Color(255, 255, 51));
