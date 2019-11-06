@@ -16,6 +16,7 @@ public class VisionRegConfirm extends javax.swing.JFrame {
      */
     public VisionRegConfirm() {
         initComponents();
+        setLocationRelativeTo(this);
     }
 
     /**
@@ -38,6 +39,7 @@ public class VisionRegConfirm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Confirmar Registo");
+        setType(java.awt.Window.Type.UTILITY);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Digite o código enviado por email");
