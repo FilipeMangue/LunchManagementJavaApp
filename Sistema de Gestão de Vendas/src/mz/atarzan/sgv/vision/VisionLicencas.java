@@ -52,6 +52,7 @@ public class VisionLicencas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Planos de Uso/Licença");
+        setType(java.awt.Window.Type.UTILITY);
 
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.LINE_AXIS));
 

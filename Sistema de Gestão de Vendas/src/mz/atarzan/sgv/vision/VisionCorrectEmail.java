@@ -17,9 +17,7 @@ public class VisionCorrectEmail extends javax.swing.JFrame {
      */              
     
     public VisionCorrectEmail() {
-        ImageIcon icone = criarImageIcon("C:\\Users\\user\\Downloads\\explicador_icon50x50.png", "Mail");
         initComponents();
-        jlEmail.setIcon(icone);
     }
 
     /**
@@ -38,6 +36,7 @@ public class VisionCorrectEmail extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Corrigir Email de Registro");
+        setType(java.awt.Window.Type.UTILITY);
 
         jlEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlEmail.setText("Email");

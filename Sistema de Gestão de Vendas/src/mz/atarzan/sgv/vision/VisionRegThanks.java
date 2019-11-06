@@ -33,6 +33,7 @@ public class VisionRegThanks extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle(" O nosso muito obrigado!");
+        setType(java.awt.Window.Type.UTILITY);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("O seu registo foi confirmado com sucesso");

@@ -46,6 +46,7 @@ public class VisionStoreRegistration extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Registo da Loja/Estabelecimento");
+        setType(java.awt.Window.Type.UTILITY);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
         jLabel1.setText("Registar Loja/Estabelecimento");

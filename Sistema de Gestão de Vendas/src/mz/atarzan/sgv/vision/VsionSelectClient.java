@@ -40,6 +40,7 @@ public class VsionSelectClient extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Seleccione um cliente");
         setAutoRequestFocus(false);
+        setType(java.awt.Window.Type.UTILITY);
 
         jTextField1.setBackground(new java.awt.Color(240, 244, 250));
 
