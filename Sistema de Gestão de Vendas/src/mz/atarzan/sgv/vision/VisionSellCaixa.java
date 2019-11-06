@@ -513,6 +513,8 @@ public class VisionSellCaixa extends javax.swing.JFrame {
 
     private void jPanel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseClicked
         // TODO add your handling code here:
+        VisionSelectUser vsu = new VisionSelectUser();
+        vsu.setVisible(true);
     }//GEN-LAST:event_jPanel12MouseClicked
 
     private void jPanel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseClicked
