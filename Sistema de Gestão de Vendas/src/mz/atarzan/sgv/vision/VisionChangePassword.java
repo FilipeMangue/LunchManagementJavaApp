@@ -31,9 +31,9 @@ public class VisionChangePassword extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        jtfActualPass = new javax.swing.JTextField();
+        jtfNewPass = new javax.swing.JTextField();
+        jtfNewPassNew = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -47,11 +47,11 @@ public class VisionChangePassword extends javax.swing.JFrame {
         setTitle("Alterar palavra passe do Administrador");
         setType(java.awt.Window.Type.UTILITY);
 
-        jTextField1.setBackground(new java.awt.Color(240, 244, 250));
+        jtfActualPass.setBackground(new java.awt.Color(240, 244, 250));
 
-        jTextField4.setBackground(new java.awt.Color(240, 244, 250));
+        jtfNewPass.setBackground(new java.awt.Color(240, 244, 250));
 
-        jTextField5.setBackground(new java.awt.Color(240, 244, 250));
+        jtfNewPassNew.setBackground(new java.awt.Color(240, 244, 250));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Digite a palavra passe actual");
@@ -101,9 +101,9 @@ public class VisionChangePassword extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addComponent(jLabel2)
                         .addComponent(jLabel4)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
-                        .addComponent(jTextField5)
-                        .addComponent(jTextField1)))
+                        .addComponent(jtfNewPass, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
+                        .addComponent(jtfNewPassNew)
+                        .addComponent(jtfActualPass)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -112,15 +112,15 @@ public class VisionChangePassword extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtfActualPass, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtfNewPass, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtfNewPassNew, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
@@ -216,8 +216,8 @@ public class VisionChangePassword extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    public javax.swing.JTextField jtfActualPass;
+    private javax.swing.JTextField jtfNewPass;
+    private javax.swing.JTextField jtfNewPassNew;
     // End of variables declaration//GEN-END:variables
 }
