@@ -21,3 +21,7 @@ O sistema esta dividido em quatro módulos, sendo a seguir:
 - Usuários
 - Produtos
 - Servidor
+
+### Vendas
+- CRUD
+- Relatórios
