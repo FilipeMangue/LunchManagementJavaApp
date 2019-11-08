@@ -5370,6 +5370,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
         // TODO add your handling code here:
+        hidePanels();
+        showStartPanel(false);
+        pnlUsuarios.setVisible(true);
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
     private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
