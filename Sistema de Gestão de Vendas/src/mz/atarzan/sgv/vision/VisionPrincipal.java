@@ -427,7 +427,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         });
 
         jlpnlClientes.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jlpnlClientes.setForeground(new java.awt.Color(51, 51, 51));
         jlpnlClientes.setText("Clientes");
 
         javax.swing.GroupLayout btnClientesLayout = new javax.swing.GroupLayout(btnClientes);
@@ -455,24 +454,23 @@ public class VisionPrincipal extends javax.swing.JFrame {
         });
 
         jlpnlfornecedores.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jlpnlfornecedores.setForeground(new java.awt.Color(51, 51, 51));
         jlpnlfornecedores.setText("Fornecedores");
 
         javax.swing.GroupLayout btnFornecedoresLayout = new javax.swing.GroupLayout(btnFornecedores);
         btnFornecedores.setLayout(btnFornecedoresLayout);
         btnFornecedoresLayout.setHorizontalGroup(
             btnFornecedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnFornecedoresLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnFornecedoresLayout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
                 .addComponent(jlpnlfornecedores)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         btnFornecedoresLayout.setVerticalGroup(
             btnFornecedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnFornecedoresLayout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap(25, Short.MAX_VALUE)
                 .addComponent(jlpnlfornecedores)
-                .addGap(23, 23, 23))
+                .addGap(24, 24, 24))
         );
 
         btnProdutos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -484,7 +482,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jlpnlProdutos.setBackground(new java.awt.Color(255, 255, 255));
         jlpnlProdutos.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jlpnlProdutos.setForeground(new java.awt.Color(51, 51, 51));
         jlpnlProdutos.setText("Produtos");
 
         javax.swing.GroupLayout btnProdutosLayout = new javax.swing.GroupLayout(btnProdutos);
@@ -512,7 +509,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         });
 
         jlpnlUsuarios.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jlpnlUsuarios.setForeground(new java.awt.Color(51, 51, 51));
         jlpnlUsuarios.setText("Usuários");
 
         javax.swing.GroupLayout btnUsuariosLayout = new javax.swing.GroupLayout(btnUsuarios);
@@ -540,7 +536,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         });
 
         jlpnlCoontas.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jlpnlCoontas.setForeground(new java.awt.Color(51, 51, 51));
         jlpnlCoontas.setText("Contas");
 
         javax.swing.GroupLayout btnContasLayout = new javax.swing.GroupLayout(btnContas);
@@ -573,7 +568,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         });
 
         jlpnlApps.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jlpnlApps.setForeground(new java.awt.Color(51, 51, 51));
         jlpnlApps.setText("Apps");
 
         javax.swing.GroupLayout btnAppsLayout = new javax.swing.GroupLayout(btnApps);
@@ -689,6 +683,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Filipe Mangue - Explicador Incorportion, Limitada!    ");
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jlDate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jlDate.setForeground(new java.awt.Color(255, 255, 255));
