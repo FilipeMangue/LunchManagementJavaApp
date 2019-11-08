@@ -1621,6 +1621,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
         jTabbedPane1.setToolTipText("");
+        jTabbedPane1.setMinimumSize(new java.awt.Dimension(0, 0));
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(775, 500));
 
         jPanel58.setBackground(new java.awt.Color(240, 244, 250));
@@ -3078,14 +3079,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
             pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 845, Short.MAX_VALUE)
             .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE))
         );
         pnProdutosLayout.setVerticalGroup(
             pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 845, Short.MAX_VALUE)
             .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pnProdutosLayout.createSequentialGroup()
-                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, Short.MAX_VALUE)
+                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 573, Short.MAX_VALUE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
