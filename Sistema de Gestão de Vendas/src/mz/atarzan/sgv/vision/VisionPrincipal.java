@@ -5046,6 +5046,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jMenu5.add(jMenuItem3);
 
         jMenuItem4.setText("2. Informar Email de Registo");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu5.add(jMenuItem4);
 
         jMenu2.add(jMenu5);
@@ -5394,6 +5399,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnProdutos.setVisible(true);
     }//GEN-LAST:event_jMenuItem20ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        VisionCorrectEmail vce = new VisionCorrectEmail();
+        vce.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
