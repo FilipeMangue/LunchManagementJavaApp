@@ -5511,7 +5511,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         pnProdutos.setVisible(true);
         setPnlLabelsColor();
         setBtnColors();
-        pnProdutos.setBackground(new Color(153,153,153));
+        pnProdutos.setBackground(new Color(170,173,173));
         btnProdutos.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_jMenuItem20ActionPerformed
 
