@@ -460,7 +460,7 @@
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="btnServices" max="32767" attributes="0"/>
                               <Component id="btnApps" alignment="0" max="32767" attributes="0"/>
-                              <Component id="btnCoontas" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btnContas" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnUsuarios" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnProdutos" alignment="0" max="32767" attributes="0"/>
                               <Component id="btnFornecedores" alignment="0" max="32767" attributes="0"/>
@@ -491,7 +491,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnUsuarios" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnCoontas" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnContas" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnApps" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -519,9 +519,9 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               <Component id="jlpnlVendas" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="35" max="32767" attributes="0"/>
+                              <EmptySpace pref="30" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -733,7 +733,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="btnCoontas">
+                <Container class="javax.swing.JPanel" name="btnContas">
                   <Properties>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -742,7 +742,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnCoontasMouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnContasMouseClicked"/>
                   </Events>
 
                   <Layout>

@@ -61,7 +61,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jlpnlProdutos = new javax.swing.JLabel();
         btnUsuarios = new javax.swing.JPanel();
         jlpnlUsuarios = new javax.swing.JLabel();
-        btnCoontas = new javax.swing.JPanel();
+        btnContas = new javax.swing.JPanel();
         jlpnlCoontas = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         btnApps = new javax.swing.JPanel();
@@ -407,9 +407,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
         btnVendasLayout.setHorizontalGroup(
             btnVendasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnVendasLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(29, 29, 29)
                 .addComponent(jlpnlVendas)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         btnVendasLayout.setVerticalGroup(
             btnVendasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -532,10 +532,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGap(21, 21, 21))
         );
 
-        btnCoontas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnCoontas.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnContas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnContas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnCoontasMouseClicked(evt);
+                btnContasMouseClicked(evt);
             }
         });
 
@@ -543,18 +543,18 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jlpnlCoontas.setForeground(new java.awt.Color(51, 51, 51));
         jlpnlCoontas.setText("Contas");
 
-        javax.swing.GroupLayout btnCoontasLayout = new javax.swing.GroupLayout(btnCoontas);
-        btnCoontas.setLayout(btnCoontasLayout);
-        btnCoontasLayout.setHorizontalGroup(
-            btnCoontasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnCoontasLayout.createSequentialGroup()
+        javax.swing.GroupLayout btnContasLayout = new javax.swing.GroupLayout(btnContas);
+        btnContas.setLayout(btnContasLayout);
+        btnContasLayout.setHorizontalGroup(
+            btnContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnContasLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jlpnlCoontas)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        btnCoontasLayout.setVerticalGroup(
-            btnCoontasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnCoontasLayout.createSequentialGroup()
+        btnContasLayout.setVerticalGroup(
+            btnContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnContasLayout.createSequentialGroup()
                 .addContainerGap(25, Short.MAX_VALUE)
                 .addComponent(jlpnlCoontas)
                 .addGap(23, 23, 23))
@@ -630,7 +630,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(btnServices, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnApps, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCoontas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnContas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnUsuarios, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnProdutos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnFornecedores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -657,7 +657,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCoontas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnContas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnApps, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -5148,7 +5148,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnlClientes.setVisible(true);
         setPnlLabelsColor();
-        jlpnlClientes.setForeground(Color.DARK_GRAY);
         setBtnColors();
         pnlClientes.setBackground(new Color(153,153,153));
         btnClientes.setBackground(new Color(153,153,153)); 
@@ -5160,7 +5159,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnlVendas.setVisible(true);
         setPnlLabelsColor();
-        jlpnlVendas.setForeground(Color.DARK_GRAY);
+        setBtnColors();
         pnlVendas.setBackground(new Color(153,153,153));
         btnVendas.setBackground(new Color(153,153,153)); 
     }//GEN-LAST:event_btnVendasMouseClicked
@@ -5173,12 +5172,13 @@ public class VisionPrincipal extends javax.swing.JFrame {
         btnServices.setBackground(new Color(240,240,240));
         btnUsuarios.setBackground(new Color(240,240,240));
         btnVendas.setBackground(new Color(240,240,240));
+        btnContas.setBackground(new Color(240,240,240));
     }
     
     private void setPnlLabelsColor(){
         jlpnlApps.setForeground(Color.BLACK);
         jlpnlClientes.setForeground(Color.BLACK);
-        btnCoontas.setForeground(Color.BLACK);
+        btnContas.setForeground(Color.BLACK);
         jlpnlProdutos.setForeground(Color.BLACK);
         jlpnlUsuarios.setForeground(Color.BLACK);
         jlpnlVendas.setForeground(Color.BLACK);
@@ -5205,7 +5205,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         btnUsuarios.setBackground(Color.LIGHT_GRAY);
         btnFornecedores.setBackground(Color.LIGHT_GRAY);
         btnServices.setBackground(Color.LIGHT_GRAY);
-        btnCoontas.setBackground(Color.LIGHT_GRAY);
+        btnContas.setBackground(Color.LIGHT_GRAY);
         btnClientes.setBackground(Color.LIGHT_GRAY);
         btnVendas.setBackground(Color.LIGHT_GRAY);
     }
@@ -5278,7 +5278,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnlFornecedores.setVisible(true);
         setPnlLabelsColor();
-        jlpnlfornecedores.setForeground(Color.red);
+        setBtnColors();
         pnlFornecedores.setBackground(new Color(153,153,153));
         btnFornecedores.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnFornecedoresMouseClicked
@@ -5289,7 +5289,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnProdutos.setVisible(true);
         setPnlLabelsColor();
-        jlpnlProdutos.setForeground(Color.red);
+        setBtnColors();
         pnProdutos.setBackground(new Color(153,153,153));
         btnProdutos.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnProdutosMouseClicked
@@ -5300,21 +5300,21 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnlUsuarios.setVisible(true);
         setPnlLabelsColor();
-        jlpnlUsuarios.setForeground(Color.red);
+        setBtnColors();
         pnlUsuarios.setBackground(new Color(153,153,153));
         btnUsuarios.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnUsuariosMouseClicked
 
-    private void btnCoontasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCoontasMouseClicked
+    private void btnContasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContasMouseClicked
         // TODO add your handling code here:
         hidePanels();
         showStartPanel(false);
         pnlContas.setVisible(true);
         setPnlLabelsColor();
-        btnCoontas.setForeground(Color.red);
+        setBtnColors();
         pnlContas.setBackground(new Color(153,153,153));
-        btnCoontas.setBackground(new Color(153,153,153));
-    }//GEN-LAST:event_btnCoontasMouseClicked
+        btnContas.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnContasMouseClicked
 
     private void btnAppsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAppsMouseClicked
         // TODO add your handling code here:
@@ -5322,7 +5322,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnlApps.setVisible(true);
         setPnlLabelsColor();
-        jlpnlApps.setForeground(Color.red);
+        setBtnColors();
+        pnlApps.setBackground(new Color(153,153,153));
+        btnApps.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnAppsMouseClicked
 
     private void btnServicesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseClicked
@@ -5331,7 +5333,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
         showStartPanel(false);
         pnlServices.setVisible(true);
         setPnlLabelsColor();
-        jlpnlservicos.setForeground(Color.red);
+        setBtnColors();
+        pnlServices.setBackground(new Color(153,153,153));
+        btnServices.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnServicesMouseClicked
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
@@ -5425,6 +5429,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         hidePanels();
         pnlInicio.setVisible(true);
         setPnlLabelsColor();
+        setBtnColors();
     }//GEN-LAST:event_jmInicioMouseClicked
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
@@ -5510,7 +5515,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel btnApps;
     private javax.swing.JPanel btnClientes;
-    private javax.swing.JPanel btnCoontas;
+    private javax.swing.JPanel btnContas;
     private javax.swing.JPanel btnFornecedores;
     private javax.swing.JPanel btnProdutos;
     private javax.swing.JPanel btnServices;
