@@ -24,4 +24,5 @@ O sistema esta dividido em quatro módulos, sendo a seguir:
 
 ### Vendas
 - CRUD
-- Relatórios
+- Relatórios email
+- Upgrade de planos
