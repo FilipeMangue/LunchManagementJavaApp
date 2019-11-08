@@ -52,22 +52,22 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         btnVendas = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        jlpnlVendas = new javax.swing.JLabel();
         btnClientes = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jlpnlClientes = new javax.swing.JLabel();
         btnFornecedores = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        jlpnlfornecedores = new javax.swing.JLabel();
         btnProdutos = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        btnContas = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        jlpnlProdutos = new javax.swing.JLabel();
         btnUsuarios = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        jlpnlUsuarios = new javax.swing.JLabel();
+        btnCoontas = new javax.swing.JPanel();
+        jlpnlCoontas = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         btnApps = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
+        jlpnlApps = new javax.swing.JLabel();
         btnServices = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
+        jlpnlservicos = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jlDate = new javax.swing.JLabel();
@@ -399,24 +399,24 @@ public class VisionPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Vendas");
+        jlpnlVendas.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jlpnlVendas.setText("Vendas");
 
         javax.swing.GroupLayout btnVendasLayout = new javax.swing.GroupLayout(btnVendas);
         btnVendas.setLayout(btnVendasLayout);
         btnVendasLayout.setHorizontalGroup(
             btnVendasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnVendasLayout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(27, 27, 27))
+            .addGroup(btnVendasLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jlpnlVendas)
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         btnVendasLayout.setVerticalGroup(
             btnVendasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnVendasLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel2)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addGap(24, 24, 24)
+                .addComponent(jlpnlVendas)
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         btnClientes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -426,24 +426,24 @@ public class VisionPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel3.setText("Clientes");
+        jlpnlClientes.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jlpnlClientes.setForeground(new java.awt.Color(51, 51, 51));
+        jlpnlClientes.setText("Clientes");
 
         javax.swing.GroupLayout btnClientesLayout = new javax.swing.GroupLayout(btnClientes);
         btnClientes.setLayout(btnClientesLayout);
         btnClientesLayout.setHorizontalGroup(
             btnClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnClientesLayout.createSequentialGroup()
-                .addContainerGap(31, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(24, 24, 24))
+            .addGroup(btnClientesLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jlpnlClientes)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         btnClientesLayout.setVerticalGroup(
             btnClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnClientesLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(jLabel3)
+                .addComponent(jlpnlClientes)
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -454,24 +454,24 @@ public class VisionPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Fornecedores");
+        jlpnlfornecedores.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jlpnlfornecedores.setForeground(new java.awt.Color(51, 51, 51));
+        jlpnlfornecedores.setText("Fornecedores");
 
         javax.swing.GroupLayout btnFornecedoresLayout = new javax.swing.GroupLayout(btnFornecedores);
         btnFornecedores.setLayout(btnFornecedoresLayout);
         btnFornecedoresLayout.setHorizontalGroup(
             btnFornecedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnFornecedoresLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel4)
+                .addContainerGap()
+                .addComponent(jlpnlfornecedores)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         btnFornecedoresLayout.setVerticalGroup(
             btnFornecedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnFornecedoresLayout.createSequentialGroup()
                 .addContainerGap(26, Short.MAX_VALUE)
-                .addComponent(jLabel4)
+                .addComponent(jlpnlfornecedores)
                 .addGap(23, 23, 23))
         );
 
@@ -482,10 +482,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel5.setText("Produtos");
+        jlpnlProdutos.setBackground(new java.awt.Color(255, 255, 255));
+        jlpnlProdutos.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jlpnlProdutos.setForeground(new java.awt.Color(51, 51, 51));
+        jlpnlProdutos.setText("Produtos");
 
         javax.swing.GroupLayout btnProdutosLayout = new javax.swing.GroupLayout(btnProdutos);
         btnProdutos.setLayout(btnProdutosLayout);
@@ -493,43 +493,15 @@ public class VisionPrincipal extends javax.swing.JFrame {
             btnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnProdutosLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addComponent(jLabel5)
+                .addComponent(jlpnlProdutos)
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         btnProdutosLayout.setVerticalGroup(
             btnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnProdutosLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel5)
+                .addComponent(jlpnlProdutos)
                 .addContainerGap(22, Short.MAX_VALUE))
-        );
-
-        btnContas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnContas.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnContasMouseClicked(evt);
-            }
-        });
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel6.setText("Usuários");
-
-        javax.swing.GroupLayout btnContasLayout = new javax.swing.GroupLayout(btnContas);
-        btnContas.setLayout(btnContasLayout);
-        btnContasLayout.setHorizontalGroup(
-            btnContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnContasLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        btnContasLayout.setVerticalGroup(
-            btnContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnContasLayout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
-                .addComponent(jLabel6)
-                .addGap(21, 21, 21))
         );
 
         btnUsuarios.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -539,29 +511,57 @@ public class VisionPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel7.setText("Contas");
+        jlpnlUsuarios.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jlpnlUsuarios.setForeground(new java.awt.Color(51, 51, 51));
+        jlpnlUsuarios.setText("Usuários");
 
         javax.swing.GroupLayout btnUsuariosLayout = new javax.swing.GroupLayout(btnUsuarios);
         btnUsuarios.setLayout(btnUsuariosLayout);
         btnUsuariosLayout.setHorizontalGroup(
             btnUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnUsuariosLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel7)
+                .addGap(26, 26, 26)
+                .addComponent(jlpnlUsuarios)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         btnUsuariosLayout.setVerticalGroup(
             btnUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnUsuariosLayout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addComponent(jlpnlUsuarios)
+                .addGap(21, 21, 21))
+        );
+
+        btnCoontas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnCoontas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCoontasMouseClicked(evt);
+            }
+        });
+
+        jlpnlCoontas.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jlpnlCoontas.setForeground(new java.awt.Color(51, 51, 51));
+        jlpnlCoontas.setText("Contas");
+
+        javax.swing.GroupLayout btnCoontasLayout = new javax.swing.GroupLayout(btnCoontas);
+        btnCoontas.setLayout(btnCoontasLayout);
+        btnCoontasLayout.setHorizontalGroup(
+            btnCoontasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnCoontasLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jlpnlCoontas)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        btnCoontasLayout.setVerticalGroup(
+            btnCoontasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnCoontasLayout.createSequentialGroup()
                 .addContainerGap(25, Short.MAX_VALUE)
-                .addComponent(jLabel7)
+                .addComponent(jlpnlCoontas)
                 .addGap(23, 23, 23))
         );
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(51, 51, 255));
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText(" Data: ");
 
@@ -572,9 +572,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel23.setText("Apps");
+        jlpnlApps.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jlpnlApps.setForeground(new java.awt.Color(51, 51, 51));
+        jlpnlApps.setText("Apps");
 
         javax.swing.GroupLayout btnAppsLayout = new javax.swing.GroupLayout(btnApps);
         btnApps.setLayout(btnAppsLayout);
@@ -582,14 +582,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
             btnAppsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnAppsLayout.createSequentialGroup()
                 .addGap(37, 37, 37)
-                .addComponent(jLabel23)
+                .addComponent(jlpnlApps)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         btnAppsLayout.setVerticalGroup(
             btnAppsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnAppsLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(jLabel23)
+                .addComponent(jlpnlApps)
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
@@ -600,9 +600,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel24.setText("Serviços");
+        jlpnlservicos.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jlpnlservicos.setForeground(new java.awt.Color(51, 51, 51));
+        jlpnlservicos.setText("Serviços");
 
         javax.swing.GroupLayout btnServicesLayout = new javax.swing.GroupLayout(btnServices);
         btnServices.setLayout(btnServicesLayout);
@@ -610,14 +610,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
             btnServicesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnServicesLayout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addComponent(jLabel24)
+                .addComponent(jlpnlservicos)
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         btnServicesLayout.setVerticalGroup(
             btnServicesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btnServicesLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addComponent(jLabel24)
+                .addComponent(jlpnlservicos)
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
@@ -630,10 +630,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(btnServices, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnApps, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCoontas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnUsuarios, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnContas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnProdutos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnFornecedores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 107, Short.MAX_VALUE)
+                    .addComponent(btnFornecedores, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnClientes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnVendas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -655,9 +655,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnContas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCoontas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnApps, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -677,7 +677,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 5239, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -687,11 +687,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
-        jLabel1.setText("Explicador eCom     ");
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Filipe Mangue - Explicador Incorportion, Limitada!    ");
 
         jlDate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jlDate.setForeground(new java.awt.Color(51, 51, 255));
+        jlDate.setForeground(new java.awt.Color(255, 255, 255));
         jlDate.setText("20/10/2019");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -726,13 +726,13 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 204));
-        jLabel10.setText("Seja Bem Vindo ao Sistema de Gestão Para Vendas!");
+        jLabel10.setText("Seja Bem Vindo ao Sistema de Gestão Para Vendas");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 819, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -758,43 +758,43 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel5.setRequestFocusEnabled(false);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel11.setForeground(new java.awt.Color(102, 102, 255));
         jLabel11.setText("Registe clientes, fornecedores e usuários");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel13.setForeground(new java.awt.Color(102, 102, 255));
         jLabel13.setText("Active e desactive usuário ou produtos");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel14.setForeground(new java.awt.Color(102, 102, 255));
         jLabel14.setText("Faca gestão de estoque ");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel15.setForeground(new java.awt.Color(102, 102, 255));
         jLabel15.setText("Controle validade dos produtos");
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel16.setForeground(new java.awt.Color(102, 102, 255));
         jLabel16.setText("Faça leitura de produtos por código de barra");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel17.setForeground(new java.awt.Color(102, 102, 255));
         jLabel17.setText("Faça gestão de seus fornecedores ");
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel18.setForeground(new java.awt.Color(102, 102, 255));
         jLabel18.setText("Imprima relatórios precisos");
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel20.setForeground(new java.awt.Color(102, 102, 255));
         jLabel20.setText("Receba relatórios mensais por correio electrónico ");
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel21.setForeground(new java.awt.Color(102, 102, 255));
         jLabel21.setText("Adira já a qualquer um dos planos que oferecemos");
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel35.setForeground(new java.awt.Color(102, 102, 255));
         jLabel35.setText("Faça  upgrade do seu plano");
         jLabel35.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -803,14 +803,16 @@ public class VisionPrincipal extends javax.swing.JFrame {
         });
 
         jLabel37.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel37.setForeground(new java.awt.Color(102, 102, 255));
         jLabel37.setText("Conheça os nossos produtos e desfrute dos melhores serviços que só a ");
 
         jLabel39.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setText("Explicador Inc, Lda");
+        jLabel39.setToolTipText("Sistemas informáticos com alta performance!");
 
         jLabel41.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel41.setForeground(new java.awt.Color(102, 102, 255));
         jLabel41.setText("oferece");
 
         jPanel8.setBackground(new java.awt.Color(51, 51, 51));
@@ -1297,7 +1299,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1615,6 +1617,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
 
         pnProdutos.setBackground(new java.awt.Color(240, 244, 250));
+        pnProdutos.setMinimumSize(new java.awt.Dimension(680, 500));
 
         jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
         jTabbedPane1.setToolTipText("");
@@ -1883,7 +1886,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel57Layout.setVerticalGroup(
             jPanel57Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 545, Short.MAX_VALUE)
+            .addGap(0, 681, Short.MAX_VALUE)
             .addGroup(jPanel57Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel58, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2121,7 +2124,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel59Layout.setVerticalGroup(
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 545, Short.MAX_VALUE)
+            .addGap(0, 681, Short.MAX_VALUE)
             .addGroup(jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2390,7 +2393,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel61Layout.setVerticalGroup(
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 545, Short.MAX_VALUE)
+            .addGap(0, 681, Short.MAX_VALUE)
             .addGroup(jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel65, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3073,13 +3076,13 @@ public class VisionPrincipal extends javax.swing.JFrame {
         pnProdutos.setLayout(pnProdutosLayout);
         pnProdutosLayout.setHorizontalGroup(
             pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 845, Short.MAX_VALUE)
             .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE))
         );
         pnProdutosLayout.setVerticalGroup(
             pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 573, Short.MAX_VALUE)
+            .addGap(0, 845, Short.MAX_VALUE)
             .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pnProdutosLayout.createSequentialGroup()
                     .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 573, Short.MAX_VALUE)
@@ -4264,7 +4267,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         });
 
         jLabel98.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel98.setText("Services");
+        jLabel98.setText("Serviços");
 
         javax.swing.GroupLayout jPanel113Layout = new javax.swing.GroupLayout(jPanel113);
         jPanel113.setLayout(jPanel113Layout);
@@ -4800,7 +4803,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlFornecedores, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnProdutos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnProdutos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlContas, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -5144,6 +5147,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         hidePanels();
         showStartPanel(false);
         pnlClientes.setVisible(true);
+        setPnlLabelsColor();
+        jlpnlClientes.setForeground(Color.DARK_GRAY);
+        setBtnColors();
+        pnlClientes.setBackground(new Color(153,153,153));
+        btnClientes.setBackground(new Color(153,153,153)); 
     }//GEN-LAST:event_btnClientesMouseClicked
 
     private void btnVendasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVendasMouseClicked
@@ -5151,8 +5159,33 @@ public class VisionPrincipal extends javax.swing.JFrame {
         hidePanels();
         showStartPanel(false);
         pnlVendas.setVisible(true);
+        setPnlLabelsColor();
+        jlpnlVendas.setForeground(Color.DARK_GRAY);
+        pnlVendas.setBackground(new Color(153,153,153));
+        btnVendas.setBackground(new Color(153,153,153)); 
     }//GEN-LAST:event_btnVendasMouseClicked
 
+    private void setBtnColors(){
+        btnApps.setBackground(new Color(240,240,240));
+        btnClientes.setBackground(new Color(240,240,240));
+        btnFornecedores.setBackground(new Color(240,240,240));
+        btnProdutos.setBackground(new Color(240,240,240));
+        btnServices.setBackground(new Color(240,240,240));
+        btnUsuarios.setBackground(new Color(240,240,240));
+        btnVendas.setBackground(new Color(240,240,240));
+    }
+    
+    private void setPnlLabelsColor(){
+        jlpnlApps.setForeground(Color.BLACK);
+        jlpnlClientes.setForeground(Color.BLACK);
+        btnCoontas.setForeground(Color.BLACK);
+        jlpnlProdutos.setForeground(Color.BLACK);
+        jlpnlUsuarios.setForeground(Color.BLACK);
+        jlpnlVendas.setForeground(Color.BLACK);
+        jlpnlfornecedores.setForeground(Color.BLACK);
+        jlpnlservicos.setForeground(Color.BLACK);
+    }
+    
     public void hidePanels(){
         pnProdutos.setVisible(false);
         pnlApps.setVisible(false);
@@ -5169,10 +5202,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
     public void btnColors(){
         btnProdutos.setBackground(Color.LIGHT_GRAY);
         btnApps.setBackground(Color.LIGHT_GRAY);
-        btnContas.setBackground(Color.LIGHT_GRAY);
+        btnUsuarios.setBackground(Color.LIGHT_GRAY);
         btnFornecedores.setBackground(Color.LIGHT_GRAY);
         btnServices.setBackground(Color.LIGHT_GRAY);
-        btnUsuarios.setBackground(Color.LIGHT_GRAY);
+        btnCoontas.setBackground(Color.LIGHT_GRAY);
         btnClientes.setBackground(Color.LIGHT_GRAY);
         btnVendas.setBackground(Color.LIGHT_GRAY);
     }
@@ -5244,6 +5277,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
         hidePanels();
         showStartPanel(false);
         pnlFornecedores.setVisible(true);
+        setPnlLabelsColor();
+        jlpnlfornecedores.setForeground(Color.red);
+        pnlFornecedores.setBackground(new Color(153,153,153));
+        btnFornecedores.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnFornecedoresMouseClicked
 
     private void btnProdutosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProdutosMouseClicked
@@ -5251,27 +5288,41 @@ public class VisionPrincipal extends javax.swing.JFrame {
         hidePanels();
         showStartPanel(false);
         pnProdutos.setVisible(true);
+        setPnlLabelsColor();
+        jlpnlProdutos.setForeground(Color.red);
+        pnProdutos.setBackground(new Color(153,153,153));
+        btnProdutos.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnProdutosMouseClicked
-
-    private void btnContasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContasMouseClicked
-        // TODO add your handling code here:
-        hidePanels();
-        showStartPanel(false);
-        pnlContas.setVisible(true);
-    }//GEN-LAST:event_btnContasMouseClicked
 
     private void btnUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsuariosMouseClicked
         // TODO add your handling code here:
         hidePanels();
         showStartPanel(false);
         pnlUsuarios.setVisible(true);
+        setPnlLabelsColor();
+        jlpnlUsuarios.setForeground(Color.red);
+        pnlUsuarios.setBackground(new Color(153,153,153));
+        btnUsuarios.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnUsuariosMouseClicked
+
+    private void btnCoontasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCoontasMouseClicked
+        // TODO add your handling code here:
+        hidePanels();
+        showStartPanel(false);
+        pnlContas.setVisible(true);
+        setPnlLabelsColor();
+        btnCoontas.setForeground(Color.red);
+        pnlContas.setBackground(new Color(153,153,153));
+        btnCoontas.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnCoontasMouseClicked
 
     private void btnAppsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAppsMouseClicked
         // TODO add your handling code here:
         hidePanels();
         showStartPanel(false);
         pnlApps.setVisible(true);
+        setPnlLabelsColor();
+        jlpnlApps.setForeground(Color.red);
     }//GEN-LAST:event_btnAppsMouseClicked
 
     private void btnServicesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseClicked
@@ -5279,6 +5330,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
         hidePanels();
         showStartPanel(false);
         pnlServices.setVisible(true);
+        setPnlLabelsColor();
+        jlpnlservicos.setForeground(Color.red);
     }//GEN-LAST:event_btnServicesMouseClicked
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
@@ -5364,12 +5417,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         hidePanels();
         pnlInicio.setVisible(true);
+        setPnlLabelsColor();
     }//GEN-LAST:event_jmInicioActionPerformed
 
     private void jmInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmInicioMouseClicked
         // TODO add your handling code here:
         hidePanels();
         pnlInicio.setVisible(true);
+        setPnlLabelsColor();
     }//GEN-LAST:event_jmInicioMouseClicked
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
@@ -5455,7 +5510,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel btnApps;
     private javax.swing.JPanel btnClientes;
-    private javax.swing.JPanel btnContas;
+    private javax.swing.JPanel btnCoontas;
     private javax.swing.JPanel btnFornecedores;
     private javax.swing.JPanel btnProdutos;
     private javax.swing.JPanel btnServices;
@@ -5502,18 +5557,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -5524,7 +5575,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -5533,7 +5583,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -5544,14 +5593,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel74;
@@ -5768,6 +5815,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JTable jTable7;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel jlDate;
+    private javax.swing.JLabel jlpnlApps;
+    private javax.swing.JLabel jlpnlClientes;
+    private javax.swing.JLabel jlpnlCoontas;
+    private javax.swing.JLabel jlpnlProdutos;
+    private javax.swing.JLabel jlpnlUsuarios;
+    private javax.swing.JLabel jlpnlVendas;
+    private javax.swing.JLabel jlpnlfornecedores;
+    private javax.swing.JLabel jlpnlservicos;
     private javax.swing.JMenu jmInicio;
     private javax.swing.JMenu jmMudancaPassword;
     private javax.swing.JPanel pnProdutos;
