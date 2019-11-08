@@ -58,6 +58,7 @@ public class VisionRegUser extends javax.swing.JFrame {
         jrbYes = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Usuários");
 
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {

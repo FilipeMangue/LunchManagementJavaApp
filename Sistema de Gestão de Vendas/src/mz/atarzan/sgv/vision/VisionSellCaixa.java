@@ -68,6 +68,7 @@ public class VisionSellCaixa extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Caixa");
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
 

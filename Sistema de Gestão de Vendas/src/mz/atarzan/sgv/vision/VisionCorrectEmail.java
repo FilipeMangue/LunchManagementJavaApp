@@ -18,6 +18,8 @@ public class VisionCorrectEmail extends javax.swing.JFrame {
     
     public VisionCorrectEmail() {
         initComponents();
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(this);
     }
 
     /**

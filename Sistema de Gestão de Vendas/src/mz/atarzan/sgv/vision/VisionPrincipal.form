@@ -156,6 +156,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="3. Fornecedores"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem19ActionPerformed"/>
+                  </Events>
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="jMenuItem20">
                   <Properties>
@@ -1207,7 +1210,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Registe clientes, fornecedores e usu&#xe1;rios"/>
                   </Properties>
@@ -1218,7 +1221,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Active e desactive usu&#xe1;rio ou produtos"/>
                   </Properties>
@@ -1229,7 +1232,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Faca gest&#xe3;o de estoque "/>
                   </Properties>
@@ -1240,7 +1243,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Controle validade dos produtos"/>
                   </Properties>
@@ -1251,7 +1254,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Fa&#xe7;a leitura de produtos por c&#xf3;digo de barra"/>
                   </Properties>
@@ -1262,7 +1265,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Fa&#xe7;a gest&#xe3;o de seus fornecedores "/>
                   </Properties>
@@ -1273,7 +1276,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Imprima relat&#xf3;rios precisos"/>
                   </Properties>
@@ -1284,7 +1287,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Receba relat&#xf3;rios mensais por correio electr&#xf3;nico "/>
                   </Properties>
@@ -1295,7 +1298,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Adira j&#xe1; a qualquer um dos planos que oferecemos"/>
                   </Properties>
@@ -1306,7 +1309,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Fa&#xe7;a  upgrade do seu plano"/>
                   </Properties>
@@ -1320,7 +1323,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Conhe&#xe7;a os nossos produtos e desfrute dos melhores servi&#xe7;os que s&#xf3; a "/>
                   </Properties>
@@ -1331,7 +1334,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                      <Color blue="99" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Explicador Inc, Lda"/>
                     <Property name="toolTipText" type="java.lang.String" value="Sistemas inform&#xe1;ticos com alta performance!"/>
@@ -1343,7 +1346,7 @@
                       <Font name="Tahoma" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="66" red="66" type="rgb"/>
+                      <Color blue="ff" green="0" red="0" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="oferece"/>
                   </Properties>
@@ -2459,7 +2462,7 @@
                   <EmptySpace min="0" pref="845" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jTabbedPane1" pref="573" max="32767" attributes="0"/>
+                          <Component id="jTabbedPane1" min="-2" pref="572" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -2503,7 +2506,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="681" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="544" max="32767" attributes="0"/>
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Component id="jPanel58" alignment="0" max="32767" attributes="0"/>
                           </Group>
@@ -2986,7 +2989,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="681" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="544" max="32767" attributes="0"/>
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Component id="jPanel63" alignment="0" max="32767" attributes="0"/>
                           </Group>
@@ -3411,7 +3414,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="681" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="544" max="32767" attributes="0"/>
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Component id="jPanel65" alignment="0" max="32767" attributes="0"/>
                           </Group>
@@ -4530,7 +4533,7 @@
                                           <Color blue="fa" green="f4" red="f0" type="rgb"/>
                                         </Property>
                                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                          <Table columnCount="5" rowCount="20">
+                                          <Table columnCount="5" rowCount="25">
                                             <Column editable="true" title="Nome" type="java.lang.Object"/>
                                             <Column editable="true" title="Endere&#xe7;o" type="java.lang.Object"/>
                                             <Column editable="true" title="N&#xfa;mero" type="java.lang.Object"/>
@@ -5495,7 +5498,7 @@
                           <Color blue="fa" green="f4" red="f0" type="rgb"/>
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="2" rowCount="4">
+                          <Table columnCount="2" rowCount="35">
                             <Column editable="true" title="Nome" type="java.lang.Object"/>
                             <Column editable="true" title="Categoria" type="java.lang.Object"/>
                           </Table>
