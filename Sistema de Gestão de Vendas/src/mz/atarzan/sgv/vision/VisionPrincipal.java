@@ -29,10 +29,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         hidePanels();
-        pnlInicio.setVisible(true);
+        showStartPanel(true);
         setNewFrameSize(908, 681);
     }
-    
+    private void showStartPanel(boolean visible){
+        pnlInicio.setVisible(visible);
+    }
     private void setNewFrameSize(int i, int j) {
         setSize(new Dimension(i,j));
     }
@@ -309,6 +311,16 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jPanel34 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu12 = new javax.swing.JMenu();
+        jmMudancaPassword = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jCheckBoxMenuItem2 = new javax.swing.JCheckBoxMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu11 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -323,6 +335,13 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jCheckBoxMenuItem8 = new javax.swing.JCheckBoxMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu10 = new javax.swing.JMenu();
         jMenuItem12 = new javax.swing.JMenuItem();
@@ -331,22 +350,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem15 = new javax.swing.JMenuItem();
-        jmMudancaPassword = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu7 = new javax.swing.JMenu();
-        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem2 = new javax.swing.JCheckBoxMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenu8 = new javax.swing.JMenu();
-        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenu9 = new javax.swing.JMenu();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenuItem11 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de Gestão de Vendas");
@@ -533,9 +536,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGap(23, 23, 23))
         );
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(51, 51, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel9.setText(" DATA");
+        jLabel9.setText(" Data: ");
 
         btnApps.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnApps.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -659,9 +663,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setText("Explicador eCommerce Versão: 1.1.0 ");
 
-        jlDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jlDate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlDate.setForeground(new java.awt.Color(51, 51, 255));
         jlDate.setText("20/10/2019");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -695,7 +701,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel4.setOpaque(false);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 51, 255));
+        jLabel10.setForeground(new java.awt.Color(0, 0, 204));
         jLabel10.setText("Seja Bem Vindo ao Sistema de Gestão Para Vendas!");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -898,12 +904,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jPanel37.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel37.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
                 jPanel37AncestorAdded(evt);
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
-            }
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
         });
         jPanel37.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -4509,8 +4515,59 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jMenuBar1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jMenuBar1.setOpaque(false);
 
+        jMenu12.setText("Início");
+        jMenuBar1.add(jMenu12);
+
+        jmMudancaPassword.setText("Ferramentas");
+
+        jMenuItem5.setText("1. Opções");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jmMudancaPassword.add(jMenuItem5);
+
+        jMenu7.setText("2. Idioma");
+
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("1. Português");
+        jMenu7.add(jCheckBoxMenuItem1);
+
+        jCheckBoxMenuItem2.setSelected(true);
+        jCheckBoxMenuItem2.setText("2. English");
+        jMenu7.add(jCheckBoxMenuItem2);
+
+        jmMudancaPassword.add(jMenu7);
+
+        jMenuItem13.setText("3. Mudança de Password");
+        jMenuItem13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuItem13MouseClicked(evt);
+            }
+        });
+        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem13ActionPerformed(evt);
+            }
+        });
+        jmMudancaPassword.add(jMenuItem13);
+
+        jMenu8.setText("4. Acesso ao Sistema");
+
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("1. Sem Autenticação");
+        jMenu8.add(jRadioButtonMenuItem1);
+
+        jRadioButtonMenuItem2.setSelected(true);
+        jRadioButtonMenuItem2.setText("2. Com Autenticação ");
+        jMenu8.add(jRadioButtonMenuItem2);
+
+        jmMudancaPassword.add(jMenu8);
+
+        jMenuBar1.add(jmMudancaPassword);
+
         jMenu1.setText("Programa");
-        jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         jMenu11.setText("1. Registar");
 
@@ -4586,8 +4643,36 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu3.setText("Sobre");
+
+        jMenu6.setText("1. Sistema");
+
+        jMenuItem8.setText("1. Funcionalidades");
+        jMenu6.add(jMenuItem8);
+
+        jMenuItem9.setText("2. Administradores");
+        jMenu6.add(jMenuItem9);
+
+        jMenu3.add(jMenu6);
+
+        jMenu9.setText("2. Desenvolvedor");
+
+        jMenuItem10.setText("1. Informações de Contacto");
+        jMenu9.add(jMenuItem10);
+
+        jMenuItem11.setText("2. Suporte Técnico Online ");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
+        jMenu9.add(jMenuItem11);
+
+        jMenu3.add(jMenu9);
+
+        jMenuBar1.add(jMenu3);
+
         jMenu2.setText("Ajuda");
-        jMenu2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu2MouseClicked(evt);
@@ -4638,86 +4723,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jMenu2.add(jMenuItem15);
 
         jMenuBar1.add(jMenu2);
-
-        jmMudancaPassword.setText("Ferramentas");
-        jmMudancaPassword.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-
-        jMenuItem5.setText("1. Opções");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        jmMudancaPassword.add(jMenuItem5);
-
-        jMenu7.setText("2. Idioma");
-
-        jCheckBoxMenuItem1.setSelected(true);
-        jCheckBoxMenuItem1.setText("1. Português");
-        jMenu7.add(jCheckBoxMenuItem1);
-
-        jCheckBoxMenuItem2.setSelected(true);
-        jCheckBoxMenuItem2.setText("2. English");
-        jMenu7.add(jCheckBoxMenuItem2);
-
-        jmMudancaPassword.add(jMenu7);
-
-        jMenuItem13.setText("3. Mudança de Password");
-        jMenuItem13.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenuItem13MouseClicked(evt);
-            }
-        });
-        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem13ActionPerformed(evt);
-            }
-        });
-        jmMudancaPassword.add(jMenuItem13);
-
-        jMenu8.setText("4. Acesso ao Sistema");
-
-        jRadioButtonMenuItem1.setSelected(true);
-        jRadioButtonMenuItem1.setText("1. Sem Autenticação");
-        jMenu8.add(jRadioButtonMenuItem1);
-
-        jRadioButtonMenuItem2.setSelected(true);
-        jRadioButtonMenuItem2.setText("2. Com Autenticação ");
-        jMenu8.add(jRadioButtonMenuItem2);
-
-        jmMudancaPassword.add(jMenu8);
-
-        jMenuBar1.add(jmMudancaPassword);
-
-        jMenu3.setText("Sobre");
-        jMenu3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-
-        jMenu6.setText("1. Sistema");
-
-        jMenuItem8.setText("1. Funcionalidades");
-        jMenu6.add(jMenuItem8);
-
-        jMenuItem9.setText("2. Administradores");
-        jMenu6.add(jMenuItem9);
-
-        jMenu3.add(jMenu6);
-
-        jMenu9.setText("2. Desenvolvedor");
-
-        jMenuItem10.setText("1. Informações de Contacto");
-        jMenu9.add(jMenuItem10);
-
-        jMenuItem11.setText("2. Suporte Técnico Online ");
-        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem11ActionPerformed(evt);
-            }
-        });
-        jMenu9.add(jMenuItem11);
-
-        jMenu3.add(jMenu9);
-
-        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
@@ -4804,12 +4809,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private void btnClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClientesMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnlClientes.setVisible(true);
     }//GEN-LAST:event_btnClientesMouseClicked
 
     private void btnVendasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVendasMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnlVendas.setVisible(true);
     }//GEN-LAST:event_btnVendasMouseClicked
 
@@ -4822,6 +4829,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
         pnlUsuarios.setVisible(false);
         pnlClientes.setVisible(false);
         pnlInicio.setVisible(false);
+        pnlVendas.setVisible(false);
+        showStartPanel(false);
     }
     
     public void btnColors(){
@@ -4900,36 +4909,42 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private void btnFornecedoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFornecedoresMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnlFornecedores.setVisible(true);
     }//GEN-LAST:event_btnFornecedoresMouseClicked
 
     private void btnProdutosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProdutosMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnProdutos.setVisible(true);
     }//GEN-LAST:event_btnProdutosMouseClicked
 
     private void btnContasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnContasMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnlContas.setVisible(true);
     }//GEN-LAST:event_btnContasMouseClicked
 
     private void btnUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUsuariosMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnlUsuarios.setVisible(true);
     }//GEN-LAST:event_btnUsuariosMouseClicked
 
     private void btnAppsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAppsMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnlApps.setVisible(true);
     }//GEN-LAST:event_btnAppsMouseClicked
 
     private void btnServicesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnServicesMouseClicked
         // TODO add your handling code here:
         hidePanels();
+        showStartPanel(false);
         pnlServices.setVisible(true);
     }//GEN-LAST:event_btnServicesMouseClicked
 
@@ -5156,6 +5171,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
+    private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
