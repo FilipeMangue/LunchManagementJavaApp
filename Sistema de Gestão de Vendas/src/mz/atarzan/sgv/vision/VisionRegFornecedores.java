@@ -16,6 +16,8 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
      */
     public VisionRegFornecedores() {
         initComponents();
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(this);
     }
 
     /**

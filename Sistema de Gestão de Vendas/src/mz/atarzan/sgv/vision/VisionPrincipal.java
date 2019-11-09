@@ -8,6 +8,7 @@ package mz.atarzan.sgv.vision;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import mz.atarzan.sgv.util.UtilOpenLink;
@@ -23,11 +24,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
      */
     long millis = System.currentTimeMillis();
     java.sql.Date date = new java.sql.Date(millis);
+    SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy"); 
+    String dataFormatada = formato.format(date);
+    
     public VisionPrincipal() {
         initComponents();
-        jlDate.setText(date.toString());
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        jlDate.setText(dataFormatada);
         hidePanels();
         showStartPanel(true);
         setNewFrameSize(908, 681);
@@ -555,7 +559,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGap(23, 23, 23))
         );
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText(" Data: ");
@@ -680,12 +684,12 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(51, 0, 255));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Filipe Mangue - Explicador Incorportion, Limitada!    ");
+        jLabel1.setText("Filipe Mangue - Explicador Incorportion, Limitada.");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jlDate.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jlDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jlDate.setForeground(new java.awt.Color(255, 255, 255));
         jlDate.setText("20/10/2019");
 
@@ -1611,10 +1615,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnProdutos.setBackground(new java.awt.Color(240, 244, 250));
+        pnProdutos.setBackground(new java.awt.Color(170, 173, 173));
+        pnProdutos.setToolTipText("");
         pnProdutos.setMinimumSize(new java.awt.Dimension(680, 500));
 
-        jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
+        jTabbedPane1.setBackground(new java.awt.Color(170, 173, 173));
         jTabbedPane1.setToolTipText("");
         jTabbedPane1.setMinimumSize(new java.awt.Dimension(0, 0));
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(775, 500));
@@ -1869,7 +1874,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
             jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel58Layout.createSequentialGroup()
                 .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 491, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel57Layout = new javax.swing.GroupLayout(jPanel57);
@@ -1884,7 +1889,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
             jPanel57Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 544, Short.MAX_VALUE)
             .addGroup(jPanel57Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jPanel58, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel57Layout.createSequentialGroup()
+                    .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("Produtos", jPanel57);
@@ -2120,7 +2127,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel59Layout.setVerticalGroup(
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 544, Short.MAX_VALUE)
+            .addGap(0, 541, Short.MAX_VALUE)
             .addGroup(jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2389,7 +2396,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel61Layout.setVerticalGroup(
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 544, Short.MAX_VALUE)
+            .addGap(0, 541, Short.MAX_VALUE)
             .addGroup(jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel65, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2650,9 +2657,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Relatório ", jPanel62);
 
-        jPanel60.setBackground(new java.awt.Color(240, 244, 250));
+        jPanel60.setBackground(new java.awt.Color(170, 173, 173));
+        jPanel60.setToolTipText("");
 
-        jPanel64.setBackground(new java.awt.Color(240, 244, 250));
+        jPanel64.setBackground(new java.awt.Color(170, 173, 173));
         jPanel64.setToolTipText("");
 
         jPanel162.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -2730,8 +2738,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
                 {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
                 {null, null, null, null, null}
             },
             new String [] {
@@ -2759,9 +2765,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         );
         jPanel165Layout.setVerticalGroup(
             jPanel165Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 365, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(jPanel165Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 365, Short.MAX_VALUE))
+                .addGroup(jPanel165Layout.createSequentialGroup()
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 407, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout jPanel162Layout = new javax.swing.GroupLayout(jPanel162);
@@ -2779,7 +2787,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel164, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel165, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel165, javax.swing.GroupLayout.PREFERRED_SIZE, 391, Short.MAX_VALUE))
         );
 
         jPanel137.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -2814,8 +2822,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel64Layout.createSequentialGroup()
                 .addComponent(jPanel137, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel162, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addComponent(jPanel162, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel138.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -3086,8 +3094,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
             .addGap(0, 845, Short.MAX_VALUE)
             .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pnProdutosLayout.createSequentialGroup()
-                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 569, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 276, Short.MAX_VALUE)))
         );
 
         pnlContas.setBackground(new java.awt.Color(192, 194, 194));
@@ -5422,8 +5430,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
     private void jPanel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel29MouseClicked
         // TODO add your handling code here:
-        VisionCadastrarCliente vcc = new VisionCadastrarCliente();
-        vcc.setVisible(true);
+        VisionRegFornecedores vrf = new VisionRegFornecedores();
+        vrf.setVisible(true);
     }//GEN-LAST:event_jPanel29MouseClicked
 
     private void jPanel75MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel75MouseClicked
