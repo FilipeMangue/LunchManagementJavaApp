@@ -1,6 +1,7 @@
 ### LunchManagementJavaApp
 Java Desktop Software for Lunch Mangement
 
+### SISTEMA DE GESTÃO PARA VENDAS  
 
 ### TRABALHO FINAL DE CONCLUSÃO DE CURSO JAVA NA EXPLICADOR INC, LDA
 Nome do projecto: ### Software Para Gestão de Vendas - SPGV
@@ -24,5 +25,5 @@ O sistema esta dividido em quatro módulos, sendo a seguir:
 
 ### Vendas
 - CRUD
-- Relatórios email
+- Relatórios por email
 - Upgrade de planos
