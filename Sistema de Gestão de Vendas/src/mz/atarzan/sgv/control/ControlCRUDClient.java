@@ -1,7 +1,6 @@
 
 package mz.atarzan.sgv.control;
 
-import com.mysql.fabric.xmlrpc.Client;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,7 +1,5 @@
 package mz.atarzan.sgv.vision;
 
-import com.mysql.fabric.xmlrpc.Client;
-import java.net.MalformedURLException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
