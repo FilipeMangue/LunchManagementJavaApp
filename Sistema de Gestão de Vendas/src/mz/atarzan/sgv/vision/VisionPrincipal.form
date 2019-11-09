@@ -380,8 +380,8 @@
                       <Component id="pnlInicio" pref="845" max="32767" attributes="0"/>
                       <Component id="pnlClientes" pref="845" max="32767" attributes="0"/>
                       <Component id="pnlFornecedores" pref="845" max="32767" attributes="0"/>
-                      <Component id="pnlContas" pref="845" max="32767" attributes="0"/>
                       <Component id="pnlUsuarios" pref="845" max="32767" attributes="0"/>
+                      <Component id="pnlContas" pref="845" max="32767" attributes="0"/>
                       <Component id="pnlApps" pref="845" max="32767" attributes="0"/>
                       <Component id="pnlServices" pref="845" max="32767" attributes="0"/>
                       <Component id="pnlVendas" pref="845" max="32767" attributes="0"/>
@@ -406,9 +406,9 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="pnProdutos" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="pnlContas" min="-2" pref="573" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="pnlUsuarios" min="-2" pref="573" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="pnlContas" min="-2" pref="573" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="pnlApps" min="-2" pref="573" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -2060,17 +2060,17 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          <Component id="jPanel43" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnAdicionarForn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPanel47" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnEditarForn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                          <Component id="jPanel45" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnEliminarForn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jPanel53" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDesactivarForn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel51" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jPanel49" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDefinicoesForn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -2081,11 +2081,11 @@
                           <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="jPanel51" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jPanel53" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jPanel45" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jPanel47" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jPanel43" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jPanel49" alignment="1" max="32767" attributes="0"/>
+                              <Component id="btnDesactivarForn" alignment="1" max="32767" attributes="0"/>
+                              <Component id="btnEliminarForn" alignment="1" max="32767" attributes="0"/>
+                              <Component id="btnEditarForn" alignment="1" max="32767" attributes="0"/>
+                              <Component id="btnAdicionarForn" alignment="1" max="32767" attributes="0"/>
+                              <Component id="btnDefinicoesForn" alignment="1" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -2093,7 +2093,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="jPanel43">
+                <Container class="javax.swing.JPanel" name="btnAdicionarForn">
                   <Properties>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -2102,7 +2102,8 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel43MouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdicionarFornMouseClicked"/>
+                    <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdicionarFornMouseEntered"/>
                   </Events>
 
                   <Layout>
@@ -2136,7 +2137,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel45">
+                <Container class="javax.swing.JPanel" name="btnEliminarForn">
                   <Properties>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -2145,7 +2146,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel45MouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEliminarFornMouseClicked"/>
                   </Events>
 
                   <Layout>
@@ -2179,7 +2180,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel47">
+                <Container class="javax.swing.JPanel" name="btnEditarForn">
                   <Properties>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -2219,7 +2220,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel49">
+                <Container class="javax.swing.JPanel" name="btnDefinicoesForn">
 
                   <Layout>
                     <DimensionLayout dim="0">
@@ -2342,7 +2343,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel53">
+                <Container class="javax.swing.JPanel" name="btnDesactivarForn">
                   <Properties>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
@@ -2351,7 +2352,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel53MouseClicked"/>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDesactivarFornMouseClicked"/>
                   </Events>
 
                   <Layout>
@@ -4677,6 +4678,9 @@
                               <Color blue="66" green="66" red="66" type="rgb"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel139MouseClicked"/>
+                          </Events>
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -5044,7 +5048,7 @@
             </Container>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="pnlContas">
+        <Container class="javax.swing.JPanel" name="pnlUsuarios">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="c2" green="c2" red="c0" type="rgb"/>
@@ -5521,7 +5525,7 @@
             </Container>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="pnlUsuarios">
+        <Container class="javax.swing.JPanel" name="pnlContas">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="c2" green="c2" red="c0" type="rgb"/>

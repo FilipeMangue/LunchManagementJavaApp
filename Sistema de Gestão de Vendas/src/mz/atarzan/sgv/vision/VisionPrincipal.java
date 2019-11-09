@@ -122,19 +122,19 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel41 = new javax.swing.JPanel();
         pnlFornecedores = new javax.swing.JPanel();
         jPanel42 = new javax.swing.JPanel();
-        jPanel43 = new javax.swing.JPanel();
+        btnAdicionarForn = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
-        jPanel45 = new javax.swing.JPanel();
+        btnEliminarForn = new javax.swing.JPanel();
         jLabel40 = new javax.swing.JLabel();
-        jPanel47 = new javax.swing.JPanel();
+        btnEditarForn = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
-        jPanel49 = new javax.swing.JPanel();
+        btnDefinicoesForn = new javax.swing.JPanel();
         jPanel50 = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
         jPanel51 = new javax.swing.JPanel();
         jLabel46 = new javax.swing.JLabel();
-        jPanel53 = new javax.swing.JPanel();
+        btnDesactivarForn = new javax.swing.JPanel();
         jLabel48 = new javax.swing.JLabel();
         jPanel55 = new javax.swing.JPanel();
         pnProdutos = new javax.swing.JPanel();
@@ -231,7 +231,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel115 = new javax.swing.JLabel();
         jPanel145 = new javax.swing.JPanel();
         jLabel116 = new javax.swing.JLabel();
-        pnlContas = new javax.swing.JPanel();
+        pnlUsuarios = new javax.swing.JPanel();
         jPanel70 = new javax.swing.JPanel();
         jPanel71 = new javax.swing.JPanel();
         jLabel62 = new javax.swing.JLabel();
@@ -250,7 +250,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel83 = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
         jTable7 = new javax.swing.JTable();
-        pnlUsuarios = new javax.swing.JPanel();
+        pnlContas = new javax.swing.JPanel();
         jPanel84 = new javax.swing.JPanel();
         jPanel85 = new javax.swing.JPanel();
         jLabel74 = new javax.swing.JLabel();
@@ -1366,77 +1366,80 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel42.setDoubleBuffered(false);
         jPanel42.setOpaque(false);
 
-        jPanel43.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel43.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAdicionarForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAdicionarForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel43MouseClicked(evt);
+                btnAdicionarFornMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAdicionarFornMouseEntered(evt);
             }
         });
 
         jLabel38.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel38.setText("Adicionar");
 
-        javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
-        jPanel43.setLayout(jPanel43Layout);
-        jPanel43Layout.setHorizontalGroup(
-            jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel43Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnAdicionarFornLayout = new javax.swing.GroupLayout(btnAdicionarForn);
+        btnAdicionarForn.setLayout(btnAdicionarFornLayout);
+        btnAdicionarFornLayout.setHorizontalGroup(
+            btnAdicionarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnAdicionarFornLayout.createSequentialGroup()
                 .addGap(0, 21, Short.MAX_VALUE)
                 .addComponent(jLabel38)
                 .addGap(0, 22, Short.MAX_VALUE))
         );
-        jPanel43Layout.setVerticalGroup(
-            jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel43Layout.createSequentialGroup()
+        btnAdicionarFornLayout.setVerticalGroup(
+            btnAdicionarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnAdicionarFornLayout.createSequentialGroup()
                 .addGap(0, 8, Short.MAX_VALUE)
                 .addComponent(jLabel38)
                 .addGap(0, 8, Short.MAX_VALUE))
         );
 
-        jPanel45.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel45.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnEliminarForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnEliminarForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel45MouseClicked(evt);
+                btnEliminarFornMouseClicked(evt);
             }
         });
 
         jLabel40.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel40.setText("Eliminar");
 
-        javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
-        jPanel45.setLayout(jPanel45Layout);
-        jPanel45Layout.setHorizontalGroup(
-            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel45Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnEliminarFornLayout = new javax.swing.GroupLayout(btnEliminarForn);
+        btnEliminarForn.setLayout(btnEliminarFornLayout);
+        btnEliminarFornLayout.setHorizontalGroup(
+            btnEliminarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnEliminarFornLayout.createSequentialGroup()
                 .addGap(0, 26, Short.MAX_VALUE)
                 .addComponent(jLabel40)
                 .addGap(0, 27, Short.MAX_VALUE))
         );
-        jPanel45Layout.setVerticalGroup(
-            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel45Layout.createSequentialGroup()
+        btnEliminarFornLayout.setVerticalGroup(
+            btnEliminarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnEliminarFornLayout.createSequentialGroup()
                 .addGap(0, 8, Short.MAX_VALUE)
                 .addComponent(jLabel40)
                 .addGap(0, 8, Short.MAX_VALUE))
         );
 
-        jPanel47.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnEditarForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel42.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel42.setText("Editar");
 
-        javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
-        jPanel47.setLayout(jPanel47Layout);
-        jPanel47Layout.setHorizontalGroup(
-            jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel47Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnEditarFornLayout = new javax.swing.GroupLayout(btnEditarForn);
+        btnEditarForn.setLayout(btnEditarFornLayout);
+        btnEditarFornLayout.setHorizontalGroup(
+            btnEditarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnEditarFornLayout.createSequentialGroup()
                 .addGap(0, 32, Short.MAX_VALUE)
                 .addComponent(jLabel42)
                 .addGap(0, 32, Short.MAX_VALUE))
         );
-        jPanel47Layout.setVerticalGroup(
-            jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel47Layout.createSequentialGroup()
+        btnEditarFornLayout.setVerticalGroup(
+            btnEditarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnEditarFornLayout.createSequentialGroup()
                 .addGap(0, 8, Short.MAX_VALUE)
                 .addComponent(jLabel42)
                 .addGap(0, 8, Short.MAX_VALUE))
@@ -1470,24 +1473,24 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel44.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel44.setText("Definições");
 
-        javax.swing.GroupLayout jPanel49Layout = new javax.swing.GroupLayout(jPanel49);
-        jPanel49.setLayout(jPanel49Layout);
-        jPanel49Layout.setHorizontalGroup(
-            jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel49Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnDefinicoesFornLayout = new javax.swing.GroupLayout(btnDefinicoesForn);
+        btnDefinicoesForn.setLayout(btnDefinicoesFornLayout);
+        btnDefinicoesFornLayout.setHorizontalGroup(
+            btnDefinicoesFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnDefinicoesFornLayout.createSequentialGroup()
                 .addGap(0, 97, Short.MAX_VALUE)
                 .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel49Layout.createSequentialGroup()
+            .addGroup(btnDefinicoesFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(btnDefinicoesFornLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jLabel44)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        jPanel49Layout.setVerticalGroup(
-            jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        btnDefinicoesFornLayout.setVerticalGroup(
+            btnDefinicoesFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel50, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel49Layout.createSequentialGroup()
+            .addGroup(btnDefinicoesFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(btnDefinicoesFornLayout.createSequentialGroup()
                     .addGap(0, 10, Short.MAX_VALUE)
                     .addComponent(jLabel44)
                     .addGap(0, 10, Short.MAX_VALUE)))
@@ -1515,28 +1518,28 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addGap(0, 8, Short.MAX_VALUE))
         );
 
-        jPanel53.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel53.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDesactivarForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDesactivarForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel53MouseClicked(evt);
+                btnDesactivarFornMouseClicked(evt);
             }
         });
 
         jLabel48.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel48.setText("Desactivar");
 
-        javax.swing.GroupLayout jPanel53Layout = new javax.swing.GroupLayout(jPanel53);
-        jPanel53.setLayout(jPanel53Layout);
-        jPanel53Layout.setHorizontalGroup(
-            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel53Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnDesactivarFornLayout = new javax.swing.GroupLayout(btnDesactivarForn);
+        btnDesactivarForn.setLayout(btnDesactivarFornLayout);
+        btnDesactivarFornLayout.setHorizontalGroup(
+            btnDesactivarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnDesactivarFornLayout.createSequentialGroup()
                 .addGap(0, 18, Short.MAX_VALUE)
                 .addComponent(jLabel48)
                 .addGap(0, 19, Short.MAX_VALUE))
         );
-        jPanel53Layout.setVerticalGroup(
-            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel53Layout.createSequentialGroup()
+        btnDesactivarFornLayout.setVerticalGroup(
+            btnDesactivarFornLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnDesactivarFornLayout.createSequentialGroup()
                 .addGap(0, 8, Short.MAX_VALUE)
                 .addComponent(jLabel48)
                 .addGap(0, 8, Short.MAX_VALUE))
@@ -1548,17 +1551,17 @@ public class VisionPrincipal extends javax.swing.JFrame {
             jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel42Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAdicionarForn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEditarForn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(7, 7, 7)
-                .addComponent(jPanel45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEliminarForn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDesactivarForn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDefinicoesForn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel42Layout.setVerticalGroup(
@@ -1567,11 +1570,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel53, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnDesactivarForn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEliminarForn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEditarForn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnAdicionarForn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnDefinicoesForn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -2831,6 +2834,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel139.setBackground(new java.awt.Color(102, 102, 102));
         jPanel139.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel139.setForeground(new java.awt.Color(102, 102, 102));
+        jPanel139.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel139MouseClicked(evt);
+            }
+        });
 
         jLabel110.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel110.setForeground(new java.awt.Color(255, 255, 255));
@@ -3098,10 +3106,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
                     .addGap(0, 276, Short.MAX_VALUE)))
         );
 
-        pnlContas.setBackground(new java.awt.Color(192, 194, 194));
-        pnlContas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        pnlContas.setPreferredSize(new java.awt.Dimension(775, 500));
-        pnlContas.setVerifyInputWhenFocusTarget(false);
+        pnlUsuarios.setBackground(new java.awt.Color(192, 194, 194));
+        pnlUsuarios.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnlUsuarios.setPreferredSize(new java.awt.Dimension(775, 500));
+        pnlUsuarios.setVerifyInputWhenFocusTarget(false);
 
         jPanel70.setBackground(new java.awt.Color(153, 153, 153));
         jPanel70.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -3397,20 +3405,20 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout pnlContasLayout = new javax.swing.GroupLayout(pnlContas);
-        pnlContas.setLayout(pnlContasLayout);
-        pnlContasLayout.setHorizontalGroup(
-            pnlContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlContasLayout.createSequentialGroup()
+        javax.swing.GroupLayout pnlUsuariosLayout = new javax.swing.GroupLayout(pnlUsuarios);
+        pnlUsuarios.setLayout(pnlUsuariosLayout);
+        pnlUsuariosLayout.setHorizontalGroup(
+            pnlUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlUsuariosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(pnlContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel70, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel83, javax.swing.GroupLayout.DEFAULT_SIZE, 821, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        pnlContasLayout.setVerticalGroup(
-            pnlContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlContasLayout.createSequentialGroup()
+        pnlUsuariosLayout.setVerticalGroup(
+            pnlUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlUsuariosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3418,9 +3426,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        pnlUsuarios.setBackground(new java.awt.Color(192, 194, 194));
-        pnlUsuarios.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        pnlUsuarios.setPreferredSize(new java.awt.Dimension(775, 500));
+        pnlContas.setBackground(new java.awt.Color(192, 194, 194));
+        pnlContas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnlContas.setPreferredSize(new java.awt.Dimension(775, 500));
 
         jPanel84.setBackground(new java.awt.Color(153, 153, 153));
         jPanel84.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -4009,20 +4017,20 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addComponent(jTabbedPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout pnlUsuariosLayout = new javax.swing.GroupLayout(pnlUsuarios);
-        pnlUsuarios.setLayout(pnlUsuariosLayout);
-        pnlUsuariosLayout.setHorizontalGroup(
-            pnlUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlUsuariosLayout.createSequentialGroup()
+        javax.swing.GroupLayout pnlContasLayout = new javax.swing.GroupLayout(pnlContas);
+        pnlContas.setLayout(pnlContasLayout);
+        pnlContasLayout.setHorizontalGroup(
+            pnlContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlContasLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(pnlUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel84, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel97, javax.swing.GroupLayout.DEFAULT_SIZE, 821, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        pnlUsuariosLayout.setVerticalGroup(
-            pnlUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlUsuariosLayout.createSequentialGroup()
+        pnlContasLayout.setVerticalGroup(
+            pnlContasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlContasLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4822,8 +4830,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
                     .addComponent(pnlInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
                     .addComponent(pnlClientes, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
                     .addComponent(pnlFornecedores, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
-                    .addComponent(pnlContas, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
                     .addComponent(pnlUsuarios, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
+                    .addComponent(pnlContas, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
                     .addComponent(pnlApps, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
                     .addComponent(pnlServices, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE)
                     .addComponent(pnlVendas, javax.swing.GroupLayout.DEFAULT_SIZE, 845, Short.MAX_VALUE))
@@ -4845,9 +4853,9 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnProdutos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnlContas, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlContas, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlApps, javax.swing.GroupLayout.PREFERRED_SIZE, 573, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -4857,8 +4865,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel3.getAccessibleContext().setAccessibleName("");
         pnlClientes.getAccessibleContext().setAccessibleName("");
         pnlFornecedores.getAccessibleContext().setAccessibleName("");
-        pnlContas.getAccessibleContext().setAccessibleName("");
         pnlUsuarios.getAccessibleContext().setAccessibleName("");
+        pnlContas.getAccessibleContext().setAccessibleName("");
         pnlApps.getAccessibleContext().setAccessibleName("");
         pnlServices.getAccessibleContext().setAccessibleName("");
 
@@ -5234,10 +5242,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
     public void hidePanels(){
         pnProdutos.setVisible(false);
         pnlApps.setVisible(false);
-        pnlContas.setVisible(false);
+        pnlUsuarios.setVisible(false);
         pnlFornecedores.setVisible(false);
         pnlServices.setVisible(false);
-        pnlUsuarios.setVisible(false);
+        pnlContas.setVisible(false);
         pnlClientes.setVisible(false);
         pnlInicio.setVisible(false);
         pnlVendas.setVisible(false);
@@ -5255,17 +5263,19 @@ public class VisionPrincipal extends javax.swing.JFrame {
         btnVendas.setBackground(Color.LIGHT_GRAY);
     }
     
-    private void jPanel43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel43MouseClicked
+    private void btnAdicionarFornMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdicionarFornMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPanel43MouseClicked
+        VisionRegFornecedores vrf = new VisionRegFornecedores();
+        vrf.setVisible(true);
+    }//GEN-LAST:event_btnAdicionarFornMouseClicked
 
-    private void jPanel45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel45MouseClicked
+    private void btnEliminarFornMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEliminarFornMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPanel45MouseClicked
+    }//GEN-LAST:event_btnEliminarFornMouseClicked
 
-    private void jPanel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel53MouseClicked
+    private void btnDesactivarFornMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDesactivarFornMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPanel53MouseClicked
+    }//GEN-LAST:event_btnDesactivarFornMouseClicked
 
     private void jPanel71MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel71MouseClicked
         // TODO add your handling code here:
@@ -5430,8 +5440,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
     private void jPanel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel29MouseClicked
         // TODO add your handling code here:
-        VisionRegFornecedores vrf = new VisionRegFornecedores();
-        vrf.setVisible(true);
+        VisionCadastrarCliente vcc = new VisionCadastrarCliente();
+        vcc.setVisible(true);
     }//GEN-LAST:event_jPanel29MouseClicked
 
     private void jPanel75MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel75MouseClicked
@@ -5487,7 +5497,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         hidePanels();
         showStartPanel(false);
-        pnlUsuarios.setVisible(true);
+        pnlContas.setVisible(true);
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
     private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
@@ -5541,6 +5551,16 @@ public class VisionPrincipal extends javax.swing.JFrame {
         btnFornecedores.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_jMenuItem19ActionPerformed
 
+    private void jPanel139MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel139MouseClicked
+        // TODO add your handling code here:
+        VisionRegFornecedores vrf = new VisionRegFornecedores();
+        vrf.setVisible(true);
+    }//GEN-LAST:event_jPanel139MouseClicked
+
+    private void btnAdicionarFornMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdicionarFornMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAdicionarFornMouseEntered
+
     /**
      * @param args the command line arguments
      */
@@ -5577,9 +5597,14 @@ public class VisionPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel btnAdicionarForn;
     private javax.swing.JPanel btnApps;
     private javax.swing.JPanel btnClientes;
     private javax.swing.JPanel btnContas;
+    private javax.swing.JPanel btnDefinicoesForn;
+    private javax.swing.JPanel btnDesactivarForn;
+    private javax.swing.JPanel btnEditarForn;
+    private javax.swing.JPanel btnEliminarForn;
     private javax.swing.JPanel btnFornecedores;
     private javax.swing.JPanel btnProdutos;
     private javax.swing.JPanel btnServices;
@@ -5814,16 +5839,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel40;
     private javax.swing.JPanel jPanel41;
     private javax.swing.JPanel jPanel42;
-    private javax.swing.JPanel jPanel43;
     private javax.swing.JPanel jPanel44;
-    private javax.swing.JPanel jPanel45;
     private javax.swing.JPanel jPanel46;
-    private javax.swing.JPanel jPanel47;
-    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel50;
     private javax.swing.JPanel jPanel51;
-    private javax.swing.JPanel jPanel53;
     private javax.swing.JPanel jPanel55;
     private javax.swing.JPanel jPanel56;
     private javax.swing.JPanel jPanel57;
