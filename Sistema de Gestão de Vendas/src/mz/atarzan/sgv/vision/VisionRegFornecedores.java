@@ -5,6 +5,9 @@
  */
 package mz.atarzan.sgv.vision;
 
+import java.awt.event.KeyEvent;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Filipe Emanuel
@@ -57,12 +60,12 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        jtfNomeForn = new javax.swing.JTextField();
+        jtfTellForn = new javax.swing.JTextField();
+        jtfEnderecoforn = new javax.swing.JTextField();
+        jtfEmailForn = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jtaObsForn = new javax.swing.JTextArea();
         jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
 
@@ -76,6 +79,11 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel5MouseClicked(evt);
+            }
+        });
 
         jLabel1.setText("Guardar");
 
@@ -375,20 +383,43 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
 
         jLabel8.setText("Observações");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jtfNomeForn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jtfNomeFornActionPerformed(evt);
+            }
+        });
+        jtfNomeForn.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfNomeFornKeyPressed(evt);
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.addKeyListener(new java.awt.event.KeyAdapter() {
+        jtfTellForn.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextArea1KeyPressed(evt);
+                jtfTellFornKeyPressed(evt);
             }
         });
-        jScrollPane1.setViewportView(jTextArea1);
+
+        jtfEnderecoforn.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfEnderecofornKeyPressed(evt);
+            }
+        });
+
+        jtfEmailForn.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtfEmailFornKeyPressed(evt);
+            }
+        });
+
+        jtaObsForn.setColumns(20);
+        jtaObsForn.setRows(5);
+        jtaObsForn.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jtaObsFornKeyPressed(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jtaObsForn);
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -408,15 +439,15 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
                     .addComponent(jLabel8))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE)
+                    .addComponent(jtfEnderecoforn, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE)
+                    .addComponent(jtfTellForn, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE)
                     .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jtfNomeForn, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jCheckBox2)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE))
+                    .addComponent(jtfEmailForn, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel14Layout.createSequentialGroup()
@@ -430,20 +461,20 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField1)
+                    .addComponent(jtfNomeForn)
                     .addComponent(jCheckBox2))
                 .addGap(18, 21, Short.MAX_VALUE)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField2))
+                    .addComponent(jtfTellForn))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField3))
+                    .addComponent(jtfEnderecoforn))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField5))
+                    .addComponent(jtfEmailForn))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
@@ -517,13 +548,46 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jtfNomeFornActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfNomeFornActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jtfNomeFornActionPerformed
 
-    private void jTextArea1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextArea1KeyPressed
+    private void jtaObsFornKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtaObsFornKeyPressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextArea1KeyPressed
+    }//GEN-LAST:event_jtaObsFornKeyPressed
+
+    private void jtfNomeFornKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfNomeFornKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfTellForn.requestFocus();
+        }
+    }//GEN-LAST:event_jtfNomeFornKeyPressed
+
+    private void jtfTellFornKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfTellFornKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfEnderecoforn.requestFocus();
+        }
+    }//GEN-LAST:event_jtfTellFornKeyPressed
+
+    private void jtfEnderecofornKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfEnderecofornKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtfEmailForn.requestFocus();
+        }
+    }//GEN-LAST:event_jtfEnderecofornKeyPressed
+
+    private void jtfEmailFornKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtfEmailFornKeyPressed
+        // TODO add your handling code here:
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
+           jtaObsForn.requestFocus();
+        }
+    }//GEN-LAST:event_jtfEmailFornKeyPressed
+
+    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Brevemente!");
+    }//GEN-LAST:event_jPanel5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -592,10 +656,10 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextArea jtaObsForn;
+    private javax.swing.JTextField jtfEmailForn;
+    private javax.swing.JTextField jtfEnderecoforn;
+    private javax.swing.JTextField jtfNomeForn;
+    private javax.swing.JTextField jtfTellForn;
     // End of variables declaration//GEN-END:variables
 }
