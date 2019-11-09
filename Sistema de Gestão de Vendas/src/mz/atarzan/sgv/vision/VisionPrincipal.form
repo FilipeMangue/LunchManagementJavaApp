@@ -2062,7 +2062,7 @@
                         <Component class="javax.swing.JTable" name="jTable10">
                           <Properties>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                              <Table columnCount="13" rowCount="4">
+                              <Table columnCount="13" rowCount="5">
                                 <Column editable="true" title="C&#xf3;digo" type="java.lang.Object"/>
                                 <Column editable="true" title="Nome" type="java.lang.Object"/>
                                 <Column editable="true" title="Data Nasc." type="java.lang.Object"/>
@@ -2578,15 +2578,189 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jPanel54" max="32767" attributes="0"/>
+                      <Component id="jPanel72" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="480" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jPanel54" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jPanel72" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel54">
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jRadioButton5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jTextField4" min="-2" pref="217" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="11" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jRadioButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jRadioButton5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Fornecedores"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Transportadores"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Entregadores"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JRadioButton" name="jRadioButton5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Controladores"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="jTextField4">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Pesquisar"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel72">
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane11" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane11" alignment="0" pref="431" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane11">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="jTable11">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="10" rowCount="4">
+                                <Column editable="true" title="C&#xf3;digo" type="java.lang.Object"/>
+                                <Column editable="true" title="Nome" type="java.lang.Object"/>
+                                <Column editable="true" title="Endere&#xe7;o" type="java.lang.Object"/>
+                                <Column editable="true" title="Telem&#xf3;vel" type="java.lang.Object"/>
+                                <Column editable="true" title="Pa&#xed;s" type="java.lang.Object"/>
+                                <Column editable="true" title="Data de Registo" type="java.lang.Object"/>
+                                <Column editable="true" title="Registad por" type="java.lang.Object"/>
+                                <Column editable="true" title="Alterdao em" type="java.lang.Object"/>
+                                <Column editable="true" title="Alterado por" type="java.lang.Object"/>
+                                <Column editable="true" title="Email" type="java.lang.Object"/>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                            </Property>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
             </Container>
           </SubComponents>
         </Container>
@@ -3196,7 +3370,7 @@
                                 <Component class="javax.swing.JTable" name="jTable8">
                                   <Properties>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="20" rowCount="26">
+                                      <Table columnCount="20" rowCount="5">
                                         <Column editable="true" title="C&#xf3;digo" type="java.lang.Object"/>
                                         <Column editable="true" title="Descri&#xe7;&#xe3;o" type="java.lang.Object"/>
                                         <Column editable="true" title="Estoque Actual" type="java.lang.Object"/>
@@ -4286,7 +4460,7 @@
                                 <Component class="javax.swing.JTable" name="jTable9">
                                   <Properties>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="5" rowCount="26">
+                                      <Table columnCount="5" rowCount="5">
                                         <Column editable="true" title=" C&#xf3;digo" type="java.lang.Object"/>
                                         <Column editable="true" title="Produto" type="java.lang.Object"/>
                                         <Column editable="true" title="Validade" type="java.lang.Object"/>
@@ -4922,7 +5096,9 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jTextField1" min="-2" pref="286" max="-2" attributes="0"/>
-                                          <EmptySpace pref="542" max="32767" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -4930,7 +5106,10 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -4944,6 +5123,11 @@
                                       <Color blue="fa" green="f4" red="f0" type="rgb"/>
                                     </Property>
                                     <Property name="toolTipText" type="java.lang.String" value="Pesquisar Fornecedor"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JLabel" name="jLabel4">
+                                  <Properties>
+                                    <Property name="text" type="java.lang.String" value="Pesquisar"/>
                                   </Properties>
                                 </Component>
                               </SubComponents>
@@ -5025,11 +5209,8 @@
                                   <SubComponents>
                                     <Component class="javax.swing.JTable" name="jTable6">
                                       <Properties>
-                                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                          <Color blue="fa" green="f4" red="f0" type="rgb"/>
-                                        </Property>
                                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                          <Table columnCount="5" rowCount="23">
+                                          <Table columnCount="5" rowCount="5">
                                             <Column editable="true" title="Nome" type="java.lang.Object"/>
                                             <Column editable="true" title="Endere&#xe7;o" type="java.lang.Object"/>
                                             <Column editable="true" title="N&#xfa;mero" type="java.lang.Object"/>
@@ -5992,11 +6173,8 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="jTable7">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="fa" green="f4" red="f0" type="rgb"/>
-                        </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="2" rowCount="35">
+                          <Table columnCount="2" rowCount="5">
                             <Column editable="true" title="Nome" type="java.lang.Object"/>
                             <Column editable="true" title="Categoria" type="java.lang.Object"/>
                           </Table>
@@ -6526,11 +6704,8 @@
                               <SubComponents>
                                 <Component class="javax.swing.JTable" name="jTable1">
                                   <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="fa" green="f4" red="f0" type="rgb"/>
-                                    </Property>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="4" rowCount="26">
+                                      <Table columnCount="4" rowCount="5">
                                         <Column editable="true" title="Tipo" type="java.lang.Object"/>
                                         <Column editable="true" title="Valor" type="java.lang.Object"/>
                                         <Column editable="true" title="Data" type="java.lang.Object"/>
@@ -6640,11 +6815,8 @@
                               <SubComponents>
                                 <Component class="javax.swing.JTable" name="jTable2">
                                   <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="fa" green="f4" red="f0" type="rgb"/>
-                                    </Property>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="4" rowCount="26">
+                                      <Table columnCount="4" rowCount="5">
                                         <Column editable="true" title="Tipo" type="java.lang.Object"/>
                                         <Column editable="true" title="Valor" type="java.lang.Object"/>
                                         <Column editable="true" title="Data" type="java.lang.Object"/>
@@ -6753,11 +6925,8 @@
                               <SubComponents>
                                 <Component class="javax.swing.JTable" name="jTable3">
                                   <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="fa" green="f4" red="f0" type="rgb"/>
-                                    </Property>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="4" rowCount="26">
+                                      <Table columnCount="4" rowCount="5">
                                         <Column editable="true" title="Tipo" type="java.lang.Object"/>
                                         <Column editable="true" title="Valor" type="java.lang.Object"/>
                                         <Column editable="true" title="Data" type="java.lang.Object"/>
@@ -6862,11 +7031,8 @@
                               <SubComponents>
                                 <Component class="javax.swing.JTable" name="jTable4">
                                   <Properties>
-                                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                      <Color blue="fa" green="f4" red="f0" type="rgb"/>
-                                    </Property>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="4" rowCount="26">
+                                      <Table columnCount="4" rowCount="5">
                                         <Column editable="true" title="Tipo" type="java.lang.Object"/>
                                         <Column editable="true" title="Valor" type="java.lang.Object"/>
                                         <Column editable="true" title="Data" type="java.lang.Object"/>
@@ -6950,11 +7116,8 @@
                           <SubComponents>
                             <Component class="javax.swing.JTable" name="jTable5">
                               <Properties>
-                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="fa" green="f4" red="f0" type="rgb"/>
-                                </Property>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                  <Table columnCount="4" rowCount="26">
+                                  <Table columnCount="4" rowCount="5">
                                     <Column editable="true" title="Tiipo" type="java.lang.Object"/>
                                     <Column editable="true" title="Valor" type="java.lang.Object"/>
                                     <Column editable="true" title="Data" type="java.lang.Object"/>
