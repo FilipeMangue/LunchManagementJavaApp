@@ -113,4 +113,29 @@ public class ControlCRUDClient {
         }
         return list;
   }
+    
+  public static ModelClient delete(ModelClient client) {
+        try {
+            // the mysql insert statement
+            try (Connection dbconnect = UtilDatabaseConnection.connect()) {
+                // the mysql insert statement
+                String query = "DELETE FROM `clients` WHERE `clients`.`id` = "+client.getCod();
+                
+                // criando a mysql preparedstatement para inserção dos dados
+                PreparedStatement preparedStmt = dbconnect.prepareStatement(query);
+                
+                preparedStmt.setInt(1, client.getCod());
+                
+                // executando a preparedstatement
+                preparedStmt.execute();
+            }
+            
+            return client;
+              
+        } catch (Exception e) {
+            System.err.println("\tERRO AO APAGAR CLIENTE: \n" + e.getMessage());
+        }
+        
+        return null;
+  }
 }
