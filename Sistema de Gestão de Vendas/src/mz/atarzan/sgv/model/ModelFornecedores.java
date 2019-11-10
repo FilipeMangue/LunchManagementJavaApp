@@ -27,6 +27,18 @@ public class ModelFornecedores {
         this.email = email;
     }
 
+    public ModelFornecedores(String nome, String endereco, String telemovel, String pais, String data_de_registo, String registado_por, String alterado_por, String alterado_em, String email) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telemovel = telemovel;
+        this.pais = pais;
+        this.data_de_registo = data_de_registo;
+        this.registado_por = registado_por;
+        this.alterado_por = alterado_por;
+        this.alterado_em = alterado_em;
+        this.email = email;
+    }
+
     public int getCodigo() {
         return codigo;
     }
