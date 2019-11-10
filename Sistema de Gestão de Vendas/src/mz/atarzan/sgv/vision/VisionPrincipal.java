@@ -1656,6 +1656,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 "Código", "Nome", "Endereço", "Telemóvel", "País", "Data de Registo", "Registad por", "Alterdao em", "Alterado por", "Email"
             }
         ));
+        jTable11.getTableHeader().setReorderingAllowed(false);
         jScrollPane11.setViewportView(jTable11);
 
         javax.swing.GroupLayout jPanel72Layout = new javax.swing.GroupLayout(jPanel72);
@@ -4904,6 +4905,11 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jMenu4.add(jMenuItem20);
 
         jMenuItem21.setText("5. Usuários");
+        jMenuItem21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenuItem21MouseClicked(evt);
+            }
+        });
         jMenuItem21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem21ActionPerformed(evt);
@@ -5391,9 +5397,13 @@ public class VisionPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
         // TODO add your handling code here:
-        hidePanels();
-        showStartPanel(false);
-        pnlContas.setVisible(true);
+//        hidePanels();
+//        showStartPanel(false);
+//        pnlUsuarios.setVisible(true);
+//        setPnlLabelsColor();
+//        setBtnColors();
+//        pnlUsuarios.setBackground(new Color(153,153,153));
+//        btnUsuarios.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
     private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
@@ -5456,6 +5466,17 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private void btnAdicionarFornMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdicionarFornMouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAdicionarFornMouseEntered
+
+    private void jMenuItem21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem21MouseClicked
+        // TODO add your handling code here:
+        hidePanels();
+        showStartPanel(false);
+        pnlUsuarios.setVisible(true);
+        setPnlLabelsColor();
+        setBtnColors();
+        pnlUsuarios.setBackground(new Color(153,153,153));
+        btnUsuarios.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_jMenuItem21MouseClicked
 
     /**
      * @param args the command line arguments
