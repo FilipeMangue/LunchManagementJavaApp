@@ -44,17 +44,21 @@ public class ControlCRUDFornecedores {
             }
             return fornecedor;
         } catch (Exception e) {
-            System.err.println("\tErro cadastrando cliente: \n" + e.getMessage()+"\n");
+            System.err.println("\tErro cadastrando fornecedor: \n" + e.getMessage()+"\n");
         }
         return null;
     }
     
-    public static ModelFornecedores  update (int id, ModelFornecedores fornecedor){
+    public static ModelFornecedores  update (int codigo, ModelFornecedores fornecedor){
         try {
             // Create the java mysql update preparedstatement
             try (Connection conn = UtilDatabaseConnection.connect()) {
                 // Create the java mysql update preparedstatement
-                String query = "update clients set name = ?, birth = ?, email = ?, tell = ?, address = ?, comment = ?, where id = ?";
+                String query = "UPDATE fornecedores set nome = ?, "
+                        + "endereco = ?, telemovel = ?, pais = ?, "
+                        + "data_de_registo = ?, registado_por = ?,"
+                        + "alterado_por = ?, alterado_em = ?, "
+                        + "email = ?, WHERE codigo = ?";
                 PreparedStatement preparedStmt = conn.prepareStatement(query);
                 
                 preparedStmt.setString (1, fornecedor.getNome());
@@ -65,7 +69,7 @@ public class ControlCRUDFornecedores {
                 preparedStmt.setString(6, fornecedor.getRegistado_por());
                 preparedStmt.setString(7, fornecedor.getAlterado_em());
                 preparedStmt.setString(8, fornecedor.getEmail());
-                preparedStmt.setInt(9, id);
+                preparedStmt.setInt(9, codigo);
                 // Executes the java preparedstatement
                 preparedStmt.executeUpdate();
             }
@@ -96,6 +100,7 @@ public class ControlCRUDFornecedores {
                 ResultSet rs = st.executeQuery(query);
                 while (rs.next()){
                     providersList.add(new ModelFornecedores(
+                        rs.getInt("codigo"),
                         rs.getString("nome"), 
                         rs.getString("endereco"), 
                         rs.getString("telemovel"), 
@@ -107,6 +112,7 @@ public class ControlCRUDFornecedores {
                         rs.getString("email")
                     ));
                     list.add(new Object[]{
+                        rs.getInt("codigo"),
                         rs.getString("nome"), 
                         rs.getString("endereco"), 
                         rs.getString("telemovel"), 
@@ -117,7 +123,7 @@ public class ControlCRUDFornecedores {
                         rs.getString("alterado_em"),
                         rs.getString("email")
                     });
-                    forn_registados += 1;
+                    //forn_registados += 1;
                 }
             }
         }

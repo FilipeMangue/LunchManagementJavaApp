@@ -7,10 +7,17 @@ package mz.atarzan.sgv.vision;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import mz.atarzan.sgv.control.ControlCRUDFornecedores;
+import mz.atarzan.sgv.util.UtilDatabaseConnection;
 import mz.atarzan.sgv.util.UtilOpenLink;
 
 /**
@@ -34,6 +41,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jlDate.setText(dataFormatada);
         hidePanels();
         showStartPanel(true);
+        ControlCRUDFornecedores.read(tabelaForn);
         setNewFrameSize(908, 681);
     }
     private void showStartPanel(boolean visible){
@@ -148,7 +156,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jPanel72 = new javax.swing.JPanel();
         jScrollPane11 = new javax.swing.JScrollPane();
-        jTable11 = new javax.swing.JTable();
+        tabelaForn = new javax.swing.JTable();
         pnProdutos = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel57 = new javax.swing.JPanel();
@@ -1645,7 +1653,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTable11.setModel(new javax.swing.table.DefaultTableModel(
+        tabelaForn.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null},
@@ -1656,8 +1664,8 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 "Código", "Nome", "Endereço", "Telemóvel", "País", "Data de Registo", "Registad por", "Alterdao em", "Alterado por", "Email"
             }
         ));
-        jTable11.getTableHeader().setReorderingAllowed(false);
-        jScrollPane11.setViewportView(jTable11);
+        tabelaForn.getTableHeader().setReorderingAllowed(false);
+        jScrollPane11.setViewportView(tabelaForn);
 
         javax.swing.GroupLayout jPanel72Layout = new javax.swing.GroupLayout(jPanel72);
         jPanel72.setLayout(jPanel72Layout);
@@ -5238,8 +5246,43 @@ public class VisionPrincipal extends javax.swing.JFrame {
         setBtnColors();
         pnlFornecedores.setBackground(new Color(153,153,153));
         btnFornecedores.setBackground(new Color(153,153,153));
+        try {
+            listarForn();
+        } catch (SQLException ex) {
+            Logger.getLogger(VisionPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        ControlCRUDFornecedores.read(tabelaForn);
     }//GEN-LAST:event_btnFornecedoresMouseClicked
 
+    private void listarForn() throws SQLException{
+        try {
+            try (Connection connect = UtilDatabaseConnection.connect()) {
+                String sql = "SELECT * FROM fornecedorsa";
+                PreparedStatement stmt = connect.prepareStatement(sql);
+                try (ResultSet rs = stmt.executeQuery()) {
+                    DefaultTableModel model = (DefaultTableModel)tabelaForn.getModel();
+                    model.setNumRows(0);
+                    //nome, endereco, telemovel, pais, data_de_registo, registado_por, alterado_por, alterado_em,email
+                    while(rs.next()){
+                        model.addRow(new Object[]{
+                            rs.getString("codigo"),
+                            rs.getString("nome"),
+                            rs.getString("endereco"),
+                            rs.getString("telemovel"),
+                            rs.getString("pais"),
+                            rs.getString("data_de_registo"),
+                            rs.getString("registado_por"),
+                            rs.getString("alterado_em"),
+                            rs.getString("alerado_por"),
+                            rs.getString("email")});
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, e);
+        }
+    }
+    
     private void btnProdutosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProdutosMouseClicked
         // TODO add your handling code here:
         hidePanels();
@@ -5819,7 +5862,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane6;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable10;
-    private javax.swing.JTable jTable11;
     private javax.swing.JTable jTable12;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
@@ -5853,5 +5895,6 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel pnlServices;
     private javax.swing.JPanel pnlUsuarios;
     private javax.swing.JPanel pnlVendas;
+    private javax.swing.JTable tabelaForn;
     // End of variables declaration//GEN-END:variables
 }

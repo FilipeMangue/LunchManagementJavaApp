@@ -1,7 +1,6 @@
 
 package mz.atarzan.sgv.control;
 
-import com.mysql.fabric.xmlrpc.Client;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,7 +17,7 @@ import mz.atarzan.sgv.vision.VisionListarClientes;
  */
 public class ControlCRUDClient {
     
-    public static ArrayList<ModelClient> clientsList = new ArrayList<>();
+    public static ArrayList<ModelClient> clientsList;
     public static int cli_registados;
     
     public static ModelClient create(ModelClient client) {
