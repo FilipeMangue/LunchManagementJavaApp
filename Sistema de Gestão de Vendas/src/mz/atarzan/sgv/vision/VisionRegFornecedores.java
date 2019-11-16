@@ -620,8 +620,9 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
 
     private void btnRegistoFornMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistoFornMouseClicked
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "Clicado!");
         setBtnColors();
-        btnRegistoForn.setBackground(new Color(102,102,102));
+        btnRegistoForn.setForeground(new Color(102,102,102));
     }//GEN-LAST:event_btnRegistoFornMouseClicked
 
     private void btnOperacoesFornMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOperacoesFornMouseClicked
