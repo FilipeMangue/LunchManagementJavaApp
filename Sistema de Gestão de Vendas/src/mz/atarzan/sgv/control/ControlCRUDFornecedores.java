@@ -26,7 +26,7 @@ public class ControlCRUDFornecedores {
     public static ModelFornecedores create(ModelFornecedores fornecedor) {
         try {
             try (Connection dbconnect = UtilDatabaseConnection.connect()) {
-                String query = "INSERT INTO fornecedores (nome, endereco, telemovel, pais, data_de_registo, registado_por, alterado_por, alterado_em,email)"
+                String query = "INSERT INTO fornecedores (nome, endereco, telemovel, pais, data_de_registo, registado_por, alterado_por, alterado_em, email)"
                              + " values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
                 PreparedStatement preparedStmt = dbconnect.prepareStatement(query);
 

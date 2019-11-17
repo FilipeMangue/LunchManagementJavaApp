@@ -5279,7 +5279,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, e);
+            //JOptionPane.showMessageDialog(this, e);
         }
     }
     
