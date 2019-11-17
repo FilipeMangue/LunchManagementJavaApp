@@ -232,6 +232,7 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         );
 
         btnOperacoesForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnOperacoesForn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOperacoesForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnOperacoesFornMouseClicked(evt);
@@ -262,6 +263,7 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         );
 
         btnProdutosForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnProdutosForn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProdutosForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProdutosFornMouseClicked(evt);
@@ -292,6 +294,7 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         );
 
         btnServicosForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnServicosForn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnServicosForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnServicosFornMouseClicked(evt);
@@ -322,6 +325,7 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         );
 
         btnContasForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnContasForn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnContasForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnContasFornMouseClicked(evt);
@@ -352,6 +356,7 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         );
 
         btnActvidadesForn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnActvidadesForn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnActvidadesForn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnActvidadesFornMouseClicked(evt);
@@ -625,7 +630,6 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
 
     private void btnRegistoFornMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistoFornMouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "Clicado!");
         setBtnColors();
         btnRegistoForn.setForeground(new Color(102,102,102));
     }//GEN-LAST:event_btnRegistoFornMouseClicked
