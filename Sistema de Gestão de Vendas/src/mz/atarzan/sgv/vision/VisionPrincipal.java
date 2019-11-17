@@ -5257,7 +5257,7 @@ public class VisionPrincipal extends javax.swing.JFrame {
     private void listarForn() throws SQLException{
         try {
             try (Connection connect = UtilDatabaseConnection.connect()) {
-                String sql = "SELECT * FROM fornecedorsa";
+                String sql = "SELECT * FROM fornecedores";
                 PreparedStatement stmt = connect.prepareStatement(sql);
                 try (ResultSet rs = stmt.executeQuery()) {
                     DefaultTableModel model = (DefaultTableModel)tabelaForn.getModel();
