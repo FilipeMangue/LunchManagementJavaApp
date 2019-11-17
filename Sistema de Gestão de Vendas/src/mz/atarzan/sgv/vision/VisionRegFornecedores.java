@@ -119,6 +119,11 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         );
 
         jPanel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel6MouseClicked(evt);
+            }
+        });
 
         jLabel2.setText("Cancelar");
 
@@ -654,6 +659,11 @@ public class VisionRegFornecedores extends javax.swing.JFrame {
         setBtnColors();
         btnActvidadesForn.setBackground(new Color(102,102,102));
     }//GEN-LAST:event_btnActvidadesFornMouseClicked
+
+    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jPanel6MouseClicked
 
     /**
      * @param args the command line arguments
