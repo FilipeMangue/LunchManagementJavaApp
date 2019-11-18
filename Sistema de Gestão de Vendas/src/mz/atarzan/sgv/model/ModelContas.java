@@ -9,12 +9,14 @@ public class ModelContas {
     double valor;
     Date data;
     String referente_a;
+    boolean estado;
 
-    public ModelContas(String tipo, double valor, Date data, String referente_a) {
+    public ModelContas(String tipo, double valor, Date data, String referente_a, boolean estado) {
         this.tipo = tipo;
         this.valor = valor;
         this.data = data;
         this.referente_a = referente_a;
+        this.estado = estado;
     }
 
     public String getTipo() {
@@ -47,6 +49,14 @@ public class ModelContas {
 
     public void setReferente_a(String referente_a) {
         this.referente_a = referente_a;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 
 }
