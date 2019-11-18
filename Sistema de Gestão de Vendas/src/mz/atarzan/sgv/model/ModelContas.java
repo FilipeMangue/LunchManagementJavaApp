@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mz.atarzan.sgv.model;
+import java.sql.Date;
 
 /**
- *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
  */
 public class ModelContas {
-    
+    String tipo;
+    double valor;
+    Date data;
+    String referente_a;
 }
