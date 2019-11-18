@@ -16,6 +16,37 @@ public class ModelContas {
         this.data = data;
         this.referente_a = referente_a;
     }
-    
-    
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public String getReferente_a() {
+        return referente_a;
+    }
+
+    public void setReferente_a(String referente_a) {
+        this.referente_a = referente_a;
+    }
+
 }
