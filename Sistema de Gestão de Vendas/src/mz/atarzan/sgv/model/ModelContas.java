@@ -5,6 +5,7 @@ import java.sql.Date;
  * @author Filipe Emanuel Da Julieta Hafo Mangue
  */
 public class ModelContas {
+    int cod;
     String tipo;
     double valor;
     Date data;
@@ -19,6 +20,15 @@ public class ModelContas {
         this.estado = estado;
     }
 
+    public ModelContas(int cod, String tipo, double valor, Date data, String referente_a, boolean estado) {
+        this.cod = cod;
+        this.tipo = tipo;
+        this.valor = valor;
+        this.data = data;
+        this.referente_a = referente_a;
+        this.estado = estado;
+    }
+    
     public String getTipo() {
         return tipo;
     }
@@ -59,4 +69,11 @@ public class ModelContas {
         this.estado = estado;
     }
 
+    public int getCod() {
+        return cod;
+    }
+
+    public void setCod(int cod) {
+        this.cod = cod;
+    }
 }
