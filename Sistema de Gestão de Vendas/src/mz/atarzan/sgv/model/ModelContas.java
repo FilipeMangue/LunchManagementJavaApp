@@ -9,4 +9,13 @@ public class ModelContas {
     double valor;
     Date data;
     String referente_a;
+
+    public ModelContas(String tipo, double valor, Date data, String referente_a) {
+        this.tipo = tipo;
+        this.valor = valor;
+        this.data = data;
+        this.referente_a = referente_a;
+    }
+    
+    
 }
