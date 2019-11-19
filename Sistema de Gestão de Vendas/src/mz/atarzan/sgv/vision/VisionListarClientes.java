@@ -1,6 +1,5 @@
 package mz.atarzan.sgv.vision;
 
-import com.mysql.fabric.xmlrpc.Client;
 import java.net.MalformedURLException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,7 +36,11 @@ public class VisionListarClientes extends javax.swing.JFrame {
                     model.setNumRows(0);
                     
                     while(rs.next()){
-                        model.addRow(new Object[]{rs.getString("name"),rs.getString("email"),rs.getString("tell"),rs.getString("endereco")});
+                        model.addRow(new Object[]{
+                            rs.getString("name"),
+                            rs.getString("email"),
+                            rs.getString("tell"),
+                            rs.getString("endereco")});
                     }
                 }
             }
