@@ -17,7 +17,8 @@ import mz.atarzan.sgv.util.UtilDatabaseConnection;
 
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class ControlCRUDFornecedores {
     public static ArrayList<ModelFornecedores> providersList = new ArrayList<>();

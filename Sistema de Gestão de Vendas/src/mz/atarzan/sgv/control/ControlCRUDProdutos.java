@@ -8,6 +8,7 @@ package mz.atarzan.sgv.control;
 /**
  *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class ControlCRUDProdutos {
     

@@ -2,7 +2,7 @@ package mz.atarzan.sgv.vision;
 
 import java.awt.Frame;
 import javax.swing.JOptionPane;
-import mz.atarzan.sgv.control.ControlAuthentication;
+import mz.atarzan.sgv.control.ControlAuth;
 import mz.atarzan.sgv.model.ModelUser;
 
 /**
@@ -160,7 +160,7 @@ public class VisionLogin extends javax.swing.JFrame {
         System.out.println("USERNAME: " + username);
         System.out.println("PASSWORD: " + password);
         
-        ModelUser usuario = ControlAuthentication.login(username, password);
+        ModelUser usuario = ControlAuth.login(username, password);
         
         if (usuario != null) {
             //Usuario encontrado.

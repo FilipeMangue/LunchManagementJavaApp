@@ -5,12 +5,13 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import mz.atarzan.sgv.model.ModelUser;
 import mz.atarzan.sgv.util.UtilDatabaseConnection;
+
 /**
  *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
  * @author Explicador Inc, Lda.
  */
-public class ControlAuthentication {
+public class ControlAuth {
     public static ModelUser login(String username, String password) {
        
         try {

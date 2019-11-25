@@ -1,6 +1,9 @@
 package mz.atarzan.sgv.model;
+
 /**
+ *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class ModelFornecedores {
     int codigo;

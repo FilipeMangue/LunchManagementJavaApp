@@ -8,7 +8,7 @@ package mz.atarzan.sgv.model;
 /**
  *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
- * @author Explicador Inc, Lda
+ * @author Explicador Inc, Lda.
  */
 public class ModelProduct {
     protected String nome_Produto;

@@ -2,7 +2,9 @@ package mz.atarzan.sgv.model;
 import java.sql.Date;
 
 /**
+ *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class ModelContas {
     int cod;

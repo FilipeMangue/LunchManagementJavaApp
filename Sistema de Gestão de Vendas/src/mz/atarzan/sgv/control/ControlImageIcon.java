@@ -5,7 +5,8 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class ControlImageIcon {
 //    final ImageIcon criarImageIcon(String caminho, String descricao) {

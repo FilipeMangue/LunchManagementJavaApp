@@ -13,7 +13,9 @@ import mz.atarzan.sgv.util.UtilDatabaseConnection;
 import mz.atarzan.sgv.vision.VisionListarClientes;
 
 /**
+ *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class ControlCRUDClient {
     

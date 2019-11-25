@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
 /**
+ *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public final class ControlTableModel extends AbstractTableModel{
     private ArrayList lines = null;
