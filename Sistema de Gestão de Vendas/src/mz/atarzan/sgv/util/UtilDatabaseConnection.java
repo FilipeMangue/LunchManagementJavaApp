@@ -6,8 +6,11 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+
 /**
+ *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class UtilDatabaseConnection {
     private static final String db_name = "dbsgv";

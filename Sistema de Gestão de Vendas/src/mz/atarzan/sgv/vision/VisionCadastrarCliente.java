@@ -8,7 +8,9 @@ import mz.atarzan.sgv.control.ControlCRUDClient;
 import mz.atarzan.sgv.model.ModelClient;
 
 /**
+ *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class VisionCadastrarCliente extends javax.swing.JFrame {
     int birth;

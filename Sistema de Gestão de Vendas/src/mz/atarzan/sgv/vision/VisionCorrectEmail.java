@@ -6,9 +6,11 @@
 package mz.atarzan.sgv.vision;
 
 import javax.swing.ImageIcon;
+
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class VisionCorrectEmail extends javax.swing.JFrame {
 

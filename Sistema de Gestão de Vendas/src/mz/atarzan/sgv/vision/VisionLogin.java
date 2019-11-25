@@ -8,6 +8,7 @@ import mz.atarzan.sgv.model.ModelUser;
 /**
  *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class VisionLogin extends javax.swing.JFrame {
 

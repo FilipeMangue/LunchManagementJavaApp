@@ -9,7 +9,8 @@ import java.awt.Color;
 
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class VisionSelectUser extends javax.swing.JFrame {
 

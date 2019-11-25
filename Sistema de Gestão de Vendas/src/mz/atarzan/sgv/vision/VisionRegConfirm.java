@@ -7,7 +7,8 @@ package mz.atarzan.sgv.vision;
 
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class VisionRegConfirm extends javax.swing.JFrame {
 

@@ -5,7 +5,8 @@ import java.net.URI;
 
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class UtilOpenLink {
     public static void contactInfo() {

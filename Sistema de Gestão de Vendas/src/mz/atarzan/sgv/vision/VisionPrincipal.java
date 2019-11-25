@@ -22,7 +22,8 @@ import mz.atarzan.sgv.util.UtilOpenLink;
 
 /**
  *
- * @author Filipe Emanuel
+ * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class VisionPrincipal extends javax.swing.JFrame {
 

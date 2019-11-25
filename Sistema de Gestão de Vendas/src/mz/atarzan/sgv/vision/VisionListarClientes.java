@@ -14,6 +14,7 @@ import mz.atarzan.sgv.util.UtilDatabaseConnection;
 /**
  *
  * @author Filipe Emanuel Da Julieta Hafo Mangue
+ * @author Explicador Inc, Lda.
  */
 public class VisionListarClientes extends javax.swing.JFrame {
     /**
