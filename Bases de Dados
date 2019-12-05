@@ -1,0 +1,7 @@
+### NOME DA BASE DE DADOS
+- dbsgv
+
+### TABELAS E ATRIBUTOS
+- usuarios (nome, categoria)
+- fornecedores (codigo, endereço, telemovel, pais, data_de_registo, registado_por, alterado_em, alterado_por, email)
+- clientes (cod, type, name, birth, email, tell, age, address, comment)
