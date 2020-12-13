@@ -1,5 +1,5 @@
 ### LunchManagementJavaApp
-Java Desktop Software for Lunch Mangement
+Java Desktop Software for Lunch Management
 
 ### SISTEMA DE GESTÃO PARA VENDAS  
 
