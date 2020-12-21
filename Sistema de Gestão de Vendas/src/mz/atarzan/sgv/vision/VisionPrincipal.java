@@ -651,9 +651,10 @@ public class VisionPrincipal extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(240, 244, 250));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setBackground(new java.awt.Color(51, 0, 255));
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setText("Explicador eCommerce Versão: 1.1.0 ");
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel1.setText("SoftCode eCom Version: 1.1.0 ");
 
         jlDate.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jlDate.setText("20/10/2019");
