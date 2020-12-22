@@ -27,7 +27,7 @@ public class UtilDatabaseConnection {
             
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(UtilDatabaseConnection.class.getName()).log(Level.SEVERE, null, ex);
-            JOptionPane.showMessageDialog(null, "Erro ao conectar com o servidor: " + server + "\nError: " + ex.getMessage());
+            JOptionPane.showMessageDialog(null, "ERRO AO CONECTAR COM O SERVIDOR: " + server + "\nError: " + ex.getMessage());
         }
         
         return null;
